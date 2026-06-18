@@ -1,4 +1,7 @@
-![Chronology Dashboard](assets/screenshot.png)
+<p align="left">
+  <a href="assets/screenshot.png"><img src="assets/screenshot.png" width="300" alt="Chronology Dashboard v1" /></a>
+  <a href="assets/screenshot_updated.png"><img src="assets/screenshot_updated.png" width="300" alt="Chronology Dashboard v2" /></a>
+</p>
 
 # Chronology
 
