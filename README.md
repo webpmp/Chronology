@@ -10,7 +10,7 @@ The dashboard integrates live visual state indicators, dual workflows (automatic
 
 ## Key Features
 
-- **Gemini AI Deep Research & Extractor**: Search or query complex topics using server-side Gemini models with real-time Google Search Grounding to automatically discover and extract high-confidence, verified assertions.
+- **Gemini AI Deep Research & Extractor**: Search or query complex topics using server-side Gemini models with real-time Google Search Grounding to automatically discover and extract high-confidence, verified assertions. You can select different Gemini models to use in Settings, or configure local models using LM Studio.
 - **Bi-Directional Interactive Curation**: Discoveries are proposed as editable cards. Select, edit, rename, modify, or append suggested entries directly.
 - **Manual Data Orchestration**: Append facts manually with a validation engine. It enforces unique, properly formatted uppercase snake_case identifier variables (e.g., `ASTRONOMY_SGR_A_MASS`).
 - **Pending Actions Lifecycle**:
@@ -50,10 +50,14 @@ The dashboard integrates live visual state indicators, dual workflows (automatic
    npm install
    ```
 
-3. Create your `.env` configuration at the root of the project with your private Google Gen AI API key:
+3. Create your `.env` configuration at the root of the project. You must supply your private Google Gen AI API key. Optionally, you can add external research sources by signing up for free API keys from [newsapi.org](https://newsapi.org) and [newsdata.io](https://newsdata.io):
    ```env
    # .env
    GEMINI_API_KEY=your-google-api-key-here
+
+   # Optional news research keys:
+   NEWS_API_KEY=your-newsapi-key-here
+   NEWSDATA_API_KEY=your-newsdata-key-here
    ```
 
 ### Development Mode
