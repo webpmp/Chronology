@@ -357,7 +357,7 @@ export const JSONViewer: React.FC<Props> = ({
                   title="Overwrite server seed_facts.json with current active JSON data"
                 >
                   <Database className={`w-3.5 h-3.5 ${isDirty ? "text-[#FDFCF8]" : "text-[#C2410C]"}`} />
-                  Save Data
+                  Save
                 </button>
               )}
 
@@ -368,7 +368,7 @@ export const JSONViewer: React.FC<Props> = ({
                   className="px-4 py-1.5 bg-white text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-[#FDFCF8] border border-[#1A1A1A]/25 hover:border-[#1A1A1A] text-[10px] font-bold uppercase tracking-wider rounded-none flex items-center justify-center gap-1.5 transition-all cursor-pointer font-sans h-[32px] flex-shrink-0"
                 >
                   <RefreshCw className="w-3.5 h-3.5" />
-                  Reset Data
+                  Reset
                 </button>
               )}
 
@@ -379,7 +379,7 @@ export const JSONViewer: React.FC<Props> = ({
                   className="px-4 py-1.5 bg-rose-50 text-[#C2410C] hover:bg-[#C2410C] hover:text-[#FDFCF8] border border-[#C2410C]/20 hover:border-[#C2410C] text-[10px] font-bold uppercase tracking-wider rounded-none flex items-center justify-center gap-1.5 transition-all cursor-pointer font-sans h-[32px] flex-shrink-0"
                 >
                   <Trash2 className="w-3.5 h-3.5" />
-                  Clear Data
+                  Clear
                 </button>
               )}
             </div>
