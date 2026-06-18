@@ -1,6 +1,8 @@
-# Key Facts Curator
+![Chronology Dashboard](assets/screenshot.png)
 
-Key Facts Curator is a professional, high-fidelity research and curation dashboard designed to extract, refine, and structure verified global facts, metrics, and scientific or technological breakthroughs. It provides a visual platform to build structured JSON datasets, which can be utilized for machine learning model tuning, retrieval-augmented generation (RAG), or detailed facts-based knowledge bases.
+# Chronology
+
+Chronology is a professional, high-fidelity research and curation dashboard designed to extract, refine, and structure verified global facts, metrics, and scientific or technological breakthroughs. It provides a visual platform to build structured JSON datasets, which can be utilized for machine learning model tuning, retrieval-augmented generation (RAG), or detailed facts-based knowledge bases.
 
 The dashboard integrates live visual state indicators, dual workflows (automatic Gemini-powered research and manual structured inputs), validation pipelines, and a direct JSON visualization.
 
@@ -40,7 +42,7 @@ The dashboard integrates live visual state indicators, dual workflows (automatic
 1. Clone or extract the repository files:
    ```bash
    git clone <repository-url>
-   cd key-facts-curator
+   cd chronology
    ```
 
 2. Install dependencies:
