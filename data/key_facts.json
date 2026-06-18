@@ -1,0 +1,54 @@
+{
+  "Computing": {
+    "NVIDIA_BLACKWELL_GPU": {
+      "value": "20 Petaflops FP4",
+      "context": "Nvidia announced the Blackwell B200 GPU in March 2024, providing up to 20 petaflops of FP4 AI processing power and executing LLMs at 25x lower cost and energy."
+    },
+    "GEMINI_1_5_PRO_CONTEXT": {
+      "value": "2 Million Tokens",
+      "context": "Google introduced Gemini 1.5 Pro in mid-2024 with a production context window of up to 2 million tokens, pioneering massive in-context reasoning."
+    }
+  },
+  "Science": {
+    "JAMES_WEBB_COSMIC_DAWN": {
+      "value": "Galaxy JADES-GS-z14-0",
+      "context": "Webb telescope scientists confirmed galaxy JADES-GS-z14-0 in May 2024 at a redshift of z=14.32, existing only 290 million years after the Big Bang."
+    }
+  },
+  "Economic Metrics": {
+    "US_FEDERAL_FUNDS_RATE_2024": {
+      "value": "4.50% - 4.75%",
+      "context": "The US Federal Reserve cut its benchmark interest rate by 50 basis points in September 2024 and 25 basis points in November 2024 to a range of 4.50%-4.75%."
+    }
+  },
+  "Environment & Climate": {
+    "GLOBAL_WARMING_EXCEED_1_5C": {
+      "value": "1.52°C Above Pre-industrial",
+      "context": "Copernicus Climate Change Service reported that for the first time in history, global warming exceeded 1.5°C across a full 12-month period (Feb 2023 - Jan 2024)."
+    }
+  },
+  "Global Affairs": {
+    "UN_CLIMATE_PACT_COP28": {
+      "value": "Transitioning away from fossil fuels",
+      "context": "Over 190 countries at the UN COP28 climate summit in Dubai entered a historic agreement to transition away from fossil fuels in energy systems."
+    }
+  },
+  "Politics": {
+    "US_PRESIDENTIAL_ELECTION_2024": {
+      "value": "Donald Trump",
+      "context": "Donald Trump won the November 2024 United States presidential election, defeating Kamala Harris and securing a second non-consecutive term."
+    }
+  },
+  "Sports": {
+    "PARIS_OLYMPICS_2024": {
+      "value": "USA and China gold parity",
+      "context": "The 2024 Summer Olympics took place in Paris, France, with the US and China tying for the most gold medals at 40 each, though the US led in total medals (126)."
+    }
+  },
+  "Transportation": {
+    "SPACEX_STARSHIP_IFT4": {
+      "value": "Double Splashdown Success",
+      "context": "SpaceX successfully completed its fourth Integrated Flight Test (IFT-4) in June 2024, achieving successful starship and booster soft-splashdowns in Indian Ocean and Gulf of Mexico."
+    }
+  }
+}

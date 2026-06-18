@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+/* Custom scrollbars matching the bookish cream-paper & charcoal-ink theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F1E6; /* deep cream paper shade */
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.25); /* ink color with soft opacity */
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(26, 26, 26, 0.45);
+}
+
+.editorial-card {
+  background-color: #FDFCF8;
+  border: 1px solid rgba(26, 26, 26, 0.15);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.editorial-card-dark {
+  background-color: #1A1A1A;
+  color: #FDFCF8;
+}
+
+.editorial-json {
+  background: #f4f3ed;
+  border: 1px solid rgba(26, 26, 26, 0.12);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Key Facts Curator",
+  "description": "A high-fidelity dashboard to research, extract, and curate a structured JSON dataset of verified global facts, metrics, and breakthroughs for AI model training, featuring Gemini Google Search Grounding and NewsAPI integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
