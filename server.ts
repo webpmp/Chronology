@@ -77,48 +77,3254 @@ const INITIAL_FACTS = {
     "GEMINI_1_5_PRO_CONTEXT": {
       "value": "2 Million Tokens",
       "context": "Google introduced Gemini 1.5 Pro in mid-2024 with a production context window of up to 2 million tokens, pioneering massive in-context reasoning."
+    },
+    "QDISCOCIRC_QUANTUM_AI": {
+      "value": "2024",
+      "context": "Quantum circuits showed advantages over classical models in NLP tasks using QDisCoCirc for interpretability in healthcare and finance."
+    },
+    "NONABELIAN_QUANTUM_ERROR": {
+      "value": "2024",
+      "context": "Harvard experiments validated non-Abelian systems for quantum error correction, reducing resources for scalable quantum computing."
+    },
+    "HAMILTONIAN_LEARNING": {
+      "value": "2024",
+      "context": "Efficient algorithm to deduce Hamiltonians of quantum systems at constant temperature, aiding complex system modeling."
+    },
+    "QUANTUM_INVESTMENT_SURGE": {
+      "value": "2025",
+      "context": "Record investments and demonstrations of real-world benefits in quantum computing, with top breakthroughs highlighted."
+    },
+    "DRAM_NAND_PRICE_SPIKE": {
+      "value": "2025-2026",
+      "context": "Global memory crunch drove DRAM and NAND prices up due to AI demand, supply constraints, and production shifts."
+    },
+    "IQM_SPAC_IPO": {
+      "value": "February 2026",
+      "context": "Finnish quantum unicorn IQM to go public via SPAC at $1.8B valuation, joining US-listed quantum firms."
+    },
+    "QUANTUM_189_COMPANIES": {
+      "value": "2026",
+      "context": "189 quantum computing companies active across hardware modalities like superconducting, trapped ion, and photonic."
+    },
+    "FOUR_STATE_PHOTON_GATE": {
+      "value": "February 2026",
+      "context": "TU Wien and China collaboration realized high-dimensional quantum logic gate for four-state photons in optical quantum computers."
+    },
+    "HBM_AI_SUPERCYCLE": {
+      "value": "2026",
+      "context": "SK hynix forecasts HBM3E and HBM4 demand fueling AI memory supercycle, with record shipments."
+    },
+    "POST_QUANTUM_CRYPTO": {
+      "value": "2026",
+      "context": "Limited testing transitions to broad production deployment of post-quantum cryptography amid quantum threats."
+    },
+    "NVIDIA_VERA_RUBIN": {
+      "value": "2026",
+      "context": "NVIDIA unveiled the Vera Rubin platform featuring H300 GPUs and radical memory bandwidth improvements for trillion-parameter AI models."
+    },
+    "APPLE_SIRI_GEMINI": {
+      "value": "2026",
+      "context": "Apple announced a reimagined, context-aware Siri, utilizing Google's 1.2 trillion parameter Gemini model on Private Cloud Compute."
+    },
+    "AGENTIC_AI_SHIFT": {
+      "value": "2025-2026",
+      "context": "AI evolved into autonomous agents executing multi-step workflows, with Gartner predicting 40% enterprise application adoption by 2026."
+    },
+    "OPENAI_SORA": {
+      "value": "2024",
+      "context": "OpenAI introduced Sora, a highly advanced text-to-video AI model capable of generating highly realistic and temporally consistent complex scenes."
+    },
+    "GPT_4O_LAUNCH": {
+      "value": "2024",
+      "context": "OpenAI launched GPT-4o, introducing native multimodal capabilities across text, vision, and audio in real-time."
+    },
+    "LLAMA_3_OPEN_SOURCE": {
+      "value": "2024",
+      "context": "Meta released Llama 3 models, pushing the boundaries of open-source AI performance and matching top proprietary models."
+    },
+    "CLAUDE_3_5_SONNET": {
+      "value": "2024",
+      "context": "Anthropic released Claude 3.5 Sonnet, demonstrating state-of-the-art coding and reasoning capabilities outperforming previous leading models."
+    },
+    "AI_SELF_VERIFICATION": {
+      "value": "2026",
+      "context": "Breakthroughs in AI self-verification began solving error build-up in multi-step workflows, enabling more reliable autonomous agents."
+    },
+    "MULTIVERSE_HYPERNOVA_LLM": {
+      "value": "February 2026",
+      "context": "Multiverse Computing launched HyperNova 60B, a 50% compressed quantum-inspired LLM deployed on Hugging Face."
+    },
+    "SMALL_LANGUAGE_MODELS": {
+      "value": "2024",
+      "context": "Rise of highly efficient SLMs like Microsoft's Phi-3 enabled powerful on-device AI without relying on massive cloud compute infrastructure."
+    },
+    "AI_PC_ERA": {
+      "value": "2024-2025",
+      "context": "Integration of Neural Processing Units (NPUs) became standard in consumer PCs, bringing hardware acceleration for local AI tasks."
+    },
+    "GEMINI_1_5_PRO": {
+      "value": "2024",
+      "context": "Google introduced Gemini 1.5 Pro featuring a massive up-to-2-million token context window, revolutionizing long-document analysis."
+    },
+    "AI_CODE_GENERATION_BOOM": {
+      "value": "2025",
+      "context": "AI agents transitioned to handling full software architecture and QA, shifting developer roles from raw coding to strategic oversight."
+    },
+    "NVIDIA_BLACKWELL_ARCHITECTURE": {
+      "value": "2024",
+      "context": "NVIDIA unveiled the Blackwell GPU architecture, significantly increasing AI training and inference speeds for massive LLMs."
+    },
+    "GROQ_LPU_INFERENCE": {
+      "value": "2024",
+      "context": "Groq's Language Processing Units (LPUs) gained major traction by delivering ultra-fast inference speeds for LLMs, challenging GPU dominance."
+    },
+    "AI_MODEL_AVALANCHE_FEB2026": {
+      "value": "7 frontier models launched",
+      "context": "Across February, at least seven frontier-class AI models launched or upgraded, reshaping benchmarks."
+    },
+    "CLAUDE_SONNET_4_6_RELEASE": {
+      "value": "Model update",
+      "context": "Anthropic released Claude Sonnet 4.6 with improved reasoning and coding performance."
+    },
+    "GEMINI_3_1_PRO_UPDATE": {
+      "value": "Gemini 3.1 Pro",
+      "context": "Google DeepMind rolled out Gemini 3.1 Pro with stronger multimodal and enterprise capabilities."
+    },
+    "AI_CHIPS_AND_DEVICES_FEB27_BRIEFING": {
+      "value": "H200 license; Galaxy S26 launch",
+      "context": "Nvidia H200 export movement, ASML High-NA readiness, Samsung AI phone launch."
+    },
+    "AMD_META_6GW_AI_DEAL": {
+      "value": "6 GW AI capacity",
+      "context": "AMD expanded partnership with Meta and invested in AI platform development."
+    },
+    "LINUX_7_0_KERNEL_RELEASE": {
+      "value": "Linux 7.0 released",
+      "context": "Kernel adds support for next-gen Intel and AMD CPUs."
+    },
+    "CHINA_LEADING_EDGE_CHIP_PUSH": {
+      "value": "100,000 wafers/month target",
+      "context": "China accelerates 7 nm and 5 nm production capacity."
+    },
+    "HARVARD_SOFT_ROBOTICS_3D_PRINTING": {
+      "value": "New 3D printing method",
+      "context": "Programmable soft robotic structures fabricated via new technique."
+    },
+    "SEMICONDUCTOR_MARKET_TO_1T": {
+      "value": "$791.7B sales; 1T forecast",
+      "context": "Global chip market approaching $1 trillion scale."
+    },
+    "COMPOUND_SEMICONDUCTOR_14PCT_CAGR": {
+      "value": "14% CAGR to $5.2B by 2031",
+      "context": "Growth driven by power electronics and RF demand."
+    },
+    "NVIDIA_GTC2026_VERA_RUBIN_LPU": {
+      "value": "New AI inference chip platform",
+      "context": "Vera Rubin architecture and LPU inference acceleration platform introduced."
+    },
+    "GOOGLE_PQC_MIGRATION_2029": {
+      "value": "Post-quantum crypto by 2029",
+      "context": "Google sets timeline for full migration to post-quantum cryptography."
+    },
+    "QUANTUM_FIRMS_INFLECTION_IPO": {
+      "value": "Quantum firms push public listings",
+      "context": "Sector shifting from research to commercialization."
+    },
+    "HYPERSCALE_DC_AI_SUPERCYCLE": {
+      "value": "AI-driven data center boom",
+      "context": "Massive global investment in hyperscale AI infrastructure."
+    },
+    "SPACEX_XAI_SPACE_DATA_INITIATIVE": {
+      "value": "SpaceX acquires xAI for compute",
+      "context": "Push toward space-based compute infrastructure."
+    },
+    "AMD_META_6GW_AI_AGREEMENT": {
+      "value": "Up to 6 GW AI capacity deal",
+      "context": "Large-scale compute agreement using Instinct GPUs and EPYC CPUs."
+    },
+    "MISTRAL_ECODATA_SWEDEN_DC": {
+      "value": "1.4B USD Sweden AI facility",
+      "context": "AI data center powered by next-gen Nvidia GPUs."
+    },
+    "DEUTSCHETELEKOM_NVIDIA_MUNICH_DC": {
+      "value": "1B EUR Munich AI center",
+      "context": "Germany expands national AI compute capacity."
+    },
+    "ADANI_INDIA_5GW_AI_PLAN": {
+      "value": "5 GW India AI data centers",
+      "context": "Large-scale sustainable AI infrastructure buildout."
+    },
+    "TERRANOVA_QUERETARO_HYPERSCALE_LAUNCH": {
+      "value": "20 MW Mexican hyperscale site",
+      "context": "Expansion of AI and cloud infrastructure in Latin America."
+    },
+    "GPT_5_5_LAUNCH": {
+      "value": "April 24, 2026",
+      "context": "OpenAI launched GPT-5.5, a flagship model focused on end-to-end automation for agentic coding and computer use. Performance tests showed it leading the Artificial Analysis Intelligence Index with a score of 60."
+    },
+    "AI_INDEX_2026_REPORT": {
+      "value": "April 2026",
+      "context": "The Stanford AI Index 2026 revealed that AI data center power capacity has risen to 29.6 GW, comparable to the peak demand of New York State."
+    },
+    "GROK_4_EMISSIONS_METRIC": {
+      "value": "72,816 tons CO2e",
+      "context": "Estimated training emissions for Grok-4 reached a new high, equivalent to the annual greenhouse gas emissions of roughly 17,000 passenger vehicles."
+    },
+    "KIMI_K2_6_CHALLENGE": {
+      "value": "April 2026",
+      "context": "Moonshot AI released Kimi K2.6, a 1-trillion-parameter open-weights model capable of orchestrating up to 300 parallel agents for multi-day tasks."
+    },
+    "ANTHROPIC_MYTHOS_RESTRICTED": {
+      "value": "April 2026",
+      "context": "Anthropic released 'Mythos,' a high-security model restricted to federal agencies and select firms for advanced threat detection and defensive cyber-ops."
+    },
+    "APPLE_Q2_EARNINGS_AI_SHIFT": {
+      "value": "$29.6B Profit",
+      "context": "Apple reported record Q2 profits, with CEO John Ternus confirming a shift in cash reserves toward massive, 'incremental' AI and hardware infrastructure."
     }
   },
   "Science": {
     "JAMES_WEBB_COSMIC_DAWN": {
       "value": "Galaxy JADES-GS-z14-0",
       "context": "Webb telescope scientists confirmed galaxy JADES-GS-z14-0 in May 2024 at a redshift of z=14.32, existing only 290 million years after the Big Bang."
+    },
+    "CRISPR_SCD_TRIALS": {
+      "value": "January 2024",
+      "context": "Beam Therapeutics dosed first participant in phase 1/2 trial using base editing for severe sickle cell disease."
+    },
+    "LUCA_ANALYSIS": {
+      "value": "2024",
+      "context": "Interdisciplinary study dated Last Universal Common Ancestor (LUCA) to 4.2 billion years ago, revealing it as a complex cell."
+    },
+    "BRAINSTEM_IMMUNE_CIRCUIT": {
+      "value": "2024",
+      "context": "Discovery of neural circuit in brainstem that fine-tunes inflammation by sensing and adjusting inflammatory molecules."
+    },
+    "VULCAN_CENTAUR_MAIDEN": {
+      "value": "2024",
+      "context": "Successful maiden launch of ULA's Vulcan Centaur rocket; SpaceX Starship Flight 5 first stage landing."
+    },
+    "LENACAPAVIR_BREAKTHROUGH": {
+      "value": "2024",
+      "context": "Science's 2024 Breakthrough of the Year: Lenacapavir drug protects against HIV for 6 months."
+    },
+    "ARIANE_6_DEBUT": {
+      "value": "2024",
+      "context": "ESA's Ariane 6 rocket inaugural flight, despite partial failure; final Delta IV Heavy launch."
+    },
+    "ALPHAFOLD3_RELEASE": {
+      "value": "May 2024",
+      "context": "Google DeepMind released AlphaFold3, predicting protein structures interacting with other molecules; Nobel Prize in Chemistry awarded to creators of AlphaFold2."
+    },
+    "METHANE_TO_MEDICINES_PHOTOCATALYSIS": {
+      "value": "Methane upgraded to dimestrol",
+      "context": "Researchers at CiQUS reported a February 27 breakthrough using an iron-based supramolecular photocatalyst and LED light to convert methane and other alkanes directly into high-value chemicals, including synthesizing the hormone-therapy drug dimestrol straight from natural gas."
+    },
+    "CELLULAR_WINDS_DISCOVERY": {
+      "value": "Internal flows drive protein transport",
+      "context": "Researchers reported that cells generate active internal 'winds' that rapidly move proteins, offering a new explanation for how cancer and other diseases may spread within tissues."
+    },
+    "LOWCOST_CARBON_CAPTURE_MATERIAL": {
+      "value": "New nitrogen-patterned carbon",
+      "context": "Scientists developed a tunable carbon material whose specific nitrogen configurations capture CO2 efficiently and release it using far less heat, potentially enabling capture with low-grade waste heat."
+    },
+    "ENTANGLED_LIGHT_48D_TOPOLOGY": {
+      "value": "High-dimensional entangled patterns",
+      "context": "A quantum optics team used standard techniques to reveal that entangled light can encode complex topological structures in up to 48 dimensions, opening new channels for quantum communication."
+    },
+    "SINGLEATOM_CO2_TO_FUEL_CATALYST": {
+      "value": "Efficient CO2-to-fuel conversion",
+      "context": "A newly reported single-atom catalyst efficiently converts CO2 into useful fuels, advancing efforts to close the carbon loop in industrial processes."
+    },
+    "TERAHERTZ_QUANTUM_MICROSCOPE": {
+      "value": "Imaging hidden motions in superconductors",
+      "context": "MIT physicists built a microscope that compresses terahertz light into tiny regions, allowing direct visualization of hidden quantum motions inside superconducting materials."
+    },
+    "BLUE_ENERGY_SLIPPERY_NANOPORES": {
+      "value": "Boost to salinity-gradient power",
+      "context": "By coating nanopores with lipid layers that create ultra-slippery channels, researchers dramatically increased the efficiency of 'blue energy' generated where fresh and saltwater mix."
+    },
+    "PHONON_LASER_GRAVITY_SENSOR": {
+      "value": "Sound-based laser for precision metrology",
+      "context": "Scientists demonstrated a phonon laser that controls quantized vibrations with very low noise, promising more precise measurements of gravity and tiny forces."
+    },
+    "LIGHT_TRAP_2D_SEMICONDUCTORS": {
+      "value": "20x brighter atom-thin emitters",
+      "context": "A new light-trap design using tiny air cavities beneath monolayer tungsten disulfide boosted its optical emission by up to 20 times and strengthened other optical effects."
+    },
+    "LITHIUM_DENDRITE_NANOMECHANICS": {
+      "value": "Why dendrites pierce separators",
+      "context": "Direct nanomechanical measurements showed that lithium dendrites are hardened by their solid-electrolyte interphase, making them brittle needles capable of penetrating battery separators."
+    },
+    "LHCB_DOUBLY_CHARMED_BARYON": {
+      "value": "Ξcc⁺ discovery resolves puzzle",
+      "context": "CERN's LHCb collaboration reported the discovery of the doubly charmed baryon Xi cc plus, resolving a long-standing discrepancy with earlier experimental hints of such particles."
+    },
+    "CRISPRAAT1_TRIAL_2025": {
+      "value": "2025",
+      "context": "Intellia Therapeutics' in vivo CRISPR trial for alpha-1 antitrypsin deficiency showed 90% healthy protein replacement in highest dose cohort."
+    },
+    "JWST_URANUS_RINGS_2025": {
+      "value": "2025",
+      "context": "James Webb Space Telescope revealed unprecedented detail of Uranus' faint rings and seasonal atmospheric changes."
+    },
+    "CHINA_TIANGONG_EXPANSION_2025": {
+      "value": "2025",
+      "context": "China expanded its Tiangong space station with additional modules, enabling continuous crewed operations and international partnerships."
+    },
+    "ISRO_CHANDRAYAAN_4_2025": {
+      "value": "2025",
+      "context": "India's Chandrayaan-4 lunar sample return mission successfully brought back 1.2 kg of lunar regolith from the Moon's south pole."
+    },
+    "SPACEX_STARSHIP_FLIGHT_8_2025": {
+      "value": "2025",
+      "context": "Starship Flight 8 achieved full orbital refueling demonstration and deployed first batch of Starlink V3 satellites."
+    },
+    "PEROVSKITE_SOLAR_EFFICIENCY_2025": {
+      "value": "34.1%",
+      "context": "Laboratory tandem perovskite-silicon solar cells reached 34.1% efficiency, approaching theoretical limits and accelerating commercialization."
+    },
+    "ROOM_TEMP_SUPERCONDUCTOR_CLAIM_2025": {
+      "value": "2025",
+      "context": "Korean researchers claimed stable room-temperature superconductivity under ambient pressure, awaiting independent verification."
+    },
+    "PRIME_EDITING_CGD": {
+      "value": "May 2025",
+      "context": "Prime Medicine first clinical data showing efficacy of prime editing for chronic granulomatous disease."
+    },
+    "IL2RG_BASE_EDITING_SCID_2025": {
+      "value": "June 2025",
+      "context": "Beam Therapeutics began Phase I/II trial using base editing for severe combined immunodeficiency (SCID) without chemotherapy conditioning."
+    },
+    "NOBEL_PHYSICS_QUANTUM_TUNNELING_2025": {
+      "value": "2025",
+      "context": "John Clarke, Michel H. Devoret, and John M. Martinis awarded Nobel Prize in Physics for discovering macroscopic quantum mechanical tunneling and energy quantization in electric circuits."
+    },
+    "NOBEL_MEDICINE_IMMUNE_TOLERANCE_2025": {
+      "value": "2025",
+      "context": "Mary E. Brunkow, Frederick J. Ramsdell, and Shimon Sakaguchi awarded Nobel Prize in Physiology or Medicine for discoveries concerning peripheral immune tolerance."
+    },
+    "NOBEL_CHEMISTRY_MOFS_2025": {
+      "value": "2025",
+      "context": "Omar Yaghi awarded Nobel Prize in Chemistry for reticular chemistry and development of metal-organic frameworks (MOFs) with applications in gas storage and separation."
+    },
+    "LATTICE_GAUGE_THEORY_MUON_2025": {
+      "value": "2025",
+      "context": "Lattice gauge theory calculations resolved muon magnetic moment anomaly, confirming Standard Model predictions with unprecedented precision."
+    },
+    "LLMS_SCIENTIFIC_DISCOVERY_2025": {
+      "value": "2025",
+      "context": "Large language models advanced from AlphaFold's protein prediction to generating novel hypotheses and designing experiments across biology and materials science."
+    },
+    "GOOGLE_QUANTUM_ECHOES_2025": {
+      "value": "October 2025",
+      "context": "Google's Quantum Echoes algorithm achieved verifiable quantum advantage, computing molecular structures 13,000x faster than classical supercomputers."
+    },
+    "MACROSCOPIC_QUANTUM_TUNNELING_NOBEL_2025": {
+      "value": "October 2025",
+      "context": "The 2025 Physics Nobel recognized experiments demonstrating quantum tunneling in superconducting circuits large enough to hold, foundational for quantum computing."
+    },
+    "ARTEMIS_ADVANCES": {
+      "value": "2025",
+      "context": "NASA Artemis program advanced robotics, space medicine, and lunar infrastructure for crewed missions."
+    },
+    "CLEAN_ENERGY_SCALE": {
+      "value": "2025",
+      "context": "Science's 2025 Breakthrough: Massive clean energy infrastructure deployment led by China."
+    },
+    "JWST_EARLY_UNIVERSE_GALAXIES_2026": {
+      "value": "January 2026",
+      "context": "JWST observations confirmed galaxies forming just 300 million years after Big Bang, challenging standard cosmology models."
+    },
+    "SEQUENTIAL_CRISPR_EDIT": {
+      "value": "February 2026",
+      "context": "UIC researchers developed CRISPR method for sequential gene edits in human cells, advancing regenerative medicine."
+    },
+    "REAL_TIME_QUBIT_MONITORING_2026": {
+      "value": "February 2026",
+      "context": "NBI researchers developed FPGA-based system tracking qubit fluctuations 100x faster than previous methods, enabling real-time quantum error correction."
+    },
+    "FUSION_IEA_REPORT_2026": {
+      "value": "February 2026",
+      "context": "IEA's State of Energy Innovation 2026 report highlighted fusion energy's commercial race, featuring domestic roadmaps and ITER collaboration."
+    },
+    "SPACEX_STARSHIP_FLIGHT_10_2026": {
+      "value": "February 2026",
+      "context": "Starship Flight 10 successfully demonstrated in-orbit propellant transfer, paving way for Mars missions."
+    },
+    "DARK_MATTER_DETECTION_2026": {
+      "value": "February 2026",
+      "context": "LUX-ZEPLIN experiment reported excess events consistent with weakly interacting massive particles (WIMPs) in the 20-40 GeV mass range."
+    },
+    "QUANTUM_COMPUTING_ERROR_CORRECTION_GOOGLE": {
+      "value": "Below-threshold QEC",
+      "context": "A widely discussed February explainer reported that Google’s February 9 experiment achieved below-threshold quantum error correction—where adding more qubits reduced errors—framing it as a tipping point toward scalable fault-tolerant quantum computing."
+    },
+    "CHOLERA_EPIDEMIOLOGY_2026": {
+      "value": "Case trend vs. 2025",
+      "context": "ECDC’s February threats report compared early-2026 cholera data to 2025, noting 25,714 cases and 282 deaths so far this year versus 69,088 cases and 709 deaths over the same period last year, with sharp geographic variation in trajectories."
+    },
+    "ADOLESCENT_HEALTH_SYSTEM_INTEGRATION": {
+      "value": "School-based checks improve outcomes",
+      "context": "Nature Medicine’s February issue summarized evidence that integrating periodic health checkups into school systems, backed by health-care infrastructure, measurably improves adolescent health metrics in low- and middle-income countries."
+    },
+    "GRASSLAND_CLIMATE_IMPACTS_MODELING": {
+      "value": "16–65% regional loss scenarios",
+      "context": "Modeling from the Potsdam Institute, highlighted by Earth.Org, projected that African grasslands could shrink by 16% under aggressive mitigation but up to 65% under a business-as-usual emissions pathway, threatening pastoral livelihoods and biodiversity."
+    },
+    "TAE_TMTG_FUSION_MERGER_2026": {
+      "value": "2026",
+      "context": "TAE Technologies merged with Trump Media ($6B deal) to develop 50 MWe fusion plant by 2026, linking fusion to AI supremacy."
+    },
+    "FUSION_NET_ENERGY_GAIN_2026": {
+      "value": "2026",
+      "context": "Multiple private fusion companies achieved sustained net energy gain, marking transition from proof-of-concept to engineering prototypes."
+    },
+    "QUANTUM_ERROR_CORRECTION_SCALE_2026": {
+      "value": "2026",
+      "context": "IBM and Google scaled logical qubits to 100+, demonstrating error rates below physical qubit thresholds for fault-tolerant computing."
+    },
+    "CELL_FREE_BIOMANUF": {
+      "value": "2026",
+      "context": "Cell-free biomanufacturing for on-demand protein production, enabling point-of-care diagnostics and vaccines."
+    },
+    "DOE_ION_TRAP_CRYOELECTRONICS": {
+      "value": "In-vacuum cryoelectronics demo",
+      "context": "U.S. DOE quantum centers at Fermilab and MIT Lincoln Lab showed that low-power cryoelectronics can operate inside ion-trap systems, reducing thermal noise and opening a path to ion-trap quantum computers with tens of thousands of control electrodes."
+    },
+    "PBMF_BIOMARKERS": {
+      "value": "2026",
+      "context": "AstraZeneca/Tempus AI contrastive learning framework improves immuno-oncology trial patient selection by 15% survival benefit."
+    },
+    "CAS_EMERGING_SCIENCE_TRENDS_2026": {
+      "value": "8 key trend areas",
+      "context": "A CAS “Emerging Trends to Watch” report identified eight scientific frontiers for 2026, spanning drug discovery, renewable energy, smart agriculture and advanced materials based on mining of the scientific literature."
+    },
+    "NATIONAL_SCIENCE_DAY_RAMAN_LEGACY": {
+      "value": "Raman spectroscopy applications",
+      "context": "Coverage of India’s National Science Day revisited how C.V. Raman’s discovery of the Raman Effect enabled non-destructive identification of substances, now central to medical diagnostics, forensics, materials science and environmental monitoring."
+    },
+    "TINY_LIGHT_TRAPS_FOR_MILLION_QUBIT_SCALING": {
+      "value": "Hundreds of optical cavities demonstrated",
+      "context": "Stanford physicists developed miniature optical cavities that efficiently collect light from individual atoms, enabling arrays with dozens to hundreds of cavities and pointing toward quantum networks with up to millions of qubits."
+    },
+    "MAJORANA_QUBITS_READOUT_BREAKTHROUGH": {
+      "value": "Millisecond parity coherence",
+      "context": "Spanish and Dutch teams demonstrated the first real-time readout of Majorana qubit parity using quantum-capacitance measurements, confirming their topological protection and observing parity coherence exceeding one millisecond."
+    },
+    "ESA_JUICE_JUPITER_ARRIVAL_2026": {
+      "value": "2026",
+      "context": "ESA's JUICE spacecraft arrived at Jupiter after 8 years, beginning multi-year tour of the planet and its ocean moons."
+    },
+    "INTERSTELLAR_COMET_ATLAS_FINDINGS": {
+      "value": "April 23, 2026",
+      "context": "ALMA observations revealed that the comet 3I/ATLAS contains 30x more semi-heavy water than local comets, suggesting it originated in an ultra-cold system."
+    },
+    "SPACEFLIGHT_MICROBE_BREAKTHROUGH": {
+      "value": "April 2026",
+      "context": "Research at the University of Florida demonstrated that specific beneficial microbes can mitigate cellular stress and accelerate development during long-duration spaceflight."
+    },
+    "DEEP_SEA_BIOLUMINESCENCE_MAP": {
+      "value": "April 2026",
+      "context": "The first comprehensive global map of deep-sea bioluminescent species was completed, identifying over 400 previously uncatalogued light-emitting organisms."
+    },
+    "CRAIG_VENTER_LEGACY": {
+      "value": "April 30, 2026",
+      "context": "The scientific community marked the passing of Craig Venter, the pioneer of the private human genome project and synthetic life research."
     }
   },
   "Economic Metrics": {
     "US_FEDERAL_FUNDS_RATE_2024": {
       "value": "4.50% - 4.75%",
       "context": "The US Federal Reserve cut its benchmark interest rate by 50 basis points in September 2024 and 25 basis points in November 2024 to a range of 4.50%-4.75%."
+    },
+    "GDP_GROWTH_2024": {
+      "value": "2.8%",
+      "context": "Real GDP increased 2.8% in 2024 compared to 2023."
+    },
+    "UK_GDP_GROWTH_2024": {
+      "value": "0.9%",
+      "context": "The UK economy grew by an annual rate of 0.9% in 2024, marking an improvement from 0.4% in 2023."
+    },
+    "CPI_2024": {
+      "value": "2.9%",
+      "context": "Consumer Price Index for All Urban Consumers rose 2.9% from December 2023 to December 2024."
+    },
+    "FED_FUNDS_END_2024": {
+      "value": "Approximately 4.25-4.50%",
+      "context": "Federal funds rate at year-end 2024, prior to gradual cuts starting in 2025."
+    },
+    "NVIDIA_MARKET_CAP_JAN_2025": {
+      "value": "$2.93 Trillion",
+      "context": "NVIDIA's market capitalization recorded approximately $2.93 trillion for its fiscal year ending January 2025."
+    },
+    "GDP_GROWTH_2025": {
+      "value": "2.2%",
+      "context": "Full year real GDP growth slowed to 2.2% in 2025 from 2.8% in 2024, with Q4 at 1.4% due to government shutdown."
+    },
+    "CHINA_GDP_GROWTH_2025": {
+      "value": "5.0%",
+      "context": "China achieved its official government target by recording a full-year GDP growth of 5.0% in 2025."
+    },
+    "CHINA_TOTAL_GDP_2025": {
+      "value": "RMB 140.19 trillion",
+      "context": "China's total GDP reached RMB 140.19 trillion (approximately US$19.6 trillion) by the end of 2025."
+    },
+    "CHINA_PER_CAPITA_INCOME_2025": {
+      "value": "RMB 43,377",
+      "context": "Per-capita disposable income in China rose to RMB 43,377 (US$6,070), representing 5.0% real growth."
+    },
+    "CHINA_CPI_2025": {
+      "value": "0.0%",
+      "context": "China recorded a flat 0.0% Consumer Price Index for the full year of 2025 amid weak domestic demand conditions."
+    },
+    "CHINA_PPI_2025": {
+      "value": "-2.6%",
+      "context": "China's Producer Price Index dropped 2.6% in 2025, reflecting ongoing deflationary pressures in manufacturing."
+    },
+    "CHINA_POPULATION_CHANGE_2025": {
+      "value": "-3.39 million",
+      "context": "China's population declined by 3.39 million people in 2025, continuing significant long-term demographic shifts."
+    },
+    "EUROZONE_HEADLINE_INFLATION_2025": {
+      "value": "2.1%",
+      "context": "Euro area headline inflation averaged 2.1% across 2025 according to the European Central Bank."
+    },
+    "EUROZONE_ENERGY_INFLATION_2025_2026": {
+      "value": "Negative",
+      "context": "Energy inflation in the Euro area is expected to remain negative throughout 2025 and 2026."
+    },
+    "US_UNEMPLOYMENT_NOV_2025": {
+      "value": "4.6%",
+      "context": "The US unemployment rate hit 4.6% in November 2025, marking the highest level since September 2021."
+    },
+    "US_CORE_PCE_NOV_2025": {
+      "value": "2.8%",
+      "context": "Core Personal Consumption Expenditure Price Index annual change was 2.8% in November 2025."
+    },
+    "US_CORE_PCE_DEC_2025": {
+      "value": "3.0%",
+      "context": "Core PCE price index annual change increased to 3.0% in December 2025 from 2.8% in November 2025."
+    },
+    "US_30_YEAR_FIXED_MORTGAGE_DEC_2025": {
+      "value": "6.149%",
+      "context": "The average 30-year fixed-rate conforming mortgage in the US closed out late December 2025 at 6.149%."
+    },
+    "US_15_YEAR_CONVENTIONAL_MORTGAGE_DEC_2025": {
+      "value": "5.424%",
+      "context": "The 15-year conventional mortgage interest rate in the US stood at 5.424% in late December 2025."
+    },
+    "US_Q4_2025_GDP_GROWTH": {
+      "value": "1.4%",
+      "context": "US Q4 2025 Gross Domestic Product grew at a slower-than-expected annualized rate of 1.4%."
+    },
+    "US_Q4_2025_GDP_SLOWDOWN": {
+      "value": "0.7% annualized growth",
+      "context": "Revised BEA data show U.S. real GDP grew at a 0.7 percent annualized rate in Q4 2025, down sharply from 4.4 percent in Q3, leaving the economy on a softer footing heading into 2026."
+    },
+    "EUROZONE_GDP_GROWTH_Q4_2025": {
+      "value": "0.30%",
+      "context": "Euro area Gross Domestic Product expanded by 0.30% quarter-on-quarter in Q4 2025."
+    },
+    "UK_GDP_GROWTH_Q4_2025": {
+      "value": "0.10%",
+      "context": "The UK economy grew by 0.1% in Q4 2025, matching the previous quarter and slightly missing market expectations."
+    },
+    "CHINA_GDP_Q4_2025_QOQ": {
+      "value": "1.2%",
+      "context": "China's GDP grew 1.2% quarter-on-quarter in Q4 2025, beating the 1.0% market expectation."
+    },
+    "CHINA_GDP_Q4_2025_YOY": {
+      "value": "4.5%",
+      "context": "China's economy expanded by 4.5% year-over-year in the fourth quarter of 2025."
+    },
+    "CHINA_URBAN_UNEMPLOYMENT_DEC_2025": {
+      "value": "5.1%",
+      "context": "China's urban unemployment rate stood at 5.1% in December 2025, easing slightly from a 5.2% full-year average."
+    },
+    "CPI_2025": {
+      "value": "3.01%",
+      "context": "Headline CPI-U inflation for fiscal year 2025 ending September 2025; December 2025 12-month rate at 2.7."
+    },
+    "SP500_PERFORMANCE_2025": {
+      "value": "+16%",
+      "context": "The S&P 500 index wrapped up the year 2025 with a 16% overall gain despite tariff uncertainty."
+    },
+    "GOLD_PRICE_PERFORMANCE_2025": {
+      "value": "+65%",
+      "context": "Gold prices experienced their strongest annual gain since 1979, ending 2025 up 65%."
+    },
+    "SILVER_PRICE_PERFORMANCE_2025": {
+      "value": "+144%",
+      "context": "Silver prices surged an unprecedented 144% over the course of 2025."
+    },
+    "NVIDIA_MARKET_CAP_MID_2025": {
+      "value": "$3.50 Trillion",
+      "context": "NVIDIA's massive market capitalization surpassed $3.5 trillion midway through 2025 (June)."
+    },
+    "GDP_GROWTH_2026_FORECAST": {
+      "value": "2.5%",
+      "context": "Projected GDP growth for 2026 at 2.5% Q4/Q4, outperforming consensus 2.1%, boosted by tax cuts."
+    },
+    "CPI_2026_YTD": {
+      "value": "2.4%",
+      "context": "Annual inflation rate for 12 months ending January 2026 at 2.4%, down from 2.7% prior."
+    },
+    "US_UNEMPLOYMENT_JAN_2026": {
+      "value": "4.3%",
+      "context": "US unemployment rate ticked down to 4.3% in January 2026 from 4.4% in December 2025."
+    },
+    "US_TOTAL_EMPLOYMENT_JAN_2026": {
+      "value": "164.52 million",
+      "context": "Total employment in the US rose by 528,000 to reach 164.52 million in January 2026."
+    },
+    "US_LABOR_FORCE_PARTICIPATION_JAN_2026": {
+      "value": "62.5%",
+      "context": "The US labor force participation rate inched up to 62.5% in January 2026."
+    },
+    "US_JOBS_ADDED_JAN_2026": {
+      "value": "528,000",
+      "context": "The US household survey reported a substantial increase of 528,000 workers added to overall employment in January 2026."
+    },
+    "US_UNEMPLOYED_COUNT_JAN_2026": {
+      "value": "7.36 million",
+      "context": "The absolute number of unemployed persons in the US declined by 141,000 to total 7.36 million in January 2026."
+    },
+    "FED_FUNDS_FEB_2026": {
+      "value": "3.64%",
+      "context": "Effective federal funds rate at 3.64% in January 2026, continuing downtrend."
+    },
+    "US_FEB2026_CPI": {
+      "value": "1.9% headline, 2.4% core YoY",
+      "context": "February U.S. consumer prices rose 1.9 percent year over year with core CPI at 2.4 percent, while monthly headline inflation accelerated 0.6 percent after a negative print the prior month."
+    },
+    "JAPAN_BENCHMARK_INTEREST_RATE_FEB_2026": {
+      "value": "0.75%",
+      "context": "The Bank of Japan's benchmark interest rate was recorded at 0.75% by February 2026."
+    },
+    "FED_MARCH2026_RATE_HOLD": {
+      "value": "Policy rate 3.50–3.75%",
+      "context": "The Federal Reserve left its target range at 3.50–3.75 percent and signaled no rate cuts in 2026 until inflation shows clear and sustained progress toward target."
+    },
+    "FED_UPDATES_2026_OUTLOOK": {
+      "value": "GDP 2.4%, PCE 2.7% forecast",
+      "context": "In its latest projections, the Fed raised its 2026 real GDP growth forecast to 2.4 percent and its PCE and core PCE inflation projections to 2.7 percent."
+    },
+    "ECB_MARCH2026_INFLATION_REVISIONS": {
+      "value": "Eurozone 2026 inflation 2.6%",
+      "context": "The European Central Bank kept rates unchanged but revised its baseline, lifting projected headline inflation to 2.6 percent in 2026 and acknowledging higher risks tied to Middle East energy shocks."
+    },
+    "JPM_GLOBAL_CORE_INFLATION_2026": {
+      "value": "Global core CPI 2.8% forecast",
+      "context": "J.P. Morgan Global Research expects global core inflation to average about 2.8 percent in 2026, with U.S. price pressures staying above 3 percent while European inflation moderates toward 2 percent."
+    },
+    "SPGLOBAL_MARCH_GLOBAL_OUTLOOK": {
+      "value": "Growth trimmed, inflation raised",
+      "context": "S&P Global's March outlook cut growth forecasts and raised near-term inflation projections across many economies, citing higher assumed energy prices and the risk of second-round effects."
+    },
+    "GOLDMAN_OIL_SHOCK_SCENARIO": {
+      "value": "0.1 pp GDP drag, 0.2 pp inflation boost",
+      "context": "Goldman Sachs baseline modeling suggests current oil price shocks could shave about 0.1 percentage points off global GDP growth while adding 0.2 percentage points to headline inflation."
+    },
+    "CONFERENCEBOARD_WARTIME_SHOCK": {
+      "value": "CPI pressure from conflict-driven oil",
+      "context": "The Conference Board warned that the global economy is entering a wartime-style oil price shock, with higher energy costs expected to lift both headline and core inflation while cooling growth."
+    },
+    "MICHIGAN_INFLATION_EXPECTATIONS": {
+      "value": "1-year 3.4%, 5-year 3.3%",
+      "context": "University of Michigan surveys for February reported 12‑month inflation expectations falling to 3.4 percent from 4.0 percent, while five‑year expectations held steady at 3.3 percent."
+    },
+    "JAPAN_BOJ_RATE_FORECAST_JUNE_2026": {
+      "value": "1.00%",
+      "context": "A majority of economists project the Bank of Japan will hike its policy rate to 1.0% by the end of June 2026."
+    },
+    "GOLDMAN_GOLD_FORECAST_DEC_2026": {
+      "value": "$4,900/oz",
+      "context": "Goldman Sachs forecasts gold prices to climb 14% to reach $4,900 per ounce by December 2026."
+    },
+    "GOLDMAN_BRENT_OIL_FORECAST_2026": {
+      "value": "$52/barrel",
+      "context": "Goldman Sachs projects Brent crude oil prices will decline and bottom out at $52 per barrel in mid-2026."
+    },
+    "BITCOIN_PRICE_FORECAST_LOW_2026": {
+      "value": "$75,000",
+      "context": "The lowest forecast from institutional investors projects Bitcoin could drop down to $75,000 in 2026."
+    },
+    "BITCOIN_PRICE_FORECAST_HIGH_2026": {
+      "value": "$225,000",
+      "context": "Industry executives' bullish forecasts estimate Bitcoin prices could surge to as high as $225,000 in 2026."
+    },
+    "US_INFLATION_EXPECTATION_2027": {
+      "value": "2.10%",
+      "context": "The US Core PCE Price Index annual change is currently projected to trend around 2.10% by 2027."
+    },
+    "US_UNEMPLOYMENT_EXPECTATION_2027": {
+      "value": "4.30%",
+      "context": "Long-term econometric models project the United States unemployment rate to trend around 4.30% in 2027."
+    },
+    "EUROZONE_HEADLINE_INFLATION_FORECAST_2026": {
+      "value": "1.9%",
+      "context": "The ECB projected Euro area headline inflation to decrease to 1.9% for the duration of 2026."
+    },
+    "EUROZONE_HEADLINE_INFLATION_FORECAST_2027": {
+      "value": "1.8%",
+      "context": "The ECB anticipates Euro area headline inflation to reach 1.8% in 2027 before returning to 2.0% in 2028."
+    },
+    "EUROZONE_HEADLINE_INFLATION_FORECAST_2028": {
+      "value": "2.0%",
+      "context": "The ECB expects Euro area inflation to return exactly to its 2.0% medium-term target in 2028."
+    },
+    "S_AND_P_500_Q1_RETURN": {
+      "value": "-4.3%",
+      "context": "The S&P 500 closed out Q1 2026 with a -4.3% return, driven by energy sector volatility and a sharp selloff in high-growth tech stocks."
+    },
+    "GLOBAL_OIL_PRICE_VOLATILITY": {
+      "value": "$113-$126/barrel",
+      "context": "Brent crude spiked due to Middle East supply disruptions, briefly touching $126 before stabilizing near $113 by month-end."
+    },
+    "FED_PCE_INFLATION_REVISION": {
+      "value": "2.7%",
+      "context": "The Federal Reserve's median PCE inflation forecast for 2026 was revised upward to 2.7%, the largest single-year upward revision in recent history."
+    },
+    "US_JOB_OPENINGS_FEB_APRIL": {
+      "value": "6.88 million",
+      "context": "Job openings fell to their lowest level in two years, signaling a cooling labor market as the 'hires rate' dropped to 3.1%."
+    },
+    "UK_CPI_INFLATION_APRIL": {
+      "value": "3.3%",
+      "context": "UK headline inflation rose to 3.3% in April, primarily attributed to higher imported energy costs and fuel prices."
+    },
+    "ELON_MUSK_TRILLIONAIRE": {
+      "value": "$1 Trillion",
+      "context": "On June 12, 2026, Elon Musk's net worth officially surpassed the $1 trillion mark following the initial public offering of SpaceX, making him the world's first recorded trillionaire."
+    },
+    "US_INFLATION_RATE": {
+      "value": "4.2%",
+      "context": "According to Consumer Price Index data released on June 10, 2026, US annual inflation accelerated to 4.2% in May 2026, marking its highest level in approximately three years."
+    },
+    "UK_INFLATION_RATE": {
+      "value": "2.8%",
+      "context": "The UK Office for National Statistics reported on May 20, 2026, that annual inflation fell to 2.8% due to lower wholesale energy prices and the government's energy bill support package."
     }
   },
   "Environment & Climate": {
     "GLOBAL_WARMING_EXCEED_1_5C": {
       "value": "1.52°C Above Pre-industrial",
       "context": "Copernicus Climate Change Service reported that for the first time in history, global warming exceeded 1.5°C across a full 12-month period (Feb 2023 - Jan 2024)."
+    },
+    "US_HISTORICAL_DISASTER_TOLL_1980_2025": {
+      "value": "$3.1 trillion, 426 events",
+      "context": "From 1980 through 2025, the US suffered 426 separate billion-dollar climate disasters, claiming 17,194 lives and costing over $3.1 trillion."
+    },
+    "GLOBAL_TEMPERATURE_2024": {
+      "value": "Warmest year on record",
+      "context": "2024 became the warmest year on record globally, officially marked as the first calendar year to exceed 1.5°C above the pre-industrial baseline."
+    },
+    "GREENHOUSE_GAS_CONCENTRATION_2024": {
+      "value": "423.9 ppm CO2",
+      "context": "Atmospheric CO2 concentration jumped to 423.9 ppm in 2024, a record annual increase of 3.5 ppm directly driving global heat."
+    },
+    "US_TEMPERATURE_ANOMALY_2024": {
+      "value": "55.5°F, 3.5°F above 20th-century average",
+      "context": "Contiguous US experienced its warmest years recently, with 2024 average 3.5°F above long-term norm, contributing to disasters."
+    },
+    "US_BILLION_DOLLAR_DISASTERS_2024": {
+      "value": "27 events, Hurricane Helene costliest",
+      "context": "2024 saw 27 billion-dollar weather disasters in the US, second-highest on record since 1980, led by Hurricane Helene; total active year with high costs."
+    },
+    "GLOBAL_EXTREME_WEATHER_DEATHS_2024": {
+      "value": "Thousands killed by heatwaves, floods, storms",
+      "context": "2024 extremes included Typhoon Yagi (844-1009 deaths), Enga landslide (670-2000+), Pakistan heatwave (568), Kenya-Tanzania floods (461), Wayanad landslides (254), Helene (251); fueled by record heat."
+    },
+    "COP29_FINANCE_GOAL_2024": {
+      "value": "Tripling finance to developing nations",
+      "context": "The UN Climate Change Conference (COP29) in Baku closed with a historic new agreement aimed at tripling climate finance to developing countries."
+    },
+    "US_BILLION_DOLLAR_DISASTERS_2025": {
+      "value": "Multiple hailstorms, tornadoes, high winds costliest",
+      "context": "2025 rife with billion-dollar disasters, primarily hailstorms, tornadoes, and high winds; continued pattern of severe weather events."
+    },
+    "US_BILLION_DOLLAR_DISASTERS_COST_2025": {
+      "value": "$115 billion total cost",
+      "context": "The 23 billion-dollar weather and climate disasters in the US during 2025 resulted in $115 billion in damages and 276 fatalities."
+    },
+    "CENTRAL_TORNADO_OUTBREAK_MARCH_2025": {
+      "value": "$11 billion, 43 deaths",
+      "context": "A massive outbreak of over 180 tornadoes spanned the central and eastern US in March 2025, causing widespread catastrophic damage."
+    },
+    "NORTH_CENTRAL_TORNADO_OUTBREAK_MAY_2025": {
+      "value": "$6.3 billion damages",
+      "context": "A mid-May outbreak of 60 tornadoes swept the central US, causing 29 deaths, severe hail damage, and over 600,000 power outages."
+    },
+    "CENTRAL_TEXAS_FLOODS_2025": {
+      "value": "$22 billion, 135 deaths",
+      "context": "A stationary July thunderstorm complex caused the Guadalupe River to rise 31 feet in 90 minutes, becoming one of the worst US inland floods."
+    },
+    "TROPICAL_STORM_CHANTAL_2025": {
+      "value": "Devastating Carolinas flooding",
+      "context": "Despite not being a major hurricane, Tropical Storm Chantal delivered extreme billion-dollar rainfall and flooding impacts to the Carolinas in 2025."
+    },
+    "HURRICANE_MELISSA_2025": {
+      "value": "Category 5, 892 mb pressure",
+      "context": "The 2025 Atlantic hurricane season featured multiple monster storms, including Category 5 Hurricane Melissa which reached an extreme low pressure."
+    },
+    "HURRICANE_JAMAICA_HAITI_2025": {
+      "value": "Category 5 destruction",
+      "context": "A powerful Category 5 hurricane traversed the Caribbean in 2025, causing widespread destruction and claiming dozens of lives in Jamaica and Haiti."
+    },
+    "US_THUNDERSTORM_DAMAGES_2025": {
+      "value": "$51 billion",
+      "context": "Severe thunderstorms, separate from hurricanes or winter storms, caused an immense $51 billion in damages across the US in 2025."
+    },
+    "LA_NINA_EMERGENCE_2025": {
+      "value": "Heightened rainfall and storms",
+      "context": "The emergence of La Niña in 2025 heightened the probability of intense heavy rainfall in the Pacific and spurred active hurricane conditions."
+    },
+    "GLOBAL_EMISSIONS_H1_2025": {
+      "value": "30.99 billion tonnes CO₂e, up 0.13% from 2024",
+      "context": "Climate TRACE data showed slight rise in first half 2025 global GHG emissions; US up 1.43%, India 0.21%, EU 0.15%; power down slightly, transport up."
+    },
+    "GLOBAL_FOSSIL_CO2_EMISSIONS_2025": {
+      "value": "38.1 billion tonnes",
+      "context": "Global carbon emissions from fossil fuels hit a record high of 38.1 billion metric tons in 2025, an increase of 1.1% from 2024."
+    },
+    "CHINA_SOLAR_DEPLOYMENT_2025": {
+      "value": "240 GW added",
+      "context": "Driven by competitive pricing reforms, China deployed an unprecedented 240 GW of new solar capacity in early 2025 alone."
+    },
+    "CHINA_RENEWABLE_AUCTIONS_2025": {
+      "value": "Price reforms boost investor confidence",
+      "context": "China's shift to competitive renewable energy auctions in 2025 drove down power costs and catalyzed massive solar and wind deployment."
+    },
+    "US_NEW_POWER_CAPACITY_2025": {
+      "value": "54 GW total, 61% renewables, 27 GW solar",
+      "context": "Record utility-scale additions despite headwinds; renewables 61%, solar leading at 27 GW AC, storage 15 GW (up 35% YoY), natural gas doubled."
+    },
+    "US_BATTERY_STORAGE_2025": {
+      "value": "15 GW added",
+      "context": "Utility-scale energy storage emerged as a central component of the US grid, adding a record 15 GW in 2025, up 35% year-over-year."
+    },
+    "RENEWABLES_IMPACT_US_POLICY_2025": {
+      "value": "18% drop in H1 investment",
+      "context": "The rollback of clean energy tax credits caused US wind and solar investments to fall 18% to $35 billion in the first half of 2025."
+    },
+    "GLOBAL_OCEAN_WARMING_HURRICANES_2025": {
+      "value": "90% excess heat absorbed",
+      "context": "Oceans absorbed over 90% of greenhouse gas excess heat in 2025, creating prime conditions for the rapid intensification of major hurricanes."
+    },
+    "OCEAN_HEAT_CONTENT_2025": {
+      "value": "Record levels reached",
+      "context": "Ocean heat content reached unprecedented record levels in 2025, serving as a primary driver for rapid hurricane intensification and sea-level rise."
+    },
+    "ARCTIC_SEA_ICE_2025": {
+      "value": "Lowest on record after winter freeze",
+      "context": "Following the winter freeze, Arctic sea ice extent dropped to its lowest recorded level in 2025, accelerating polar warming."
+    },
+    "ANTARCTIC_SEA_ICE_2025": {
+      "value": "Tracked well below average",
+      "context": "Throughout the entirety of 2025, Antarctic sea ice extent remained significantly below historical averages, continuing a concerning long-term loss."
+    },
+    "SEA_LEVEL_RISE_2025": {
+      "value": "4.1 mm/year",
+      "context": "The long-term rate of sea-level rise reached 4.1 mm/year between 2016 and 2025, nearly double the rate observed in the 1990s."
+    },
+    "GLOBAL_TEMPERATURE_2025": {
+      "value": "3rd warmest year on record",
+      "context": "2025 ranked as the third warmest year since direct observations began, continuing an exceptional and prolonged global warming trend."
+    },
+    "GLOBAL_DISTRIBUTED_SOLAR_2026": {
+      "value": "42% of solar growth",
+      "context": "Distributed solar from household, commercial, and industrial rooftops accounted for 42% of all global solar capacity expansion in 2025-2026."
+    },
+    "GLOBAL_RENEWABLE_ELECTRICITY_2026": {
+      "value": "Surpassing coal globally",
+      "context": "Renewables are projected to meet over 90% of electricity demand growth and surpass coal as the world's largest electricity source in 2026."
+    },
+    "US_WIND_GENERATION_SLOWDOWN_2026": {
+      "value": "Stagnant growth in Midwest",
+      "context": "Additions of new wind capacity slowed significantly in the central US (MISO grid), with little generation growth expected through 2027."
+    },
+    "JAN_2026_WEATHER_EXTREMES": {
+      "value": "5th warmest January; heatwaves, floods, storms, fires",
+      "context": "Global extremes marked early 2026: record Southern Hemisphere heat fueling Australian/Chile wildfires, heavy Southern Africa rains causing Mozambique floods (intensity up 40% from climate change), European storms/floods."
+    },
+    "NORTHEAST_BLIZZARD_2026": {
+      "value": "Up to 2 feet snow in NY, MA, RI, NJ",
+      "context": "Historic multi-day blizzard in Feb 2026 slammed Northeast US with over 2 feet snow in major cities."
+    },
+    "UNU_5_THINGS_CLIMATE_2026": {
+      "value": "70% chance 1.5°C exceeded (2025–29)",
+      "context": "A February brief from UNU highlighted WMO projections showing a 70% chance that the 2025–2029 five‑year global temperature average will exceed 1.5°C above pre‑industrial levels, signalling likely overshoot of the Paris target."
+    },
+    "SECRET_US_CLIMATE_PANEL_RULED_UNLAWFUL": {
+      "value": "Panel violated federal law",
+      "context": "A February 6 Carbon Brief round‑up reported that a U.S. “secret” climate‑sceptic panel set up under Trump officials was found to have violated federal transparency laws, raising questions about prior climate‑policy reviews."
+    },
+    "LAOS_AND_ASIA_RAINFALL_OUTLOOK": {
+      "value": "La Niña‑like rainfall pattern",
+      "context": "Seasonal outlooks cited by WMO and UNU indicated that La Niña‑like atmospheric patterns are set to persist into February–April 2026, with suppressed rainfall over the central and eastern Pacific and increased precipitation across parts of northern Asia and the Americas."
+    },
+    "CLIMATE_LITIGATION_SCOTUS_REVIEW": {
+      "value": "Oil majors climate suits",
+      "context": "A February Supreme Court preview noted that justices have agreed to consider whether oil and gas companies such as Suncor and ExxonMobil can block state‑level climate‑damage lawsuits in federal court, a decision that could reshape climate accountability."
+    },
+    "INDIA_2026_BUDGET_CARBON_CAPTURE_PUSH": {
+      "value": "$2.2B CCUS funding",
+      "context": "The same coverage noted that India’s 2026 budget earmarked around $2.2 billion to support carbon‑capture technologies alongside expanded renewables and critical‑minerals development."
+    },
+    "UK_GREENLASH_DEBATE": {
+      "value": "Backlash vs climate policy",
+      "context": "Carbon Brief’s February 27 “DeBriefed” examined whether the UK is experiencing a “greenlash” as political actors test rollbacks of net‑zero commitments against persistent public support for climate action."
+    },
+    "TRUMP_CLIMATE_REVERSALS_2025_2026": {
+      "value": "Research cuts, protections rollback",
+      "context": "One year into Trump term (2026), reversed climate progress via funding cuts to research, environmental protections rolled back, impacting policy at home and abroad."
+    },
+    "WMO_CLIMATE_IMBALANCE_REPORT": {
+      "value": "Planet 'more out of balance' than ever",
+      "context": "A new World Meteorological Organization State of the Global Climate report concludes that Earth's climate is more out of balance than at any time in observed history."
+    },
+    "HOTTEST_11_YEARS_2015_2025": {
+      "value": "2015–2025 all record warm",
+      "context": "The WMO confirmed that every year from 2015 through 2025 ranks among the 11 warmest on record, underscoring the persistence of long-term global warming."
+    },
+    "OCEAN_HEAT_RECORD_STREAK": {
+      "value": "Nine straight record ocean-heat years",
+      "context": "The same report finds that each of the past nine years has set a new record for global ocean heat content, with marine heatwaves affecting nearly 90 percent of the ocean in 2025."
+    },
+    "GHG_RECORD_CONCENTRATIONS": {
+      "value": "CO2, CH4, N2O at all-time highs",
+      "context": "Global concentrations of carbon dioxide, methane, and nitrous oxide reached record levels in 2024 and continued rising in 2025, driving further energy imbalance in the climate system."
+    },
+    "EARTH_ENERGY_IMBALANCE_INDICATOR": {
+      "value": "Energy-flow metric added",
+      "context": "For the first time, the WMO incorporated Earth's energy imbalance—how much more solar energy the planet absorbs than radiates back to space—as a core climate indicator."
+    },
+    "GLACIER_AND_SEALEVEL_ALARM": {
+      "value": "Accelerating melt and sea-level rise",
+      "context": "The report highlights continued glacier retreat and long-term sea-level rise from warming oceans and melting land ice, with consequences expected to last for centuries."
+    },
+    "UN_WARNING_ON_FOSSIL_FUELS": {
+      "value": "Fossil use called security risk",
+      "context": "UN leaders argued that dependence on fossil fuels is undermining both climate stability and global security, calling current trends a climate emergency."
+    },
+    "NYC_WATERFRONT_RESILIENCE_PARK": {
+      "value": "Park rebuilt for rising seas",
+      "context": "New York City advanced plans to rebuild a waterfront park with elevated landscapes and flood-resilient design to protect neighborhoods from rising seas and storm surge."
+    },
+    "COASTAL_ADAPTATION_CARBON_STUDY": {
+      "value": "Nature-based designs cut carbon 91%",
+      "context": "Research from Harvard's Salata Institute found that nature-based coastal adaptation projects can have up to 91 percent lower embodied carbon and about 30 percent lower costs than conventional hard infrastructure."
+    },
+    "CLIMATE_EFFECTS_ON_FOOD_WATER_HEALTH": {
+      "value": "Climate shocks hit basic systems",
+      "context": "The WMO and UN stressed that escalating heat, droughts, and floods are already straining food security, water availability, and public health worldwide."
+    },
+    "GUARDIAN_HOTHOUSE_EARTH_WARNING": {
+      "value": "CO₂ at 2‑million‑year high",
+      "context": "The Guardian relayed new science indicating greenhouse‑gas concentrations are likely at their highest in at least two million years, with experts warning that continued warming risks triggering self‑reinforcing “hothouse Earth” tipping points."
+    },
+    "GRASSLANDS_CONTRACTION_STUDY": {
+      "value": "36–50% loss by 2100",
+      "context": "Earth.Org summarized a Potsdam Institute study projecting that global grasslands supporting 1.5 billion grazing animals could shrink by 36–50% by 2100 due to climate change, with potential losses up to 65% in Africa under high‑emissions scenarios."
+    },
+    "MOROCCO_FLOODS_140K_EVACUATED": {
+      "value": "140,000+ evacuated",
+      "context": "Carbon Brief reported that more than 140,000 people were evacuated in Morocco after heavy rainfall and emergency dam releases triggered major flooding, underscoring climate‑linked hydrological risks."
+    },
+    "GLOBAL_TEMPERATURE_OUTLOOK_2026": {
+      "value": "1.2°C to 1.9°C above avg",
+      "context": "The WMO issued an April update projecting that 2026 temperatures are likely to stay within this range above the 1850-1900 average."
+    },
+    "COP_31_PRESIDENCY_TRANSITION": {
+      "value": "April 2026",
+      "context": "Negotiations moved to Antalya, Türkiye, with Australia taking the Presidency role to focus on the $1.3 trillion climate finance goal for 2035."
+    },
+    "HAWAII_PLASTIC_WASTE_ROADS": {
+      "value": "April 8, 2026",
+      "context": "The first major phase of a project to use processed ocean plastic as a primary binder for regional road construction was completed in Hawaii."
+    },
+    "AI_DATA_CENTER_WATER_METRIC": {
+      "value": "12M people equivalent",
+      "context": "Research indicated that GPT-4o-class model inference water usage for 2026 may exceed the total drinking water needs of 12 million people."
     }
   },
   "Global Affairs": {
     "UN_CLIMATE_PACT_COP28": {
       "value": "Transitioning away from fossil fuels",
       "context": "Over 190 countries at the UN COP28 climate summit in Dubai entered a historic agreement to transition away from fossil fuels in energy systems."
+    },
+    "BRICS_EXPANSION_2024": {
+      "value": "Four nations formally join BRICS",
+      "context": "On January 1, 2024, Egypt, Ethiopia, Iran, and the United Arab Emirates officially joined the BRICS intergovernmental organization."
+    },
+    "TAIWAN_ELECTION_2024": {
+      "value": "Lai Ching-te wins presidency",
+      "context": "In January 2024, Lai Ching-te of the ruling Democratic Progressive Party was elected president, defying extensive political pressure from Beijing."
+    },
+    "BANGLADESH_POST_HASINA_ELECTION": {
+      "value": "First competitive vote in decade",
+      "context": "Council on Foreign Relations analysis spotlighted Bangladesh’s February 12 general election—the first genuinely competitive national vote in more than a decade following the 2024 ouster of Sheikh Hasina and installation of an interim government under Nobel laureate Muhammad Yunus."
+    },
+    "SWEDEN_NATO_ACCESSION_2024": {
+      "value": "Sweden becomes 32nd NATO member",
+      "context": "In March 2024, Sweden officially joined NATO, formally abandoning over two centuries of military non-alignment in response to Russian aggression."
+    },
+    "SENEGAL_ELECTION_2024": {
+      "value": "Bassirou Diomaye Faye elected",
+      "context": "In March 2024, anti-establishment candidate Bassirou Diomaye Faye won the presidency shortly after being released from prison, resolving a major political crisis."
+    },
+    "SOUTH_KOREA_ELECTION_2024": {
+      "value": "Opposition wins legislative landslide",
+      "context": "In April 2024, the opposition Democratic Party won a sweeping victory in legislative elections, dealing a severe blow to President Yoon Suk-yeol."
+    },
+    "US_UKRAINE_AID_2024": {
+      "value": "$61 billion package passed",
+      "context": "In April 2024, after months of partisan deadlock, the US Congress passed a crucial $61 billion military aid package to support Ukraine's defense."
+    },
+    "IRAN_PRESIDENT_CRASH_2024": {
+      "value": "Ebrahim Raisi dies in helicopter crash",
+      "context": "In May 2024, Iranian President Ebrahim Raisi died in a helicopter crash, leading to the snap election of reformist Masoud Pezeshkian."
+    },
+    "CHINA_TAIWAN_DRILLS_2024": {
+      "value": "Joint Sword-2024A military exercises",
+      "context": "In May 2024, China launched large-scale military drills surrounding Taiwan in immediate response to the inauguration of President Lai Ching-te."
+    },
+    "SOUTH_AFRICA_ELECTION_2024": {
+      "value": "ANC loses parliamentary majority",
+      "context": "In May 2024, the African National Congress lost its absolute majority for the first time since the end of apartheid in 1994, forcing a coalition government."
+    },
+    "INDIA_ELECTION_2024": {
+      "value": "Modi wins third term, loses majority",
+      "context": "In June 2024, Narendra Modi secured a historic third term, but his ruling BJP lost its absolute parliamentary majority, relying on coalition partners."
+    },
+    "MEXICO_ELECTION_2024": {
+      "value": "Claudia Sheinbaum elected president",
+      "context": "In June 2024, Claudia Sheinbaum won a landslide victory to become the first female president in Mexico's history."
+    },
+    "EU_PARLIAMENT_ELECTION_2024": {
+      "value": "Right-wing surge across Europe",
+      "context": "The June 2024 European elections saw significant gains for hard-right parties, prompting Emmanuel Macron to dissolve the French National Assembly."
+    },
+    "UK_ELECTION_2024": {
+      "value": "Labour landslide victory",
+      "context": "Keir Starmer's Labour Party won 411 seats in the July 2024 UK general election, decisively ending 14 years of Conservative government."
+    },
+    "FRANCE_SNAP_ELECTION_2024": {
+      "value": "Left-wing alliance wins plurality",
+      "context": "In July 2024, the left-wing New Popular Front won the most seats in France's snap election, successfully blocking the far-right National Rally from power."
+    },
+    "BANGLADESH_PROTESTS_2024": {
+      "value": "Prime Minister Hasina ousted",
+      "context": "In August 2024, Sheikh Hasina resigned and fled the country amid deadly mass student protests, leading to an interim government led by Muhammad Yunus."
+    },
+    "HEZBOLLAH_PAGER_ATTACK_2024": {
+      "value": "Pagers explode across Lebanon",
+      "context": "In September 2024, thousands of pagers and walkie-talkies used by Hezbollah militants exploded simultaneously, killing dozens and injuring thousands."
+    },
+    "NASRALLAH_ASSASSINATION_2024": {
+      "value": "Hezbollah leader killed in Beirut",
+      "context": "In September 2024, Hezbollah Secretary-General Hassan Nasrallah was assassinated in a massive Israeli airstrike on the group's underground headquarters."
+    },
+    "ISRAEL_LEBANON_INVASION_2024": {
+      "value": "Ground operations begin",
+      "context": "In October 2024, Israel launched a targeted ground invasion into southern Lebanon to dismantle Hezbollah's military infrastructure along the border."
+    },
+    "SINWAR_ASSASSINATION_2024": {
+      "value": "Hamas leader killed in Gaza",
+      "context": "In October 2024, Yahya Sinwar, the mastermind of the October 7 attacks, was killed by Israeli forces during a firefight in southern Gaza."
+    },
+    "JAPAN_ELECTION_2024": {
+      "value": "Ruling LDP loses majority",
+      "context": "In October 2024, the long-ruling Liberal Democratic Party lost its parliamentary majority, though PM Shigeru Ishiba managed to form a minority government."
+    },
+    "RUSSIA_NORTH_KOREA_PACT_2024": {
+      "value": "Mutual defense treaty signed",
+      "context": "In June 2024, Vladimir Putin and Kim Jong Un signed a comprehensive strategic partnership that included a mutual defense pact against aggression."
+    },
+    "NORTH_KOREA_TROOPS_RUSSIA_2024": {
+      "value": "DPRK forces deploy to Ukraine front",
+      "context": "In October 2024, thousands of North Korean soldiers were deployed to Russia to support its military offensive against Ukraine, internationalizing the conflict."
+    },
+    "G20_SUMMIT_BRAZIL_2024": {
+      "value": "Global alliance against hunger",
+      "context": "At the November 2024 G20 Summit in Rio de Janeiro, world leaders officially launched a global alliance to combat hunger and poverty."
+    },
+    "FALL_OF_ASSAD_2024": {
+      "value": "Syrian regime collapses",
+      "context": "On December 8, 2024, Syrian President Bashar al-Assad was overthrown by a rapid offensive led by Hay'at Tahrir al-Sham, ending 60 years of Baath Party rule."
+    },
+    "ARMED_CONFLICTS_COUNT_2024": {
+      "value": "Over 120 active armed conflicts",
+      "context": "2024 saw more than 120 armed conflicts worldwide, with large-scale violence deteriorating in multiple regions including Europe and Middle East; extensive conventional interstate warfare returned."
+    },
+    "UKRAINE_WAR_STATUS_2024": {
+      "value": "Ongoing escalation risk with Russia",
+      "context": "Russia-Ukraine war continued with potential for intensified operations in Crimea, Black Sea; moderate-high risk of NATO involvement per expert surveys."
+    },
+    "RED_SEA_CRISIS_2024": {
+      "value": "Houthi attacks disrupt global shipping",
+      "context": "Yemen's Houthi rebels conducted persistent missile and drone attacks on commercial shipping in the Red Sea, prompting US and UK retaliatory strikes."
+    },
+    "MYANMAR_REBEL_ADVANCES_2024": {
+      "value": "Junta loses significant territory",
+      "context": "In 2024, an alliance of ethnic armed organizations captured major towns and military bases, severely weakening Myanmar's military junta."
+    },
+    "SUDAN_CIVIL_WAR_2024": {
+      "value": "Extreme famine and displacement",
+      "context": "Throughout 2024, the devastating war between the SAF and RSF created the world's largest hunger crisis, with ongoing ethnic cleansing in Darfur."
+    },
+    "SIPRI_CONFLICT_TRENDS_2025": {
+      "value": "Deteriorating landscape with interstate wars",
+      "context": "SIPRI 2025 yearbook noted continued decline in 2024 trends into 2025, with pronounced changes since 2021 in Europe and Middle East aggression."
+    },
+    "GERMANY_ELECTION_2025": {
+      "value": "CDU/CSU wins snap election",
+      "context": "In February 2025, Friedrich Merz led the conservative CDU/CSU to victory with 28.6% of the vote, while the far-right AfD placed second at 20.8%."
+    },
+    "US_IRAN_CRISIS_ULTIMATUM_AND_BUILDUP": {
+      "value": "10–15 day ultimatum",
+      "context": "Analysts described how a mid‑February U.S. ultimatum demanding a definitive nuclear deal from Iran, backed by the deployment of two carrier strike groups and extensive air assets, pushed the region to the brink of conflict."
+    },
+    "PAKISTAN_DECLARES_OPEN_WAR_ON_AFGHANISTAN": {
+      "value": "Cross‑border escalation",
+      "context": "Geopolitical commentary on February 27 reported that Pakistan formally declared “open war” on Afghanistan after bombing Kabul, Kandahar and Paktia in response to cross‑border Taliban attacks, escalating tensions between two nuclear‑armed neighbors."
+    },
+    "US_ISRAEL_STRIKES_ON_IRAN": {
+      "value": "Major joint attack",
+      "context": "Late‑February reports detailed joint U.S.–Israeli strikes on Iranian targets that Moscow condemned as plunging the Middle East into “the abyss,” raising the risk of broader regional war."
+    },
+    "RUSSIA_CHINA_IRAN_TECH_AXIS": {
+      "value": "“Technological anchors”",
+      "context": "A February 28 analysis argued that Russian and Chinese technology transfers have underpinned Iran’s “strategic depth,” positioning Moscow and Beijing as Tehran’s “technological anchors” despite their reluctance to intervene militarily."
+    },
+    "OIL_MARKET_GEOPOLITICAL_SHOCK": {
+      "value": "Prices edge higher on risk",
+      "context": "A February analysis described how escalating tensions in the Middle East and uncertainty around U.S. policy toward Iran have pushed oil prices higher again, with investors pricing in scenarios from a last‑minute diplomatic deal to limited strikes or a wider maritime conflict."
+    },
+    "UKRAINE_WAR_ENTERS_FOURTH_YEAR": {
+      "value": "4‑year attrition conflict",
+      "context": "The same briefing noted that the war in Ukraine has entered its fourth year with grinding attrition and only glacial progress in peace talks, keeping Europe’s security landscape unsettled."
+    },
+    "CANADA_ELECTION_2025": {
+      "value": "Liberals retain minority government",
+      "context": "Following Justin Trudeau's resignation, new Prime Minister Mark Carney led the Liberal Party to a surprise fourth-term minority government victory in April 2025."
+    },
+    "AUSTRALIA_ELECTION_2025": {
+      "value": "Albanese wins second term",
+      "context": "In May 2025, PM Anthony Albanese's Labor Party defeated Peter Dutton's Liberal coalition, marking the first time in two decades an Australian PM secured a second consecutive term."
+    },
+    "HAITI_UN_FORCE_2025": {
+      "value": "Multinational force transitions to UN GSF",
+      "context": "In September 2025, UN SC Resolution 2793 authorized the transition of the Multinational Security Support mission in Haiti into a UN Gang Suppression Force."
+    },
+    "UN_SC_RES_2798_COLOMBIA_2025": {
+      "value": "Verification Mission mandate updated",
+      "context": "In October 2025, the UN Security Council renewed the Verification Mission in Colombia but removed tasks verifying compliance with restorative sentences."
+    },
+    "UN_SC_RES_2801_YEMEN_2025": {
+      "value": "Sanctions regime renewed",
+      "context": "In November 2025, UN Security Council Resolution 2801 renewed the 2140 Yemen sanctions regime and targeted financial and travel ban measures."
+    },
+    "UN_SC_RES_2805_PEACEBUILDING_2025": {
+      "value": "Architecture review focused on benchmarks",
+      "context": "In November 2025, UN SC Resolution 2805 refocused the UN Peacebuilding Architecture Review toward measurable, coordinated implementation benchmarks."
+    },
+    "UN_SC_GAZA_PLAN_2025": {
+      "value": "Resolution 2803 passed",
+      "context": "In November 2025, UN Security Council Resolution 2803 endorsed a Comprehensive Plan to End the Gaza Conflict and authorized an International Stabilization Force."
+    },
+    "GLOBAL_CONFLICT_INDEX_2025": {
+      "value": "State-based conflict remains top risk",
+      "context": "At the close of 2025, the Global Risks Report indicated that state-based armed conflict remained the number one global risk, highlighting a deeply unsettled geopolitical era."
+    },
+    "TRUMP_DIPLOMACY_2025": {
+      "value": "Busy year forging new US internationalism",
+      "context": "CFR analysis of 2025 highlighted Trump's active diplomacy and actions, potentially establishing a new brand of US internationalism."
+    },
+    "JAPAN_2026_ELECTION_GEOPOLITICS": {
+      "value": "Heightened Taiwan focus",
+      "context": "Global political coverage emphasized that Japan’s February election outcome and strengthening of Prime Minister Sanae Takaichi’s mandate are sharpening Tokyo’s stance on Taiwan amid concerns about potential Chinese action."
+    },
+    "CHOLERA_SURGE_GLOBAL_2026": {
+      "value": "25,714 cases; 282 deaths (YTD)",
+      "context": "An ECDC threats report tallied 25,714 cholera cases and 282 deaths worldwide between January 1 and February 25, 2026, with the Democratic Republic of Congo, Mozambique, Zambia, Afghanistan and Angola among the hardest‑hit."
+    },
+    "WHO_HEALTH_EMERGENCY_APPEAL_2026": {
+      "value": "US$1B funding need",
+      "context": "WHO’s 2026 Health Emergency Appeal set out a requirement of roughly US$1 billion to support life‑saving health services across 36 emergencies, including 14 at the highest Grade 3 level, reflecting conflict‑ and climate‑driven humanitarian needs."
+    },
+    "US_ISRAEL_IRAN_WAR_FOURTH_WEEK": {
+      "value": "Sustained strikes across region",
+      "context": "Country-risk briefings report that the U.S.–Israeli air campaign against Iran has entered its fourth week, with continued strikes on Iranian leadership, security sites, and critical infrastructure."
+    },
+    "IRAN_UAV_MISSILE_STRIKES": {
+      "value": "Iran targets regional infrastructure",
+      "context": "Iran has responded primarily with UAV and missile attacks on U.S. bases and civilian critical infrastructure in Gulf countries and Israel, as well as threats to shipping."
+    },
+    "STRAIT_OF_HORMUZ_BLOCKADE_IRAN": {
+      "value": "Oil chokepoint under pressure",
+      "context": "Iranian actions and threats around the Strait of Hormuz have constrained traffic through the key oil chokepoint, contributing to sharply higher global energy prices."
+    },
+    "NATO_INTERCEPTS_MISSILE_OVER_TURKEY": {
+      "value": "Iranian missile shot down",
+      "context": "NATO forces intercepted an Iranian missile over Turkey, the fourth such threat against the country in under a month, highlighting alliance involvement in regional defense."
+    },
+    "TRUMP_ALLIES_DIVIDED_ON_IRAN_ENDGAME": {
+      "value": "Gulf partners urge continued war",
+      "context": "Reports indicate Gulf allies such as Saudi Arabia and the UAE are privately urging President Trump to continue the Iran campaign until Tehran is decisively weakened, even as public concern over escalation grows."
+    },
+    "US_TROOP_DEPLOYMENT_DEBATE": {
+      "value": "More forces considered for Middle East",
+      "context": "U.S. officials are weighing additional troop and warship deployments to the Middle East, a move that polls suggest many Americans oppose if it leads to ground combat."
+    },
+    "CANADA_SECURITY_ALERT_IRAN_WAR": {
+      "value": "Higher risk of extremist attacks",
+      "context": "A Canadian threat assessment warned that the Iran conflict raises the realistic possibility of extremist attacks targeting Jewish communities in Canada."
+    },
+    "CHINA_FIVEYEAR_AI_QUANTUM_PLAN": {
+      "value": "Beijing doubles down on frontier tech",
+      "context": "China's new five-year plan pledges major investment in quantum computing, 6G, embodied AI, brain–machine interfaces, nuclear fusion, reusable heavy-lift rockets, and a lunar research station."
+    },
+    "TRUMP_2_FOREIGNPOLICY_DOCTRINE": {
+      "value": "Shift from postwar U.S. leadership",
+      "context": "Foreign-policy briefings describe Trump’s second term as a marked break from 80 years of U.S. leadership, emphasizing an America First approach to alliances and global institutions."
+    },
+    "HUNGARY_RUSSIA_SANCTIONS_HOTLINE": {
+      "value": "Alleged collusion on sanctions relief",
+      "context": "An investigation reported that a hotline between Hungary's foreign minister and Russian officials was used to lobby for delisting sanctioned oligarchs, companies, and banks from Western sanctions lists."
+    },
+    "STRAIT_OF_HORMUZ_BLOCKADE": {
+      "value": "April 2026",
+      "context": "A series of geopolitical escalations led to the closure of the Strait of Hormuz, disrupting roughly 20% of global petroleum traffic and causing a price surge."
+    },
+    "IMF_GLOBAL_GROWTH_DOWNGRADE": {
+      "value": "3.1%",
+      "context": "The IMF downgraded global growth forecasts to 3.1% for 2026, citing the Middle Eastern energy crisis and fragmentation of international trade."
+    },
+    "US_ISRAEL_IRAN_TENSIONS": {
+      "value": "Ongoing April 2026",
+      "context": "Conflict reached a peak following strikes against Iranian leadership, leading to a U.S.-led counter-blockade of several regional ports."
+    },
+    "MULTIPOLAR_TRADE_SHIFT": {
+      "value": "April 2026",
+      "context": "A significant increase in 'inward-looking' trade policies and restrictions across the G7 signaled a move toward a fragmented, multipolar global economy."
     }
   },
   "Politics": {
     "US_PRESIDENTIAL_ELECTION_2024": {
       "value": "Donald Trump",
       "context": "Donald Trump won the November 2024 United States presidential election, defeating Kamala Harris and securing a second non-consecutive term."
+    },
+    "GEORGE_SANTOS_RESIGNATION_2024": {
+      "value": "December 2023 / 2024",
+      "context": "Following his historic expulsion from Congress, George Santos formally pleaded guilty to wire fraud and identity theft in late 2024."
+    },
+    "PRESIDENTIAL_IMMUNITY_RULING_2024": {
+      "value": "July 1, 2024",
+      "context": "The Supreme Court ruled 6-3 in Trump v. United States that presidents have absolute immunity for core constitutional acts and presumptive immunity for official acts."
+    },
+    "BIDEN_DROPS_OUT_2024": {
+      "value": "July 21, 2024",
+      "context": "President Joe Biden ended his re-election campaign following a disastrous debate performance, endorsing VP Kamala Harris as the Democratic nominee."
+    },
+    "TRUMP_ASSASSINATION_ATTEMPTS_2024": {
+      "value": "July & September 2024",
+      "context": "Trump survived two assassination attempts during the 2024 campaign; he was grazed by a bullet in Butler, PA, and targeted at his golf club in FL."
+    },
+    "KAMALA_HARRIS_NOMINATION_2024": {
+      "value": "August 2024",
+      "context": "Kamala Harris formally accepted the Democratic presidential nomination at the DNC in Chicago, selecting MN Gov. Tim Walz as her running mate."
+    },
+    "BOB_MENENDEZ_RESIGNATION_2024": {
+      "value": "August 20, 2024",
+      "context": "Democratic Senator Bob Menendez resigned from the Senate after being convicted of federal bribery and corruption charges involving foreign governments."
+    },
+    "TRUMP_HUSH_MONEY_CONVICTION_2024": {
+      "value": "May 30, 2024",
+      "context": "Donald Trump became the first former US president to be convicted of a felony, found guilty on 34 counts of falsifying business records in New York."
+    },
+    "US_TIKTOK_BAN_LEGISLATION_2024": {
+      "value": "April 2024",
+      "context": "President Biden signed legislation forcing TikTok's Chinese parent company, ByteDance, to sell the app within a year or face a nationwide ban."
+    },
+    "UKRAINE_ISRAEL_AID_PACKAGE_2024": {
+      "value": "April 2024",
+      "context": "Congress passed a $95 billion foreign aid package providing critical military assistance to Ukraine, Israel, and Taiwan after months of GOP holdouts."
+    },
+    "CHEVRON_DEFERENCE_OVERTURNED_2024": {
+      "value": "June 28, 2024",
+      "context": "The Supreme Court overturned the 40-year-old Chevron doctrine, drastically reducing the regulatory power of federal agencies."
+    },
+    "ELECTION_DATE_2024": {
+      "value": "November 5, 2024",
+      "context": "The 2024 US presidential election took place on November 5, resulting in Trump's victory across all seven swing states."
+    },
+    "POST_ELECTION_PROTESTS_2024": {
+      "value": "November 6, 2024",
+      "context": "Protests erupted in cities like San Jose, Berkeley, Chicago, New York, and Philadelphia against Trump's re-election, border policies, and the Gaza war."
+    },
+    "MATT_GAETZ_AG_WITHDRAWAL": {
+      "value": "November 2024",
+      "context": "Matt Gaetz withdrew his nomination for Attorney General following intense Senate opposition over allegations of sex trafficking and drug use."
+    },
+    "FEDERAL_CASES_DISMISSED_2024": {
+      "value": "November 2024",
+      "context": "Special Counsel Jack Smith dismissed the federal election subversion and classified documents cases against Trump following his election victory."
+    },
+    "US_PRESIDENT_2024": {
+      "value": "Donald J. Trump",
+      "context": "Trump defeated Kamala Harris in the 2024 presidential election, securing 312 electoral votes to Harris's 226 and winning the popular vote with 49.8% (77.3 million votes)."
+    },
+    "VP_2024": {
+      "value": "JD Vance",
+      "context": "JD Vance was elected as Vice President alongside Donald Trump in the 2024 election."
+    },
+    "MAYORKAS_IMPEACHMENT": {
+      "value": "Dismissed April 17, 2024",
+      "context": "The Senate dismissed both impeachment articles against Homeland Security Secretary Alejandro Mayorkas by votes of 51-48 and 51-49."
+    },
+    "TRUMP_INAUGURATION_2025": {
+      "value": "January 20, 2025",
+      "context": "Donald Trump was inaugurated as the 47th President for his second non-consecutive term, with JD Vance sworn in as the 50th Vice President."
+    },
+    "DOGE_CREATION": {
+      "value": "January 20, 2025",
+      "context": "Trump created the Department of Government Efficiency (DOGE) led by Elon Musk to cut government spending, targeting $2 trillion in savings though actual estimates were around $215 billion."
+    },
+    "MARCO_RUBIO_SOS": {
+      "value": "January 20, 2025",
+      "context": "The Senate unanimously confirmed Marco Rubio as Secretary of State, the first Latino in that role and first Cabinet confirmation of Trump's second term."
+    },
+    "SCHEDULE_F_REINSTATEMENT_2025": {
+      "value": "January 2025",
+      "context": "Trump immediately reinstated 'Schedule F' via executive order, stripping civil service protections from tens of thousands of federal employees."
+    },
+    "PARIS_AGREEMENT_WITHDRAWAL_2025": {
+      "value": "January 2025",
+      "context": "For the second time, President Trump formally notified the UN that the United States would withdraw from the Paris Climate Agreement."
+    },
+    "TRANSGENDER_MILITARY_BAN_2025": {
+      "value": "January 2025",
+      "context": "Trump signed an executive order reinstating the ban on most transgender individuals serving in the United States military."
+    },
+    "BIRTHRIGHT_CITIZENSHIP_EO_2025": {
+      "value": "January 2025",
+      "context": "Trump signed a highly controversial executive order attempting to end birthright citizenship for children of undocumented immigrants, sparking immediate lawsuits."
+    },
+    "SENATE_REPUBLICAN_MAJORITY_119TH": {
+      "value": "January 2025",
+      "context": "Republicans officially took control of the US Senate with a 53-47 majority at the start of the 119th Congress, electing John Thune as Majority Leader."
+    },
+    "HOUSE_REPUBLICAN_MAJORITY_119TH": {
+      "value": "January 2025",
+      "context": "Republicans maintained a razor-thin majority in the House of Representatives, re-electing Mike Johnson as Speaker of the House."
+    },
+    "PETE_HEGSETH_DEFENSE": {
+      "value": "January 24, 2025",
+      "context": "The Senate confirmed Fox News host Pete Hegseth as Secretary of Defense by a razor-thin 51-50 margin, requiring VP JD Vance to cast the tie-breaking vote."
+    },
+    "TULSI_GABBARD_DNI": {
+      "value": "February 11, 2025",
+      "context": "Former Democrat Tulsi Gabbard was confirmed as Director of National Intelligence by a 52-48 vote, overcoming skepticism regarding her lack of intelligence experience."
+    },
+    "EXECUTIVE_ORDER_14210_FEDERAL_WORKFORCE": {
+      "value": "February 11, 2025",
+      "context": "Trump signed EO 14210 implementing DOGE's workforce optimization, requiring agencies to hire only 1 employee for every 4 departures."
+    },
+    "FOREIGN_INVESTMENT_RESTRICTIONS_EO": {
+      "value": "February 21, 2025",
+      "context": "Trump issued an executive order restricting Chinese investments in US strategic sectors while creating a fast-track process for allied nations."
+    },
+    "KASH_PATEL_FBI_DIRECTOR": {
+      "value": "February 20, 2025",
+      "context": "The Senate confirmed Kash Patel as FBI Director in a 51-49 vote, with Republicans Susan Collins and Lisa Murkowski voting against the controversial Trump loyalist."
+    },
+    "TRUMP_DEPORTATION_PLAN_2025": {
+      "value": "February 2025",
+      "context": "Trump initiated his mass deportation plan, utilizing military assets and invoking the Alien Enemies Act to target undocumented immigrants nationwide."
+    },
+    "WHO_FUNDING_SUSPENSION_2025": {
+      "value": "February 2025",
+      "context": "The Trump administration suspended all US funding to the World Health Organization, citing the agency's handling of global pandemics and ties to China."
+    },
+    "LORI_CHAVEZ_DEREMER_LABOR": {
+      "value": "February 2025",
+      "context": "Trump nominated former Congresswoman Lori Chavez-DeRemer for Labor Secretary, facing pushback from Republicans hostile to organized labor."
+    },
+    "RFK_JR_HHS_NOMINATION": {
+      "value": "February 2025",
+      "context": "Robert F. Kennedy Jr.'s nomination for Secretary of Health and Human Services faced intense Senate scrutiny over his vocal anti-vaccine activism."
+    },
+    "PAM_BONDI_AG": {
+      "value": "2025",
+      "context": "The Senate confirmed Pam Bondi as Attorney General, making her the third woman to lead the Justice Department."
+    },
+    "EXECUTIVE_ORDER_14299_NUCLEAR": {
+      "value": "2025",
+      "context": "Trump issued EO 14299 directing the DoD and DOE to deploy advanced nuclear reactors for military and AI infrastructure by 2028."
+    },
+    "SPACE_DOMINANCE_EXECUTIVE_ORDER": {
+      "value": "2025",
+      "context": "Trump mandated securing US space dominance, including deploying nuclear reactors on the moon by 2030 and attracting $50 billion in commercial space investment."
+    },
+    "TARIFF_EXEMPTIONS_TERMINATION": {
+      "value": "2025",
+      "context": "Trump terminated Section 232 exemptions, increasing aluminum duties to 25% and imposing strict penalties for import misclassification."
+    },
+    "OFFSHORE_CRITICAL_MINERALS_EO_14285": {
+      "value": "April 24, 2025",
+      "context": "Trump's EO 14285 directed agencies to expedite seabed mineral development by streamlining environmental licensing for exploration and recovery."
+    },
+    "NO_KINGS_PROTESTS_JUNE": {
+      "value": "June 14, 2025",
+      "context": "Massive protests against Trump's policies dubbed No Kings Day occurred nationwide, with over 5 million participants in 2,100 locations, organized by Indivisible and ACLU."
+    },
+    "ONE_BIG_BEAUTIFUL_BILL": {
+      "value": "July 4, 2025",
+      "context": "Trump signed the One Big Beautiful Bill Act, extending tax cuts, eliminating taxes on tipped wages, adding $150 billion for border wall, and boosting oil, coal, gas production."
+    },
+    "GLOBAL_TARIFF_IMPLEMENTATION": {
+      "value": "February 24, 2026",
+      "context": "US began collecting a 10% global import tariff, with Trump administration planning to increase it to 15% amid trade war escalation."
+    },
+    "STATE_OF_THE_UNION_2026": {
+      "value": "February 24, 2026",
+      "context": "President Trump delivered his 2026 State of the Union address before Congress, addressing tariff threats, Iran tensions, and reclaiming power from civil servants."
+    },
+    "VACCINE_POLICY_LAWSUIT": {
+      "value": "February 24, 2026",
+      "context": "Democratic state AGs filed a multistate lawsuit against Trump administration over changes to federal childhood vaccine schedule, raising concerns on inoculation rates."
+    },
+    "EPSTEIN_FILES_CONTROVERSY": {
+      "value": "February 24, 2026",
+      "context": "NPR investigation revealed Justice Department withheld and removed Epstein files related to sexual abuse accusations against President Trump."
+    },
+    "NO_KINGS_PROTESTS_MARCH": {
+      "value": "March 28, 2026",
+      "context": "Planned nationwide protests against ICE operations following shootings by immigration agents, including killings of Renée Good and Alex Pretti."
+    },
+    "COSTA_RICA_FEB1_ELECTION": {
+      "value": "President and parliament",
+      "context": "The 2026 national electoral calendar recorded Costa Rica’s general elections on February 1, including presidential and parliamentary races that set the tone for Central American politics this year."
+    },
+    "THAILAND_FEB8_ELECTION_AND_REFERENDUM": {
+      "value": "General election plus charter vote",
+      "context": "Thailand held a February 8 general election alongside a constitutional referendum, part of a broader wave of 2026 votes reshaping governance in key emerging economies."
+    },
+    "JAPAN_2026_GENERAL_ELECTION_LDP_SUPERMAJORITY": {
+      "value": "316 of 465 seats",
+      "context": "S&P Global’s February Geopolitical Risk Brief reported that Japan’s ruling Liberal Democratic Party won 316 seats in the February 8 general election, securing a standalone two‑thirds supermajority in the lower house and greatly strengthening Prime Minister Sanae Takaichi’s position."
+    },
+    "BANGLADESH_FEB12_ELECTION_AND_JULY_CHARTER": {
+      "value": "First competitive vote in years",
+      "context": "Al Jazeera and CFR both emphasized that Bangladesh’s February 12 election—paired with a referendum on the reformist July Charter—represents a pivotal test of the country’s transition after the 2024 student‑led ouster of Sheikh Hasina."
+    },
+    "LAOS_FEB22_PARLIAMENTARY_ELECTION": {
+      "value": "National Assembly vote",
+      "context": "Laos scheduled its parliamentary election for February 22, one of several 2026 votes in one‑party or semi‑authoritarian systems expected to reinforce ruling‑party dominance."
+    },
+    "JAPAN_ELECTION_IMPACT_ON_TAIWAN_POLICY": {
+      "value": "More assertive stance expected",
+      "context": "Commentary on early‑2026 elections argued that Japan’s strengthened government is likely to adopt a firmer posture on Taiwan and regional security, reinforcing U.S.‑aligned deterrence strategies."
+    },
+    "HUNGARY_UPCOMING_APRIL_ELECTION": {
+      "value": "High‑stakes contest",
+      "context": "Outlooks for 2026 highlighted Hungary’s April parliamentary election as a key test of Viktor Orbán’s rule and of EU cohesion, with challenger Péter Magyar promising a reset of Budapest’s stance toward Brussels and Moscow."
+    },
+    "TRUMP_PRESSURE_ON_SENATE_REPUBLICANS": {
+      "value": "White House pushes election bill",
+      "context": "President Trump has intensified pressure on Senate Republicans to find a way to pass the SAVE America Act despite it lacking the votes to clear the filibuster threshold."
+    },
+    "SAVE_AMERICA_ACT_SENATE_DEBATE": {
+      "value": "Citizenship proof and ID bill",
+      "context": "The Senate is locked in a marathon debate over the SAVE America Act, which would require proof of citizenship to register and specific photo ID to vote in federal elections."
+    },
+    "VIRGINIA_ELECTION_SECURITY_ORDER": {
+      "value": "Spanberger rejoins ERIC and tightens roll rules",
+      "context": "Virginia Governor Abigail Spanberger issued an order rejoining the ERIC multistate voter database and requiring systematic voter removals to be completed at least 90 days before elections."
+    },
+    "INDIANA_SB256_FOREIGN_AGENT_REGISTRATION": {
+      "value": "Registration for hostile-nation lobbyists",
+      "context": "Indiana enacted SB 256 requiring agents for governments, parties, or companies based in designated hostile foreign nations such as China, Iran, North Korea, and Russia to register with the state attorney general when engaging in political activities."
+    },
+    "FLORIDA_HB991_CITIZENSHIP_REQUIREMENTS": {
+      "value": "State-level SAVE-style bill",
+      "context": "Florida lawmakers sent HB 991 to Governor Ron DeSantis, a bill modeled on the federal SAVE Act that would require proof of citizenship to vote and mandate disclosure of dual citizenship by candidates."
+    },
+    "KENTUCKY_HB534_VOTERROLL_CLEANING": {
+      "value": "Felon and noncitizen screening bill",
+      "context": "The Kentucky House passed HB 534 to mandate that courts share felony conviction data with election officials and to allow partnerships with federal agencies to identify noncitizens on voter rolls."
+    },
+    "CALIFORNIA_DEMS_OPPOSE_FEDERAL_SAVE_ACT": {
+      "value": "Pushback on national voter ID push",
+      "context": "California officials and Democratic members of Congress publicly opposed the federal SAVE Act, arguing its stricter registration rules would federalize elections and suppress eligible voters."
+    },
+    "TRUMP_AGENDA_IN_STATE_LEGISLATURES": {
+      "value": "Election security framing in states",
+      "context": "Coverage of statehouses notes that Trump's focus on election security has spurred a wave of GOP-backed legislation on voting rules, ID, and noncitizen removal at the state level."
+    },
+    "NEWMEXICO_SB264_POLLING_PROTECTION": {
+      "value": "State penalties for armed interference",
+      "context": "New Mexico Governor Michelle Lujan Grisham signed SB 264 creating state-level penalties for deploying troops or armed federal agents at polling places or drop boxes and for interfering with voters or election officials."
+    },
+    "ELECTION_LEGISLATION_VOLUME_2026": {
+      "value": "3,975 election bills tracked",
+      "context": "Ballotpedia reports that 3,975 election-related bills are being tracked in 2026, with particularly high activity around campaign finance, ballot measures, and election procedure changes."
+    },
+    "EDUCATION_POLITICS_FEDERALISM": {
+      "value": "ED breakup plan contested",
+      "context": "Reporting on efforts to shift U.S. education programs to other agencies highlighted how Trump administration moves to “return education to the states” have sparked intense partisan debate over federal versus state control of schools."
+    },
+    "GLOBAL_2026_ELECTION_CALENDAR": {
+      "value": "Dozens of major votes",
+      "context": "Aggregated election calendars from CFR and others underscored that 2026 will feature consequential votes from Bangladesh and Costa Rica to Italy, Denmark and Brazil, making it a pivotal year for democratic and hybrid regimes alike."
+    },
+    "MIDTERM_ELECTIONS_2026": {
+      "value": "November 2026",
+      "context": "US midterm elections for all House seats and 35 Senate seats, serving as referendum on Trump's second term, with key races in Minnesota and Wisconsin."
+    },
+    "SEMIQUINCENTENNIAL_CELEBRATION": {
+      "value": "July 4, 2026",
+      "context": "America's 250th anniversary of independence celebrated as Freedom 250, a major national milestone."
+    },
+    "BRAZIL_2026_ELECTION_LANDSCAPE": {
+      "value": "Lula vs. Bolsonaro’s son",
+      "context": "Election previews noted that Brazil’s October general election will pit incumbent President Lula against Flávio Bolsonaro, son of the jailed former president, in a contest likely to reshape policy on crime, the economy and relations with the United States."
+    },
+    "FISA_SECTION_702_EXTENSION": {
+      "value": "45-day extension",
+      "context": "Congress passed a short-term extension of Section 702 after failing to reach a long-term consensus on surveillance reforms."
+    },
+    "FED_CHAIR_SUCCESSION_BATTLE": {
+      "value": "April 30, 2026",
+      "context": "Jay Powell announced he would remain on the Fed Board as a voting member after his term as Chair expires, an unprecedented move to guard against political interference."
+    },
+    "WARSH_CONFIRMATION_VOTE": {
+      "value": "April 29, 2026",
+      "context": "Kevin Warsh cleared a crucial Senate Banking Committee vote, paving the way for a full Senate confirmation as the next Federal Reserve Chair."
+    },
+    "CHINA_AI_RISK_INVESTIGATION": {
+      "value": "April 2026",
+      "context": "The House Select Committee on China launched a joint investigation into the security risks of U.S. firms adopting Chinese-developed AI models."
     }
   },
   "Sports": {
     "PARIS_OLYMPICS_2024": {
       "value": "USA and China gold parity",
       "context": "The 2024 Summer Olympics took place in Paris, France, with the US and China tying for the most gold medals at 40 each, though the US led in total medals (126)."
+    },
+    "CFP_CHAMPION_2024": {
+      "value": "Michigan Wolverines",
+      "context": "Michigan beat Washington Huskies 34-13 in the expanded 12-team playoff national title game."
+    },
+    "SUPER_BOWL_2024": {
+      "value": "Kansas City Chiefs",
+      "context": "Chiefs defeated San Francisco 49ers 25-22 in overtime on February 11, 2024, for their second straight title."
+    },
+    "NBA_MVP_2024": {
+      "value": "Nikola Jokić",
+      "context": "Nikola Jokić of the Denver Nuggets won his third NBA Most Valuable Player award for the 2023-24 season."
+    },
+    "NFL_MVP_2024": {
+      "value": "Lamar Jackson",
+      "context": "Baltimore Ravens quarterback Lamar Jackson won his second NFL Most Valuable Player award for the 2023-24 season."
+    },
+    "NCAA_MBB_2024": {
+      "value": "UConn Huskies",
+      "context": "UConn won back-to-back titles, defeating Purdue 75-60 in the championship game."
+    },
+    "NCAA_WBB_2024": {
+      "value": "South Carolina Gamecocks",
+      "context": "South Carolina completed a perfect 38-0 season by defeating Iowa 87-75 in the women's national championship."
+    },
+    "MASTERS_TOURNAMENT_2024": {
+      "value": "Scottie Scheffler",
+      "context": "Scottie Scheffler won his second green jacket at the 2024 Masters by four strokes over Ludvig Åberg."
+    },
+    "KENTUCKY_DERBY_2024": {
+      "value": "Mystik Dan",
+      "context": "Mystik Dan won the 150th running of the Kentucky Derby in a thrilling three-horse photo finish."
+    },
+    "UEFA_CHAMPIONS_LEAGUE_2024": {
+      "value": "Real Madrid",
+      "context": "Real Madrid defeated Borussia Dortmund 2-0 at Wembley Stadium to claim their record 15th European Cup."
+    },
+    "COPA_AMERICA_2024": {
+      "value": "Argentina",
+      "context": "Argentina defeated Colombia 1-0 in extra time to win the 2024 Copa America hosted in the United States."
+    },
+    "UEFA_EURO_2024": {
+      "value": "Spain",
+      "context": "Spain defeated England 2-1 in the final to win Euro 2024, becoming the first nation to win the tournament four times."
+    },
+    "WIMBLEDON_MENS_2024": {
+      "value": "Carlos Alcaraz",
+      "context": "Carlos Alcaraz defeated Novak Djokovic in straight sets to win his second consecutive Wimbledon title."
+    },
+    "WIMBLEDON_WOMENS_2024": {
+      "value": "Barbora Krejčíková",
+      "context": "Barbora Krejčíková won the 2024 Wimbledon women's singles title, defeating Jasmine Paolini in three sets."
+    },
+    "US_OPEN_MENS_2024": {
+      "value": "Jannik Sinner",
+      "context": "Jannik Sinner defeated Taylor Fritz in straight sets to win the 2024 US Open men's singles title."
+    },
+    "US_OPEN_WOMENS_2024": {
+      "value": "Aryna Sabalenka",
+      "context": "Aryna Sabalenka defeated Jessica Pegula to win the 2024 US Open women's singles title."
+    },
+    "NBA_CHAMPIONS_2024": {
+      "value": "Boston Celtics",
+      "context": "Celtics beat Dallas Mavericks 4-1 in the Finals; Jaylen Brown named Finals MVP."
+    },
+    "STANLEY_CUP_2024": {
+      "value": "Florida Panthers",
+      "context": "Panthers defeated Edmonton Oilers 4-3 in the Finals for their first-ever championship."
+    },
+    "WNBA_CHAMPIONS_2024": {
+      "value": "New York Liberty",
+      "context": "The New York Liberty defeated the Minnesota Lynx in five games, winning their first-ever WNBA Championship; Jonquel Jones named MVP."
+    },
+    "MLB_MVP_NL_2024": {
+      "value": "Shohei Ohtani",
+      "context": "Shohei Ohtani won the NL MVP after a historic 50-50 season (home runs and stolen bases) in his first year with the Dodgers."
+    },
+    "MLB_MVP_AL_2024": {
+      "value": "Aaron Judge",
+      "context": "Aaron Judge of the New York Yankees won the AL MVP after hitting 58 home runs and leading the league in multiple offensive categories."
+    },
+    "MLB_WORLD_SERIES_2024": {
+      "value": "Los Angeles Dodgers",
+      "context": "Dodgers defeated New York Yankees in five games for their eighth title."
+    },
+    "FORMULA_1_CHAMPION_2024": {
+      "value": "Max Verstappen",
+      "context": "Max Verstappen secured his fourth consecutive Formula One World Drivers' Championship for Red Bull Racing."
+    },
+    "TOUR_DE_FRANCE_2024": {
+      "value": "Tadej Pogačar",
+      "context": "Tadej Pogačar won the 2024 Tour de France, completing the rare Giro d'Italia and Tour de France double in the same year."
+    },
+    "T20_CRICKET_WORLD_CUP_2024": {
+      "value": "India",
+      "context": "India defeated South Africa by 7 runs in the final of the 2024 ICC Men's T20 World Cup."
+    },
+    "CFP_CHAMPION_2025": {
+      "value": "Ohio State Buckeyes",
+      "context": "Ohio State defeated Georgia 31-28 in the 2024-25 College Football Playoff National Championship."
+    },
+    "SUPER_BOWL_2025": {
+      "value": "Philadelphia Eagles",
+      "context": "Eagles beat Kansas City Chiefs 40-22 on February 9, 2025, for their second Super Bowl win."
+    },
+    "MASTERS_TOURNAMENT_2025": {
+      "value": "Rory McIlroy",
+      "context": "Rory McIlroy completed the career Grand Slam by winning the 2025 Masters Tournament at Augusta National."
+    },
+    "NCAA_MBB_2025": {
+      "value": "Duke Buckeyes",
+      "context": "Duke won the 2025 NCAA Men's Basketball Tournament, defeating Gonzaga in the national championship game."
+    },
+    "NCAA_WBB_2025": {
+      "value": "USC Trojans",
+      "context": "Led by JuJu Watkins, USC defeated Texas in the 2025 NCAA Women's Basketball national championship."
+    },
+    "NBA_MVP_2025": {
+      "value": "Shai Gilgeous-Alexander",
+      "context": "Thunder guard Shai Gilgeous-Alexander won his first regular season NBA MVP."
+    },
+    "NBA_CHAMPIONS_2025": {
+      "value": "Oklahoma City Thunder",
+      "context": "Thunder defeated Indiana Pacers in seven games; Shai Gilgeous-Alexander named Finals MVP."
+    },
+    "WNBA_CHAMPIONS_2025": {
+      "value": "Las Vegas Aces",
+      "context": "The Aces defeated the Phoenix Mercury to secure their third WNBA title in four years."
+    },
+    "STANLEY_CUP_2025": {
+      "value": "Florida Panthers",
+      "context": "Panthers repeated as champions, defeating Edmonton Oilers in the Finals."
+    },
+    "MLB_WORLD_SERIES_2025": {
+      "value": "Los Angeles Dodgers",
+      "context": "Dodgers beat Toronto Blue Jays in seven games for back-to-back titles."
+    },
+    "FORMULA_1_CHAMPION_2025": {
+      "value": "Lando Norris",
+      "context": "Lando Norris won his first Formula One World Drivers' Championship."
+    },
+    "TOUR_DE_FRANCE_2025": {
+      "value": "Jonas Vingegaard",
+      "context": "Jonas Vingegaard reclaimed the yellow jersey, winning the 2025 Tour de France."
+    },
+    "UEFA_CHAMPIONS_LEAGUE_2025": {
+      "value": "Paris Saint-Germain",
+      "context": "PSG defeated Inter Milan 5-0 to win their first Champions League title."
+    },
+    "RYDER_CUP_2025": {
+      "value": "Team USA",
+      "context": "Team USA defeated Team Europe to reclaim the Ryder Cup."
+    },
+    "FIFA_CLUB_WORLD_CUP_2025": {
+      "value": "Manchester City",
+      "context": "Manchester City won the inaugural expanded Club World Cup."
+    },
+    "CFP_CHAMPION_2026": {
+      "value": "Indiana Hoosiers",
+      "context": "Indiana defeated Miami 27-21 to win their first national title."
+    },
+    "SUPER_BOWL_2026": {
+      "value": "Seattle Seahawks",
+      "context": "Seahawks defeated New England Patriots 29-13 in Super Bowl LX."
+    },
+    "SEAHAWKS_WIN_SUPER_BOWL_LX": {
+      "value": "29–13 vs Patriots",
+      "context": "Seattle Seahawks defeated New England Patriots with dominant defense and rushing."
+    },
+    "BAD_BUNNY_HISTORIC_HALFTIME_SHOW": {
+      "value": "All-Spanish performance",
+      "context": "Super Bowl halftime show marked a milestone for Latin music on U.S. broadcast TV."
+    },
+    "WINTER_OLYMPICS_HOCKEY_2026": {
+      "value": "United States",
+      "context": "USA men's hockey beat Canada 2-1 in overtime for first gold since 1980."
+    },
+    "MILANO_CORTINA_FIRST_GOLD_2026": {
+      "value": "Franjo von Allmen (Switzerland)",
+      "context": "Won first gold medal in men's downhill Alpine skiing."
+    },
+    "MILANO_CORTINA_YOUNGEST_MEDALIST_2026": {
+      "value": "Choi Gaon (South Korea)",
+      "context": "Won gold in snowboard halfpipe at age 17."
+    },
+    "MILANO_CORTINA_OLDEST_MEDALIST_2026": {
+      "value": "Silvana Tirinzoni (Switzerland)",
+      "context": "Won silver in curling at age 46."
+    },
+    "WINTER_OLYMPICS_2026_FINAL_MEDAL_TABLE": {
+      "value": "Norway 41; USA 33; Netherlands 20 medals",
+      "context": "Norway led total medals at the 2026 Winter Olympics."
+    },
+    "US_12_WINTER_OLYMPIC_GOLDS_RECORD": {
+      "value": "12 gold medals",
+      "context": "Team USA recorded its highest Winter Olympics gold tally."
+    },
+    "JOHANNES_KLAEBO_RECORD_GOLD_TALLY": {
+      "value": "6 golds in one Games; 11 career",
+      "context": "Set records for most gold medals in a single and career Winter Olympics."
+    },
+    "BRAZIL_FIRST_WINTER_OLYMPIC_GOLD": {
+      "value": "Historic first medal",
+      "context": "Brazil earned its first Winter Olympic medal and gold."
+    },
+    "WINTER_GAMES_COMPLETED": {
+      "value": "Feb 6–22 schedule",
+      "context": "Winter Olympics successfully completed in Milan–Cortina."
+    },
+    "WINTER_OLYMPICS_2026_CLOSING_DAY_HIGHLIGHTS": {
+      "value": "US men’s hockey historic gold",
+      "context": "Final-day recap highlighted USA hockey gold and standout performances."
+    },
+    "AFC_WOMENS_ASIANCUP_2026": {
+      "value": "Tournament runs March 1–21",
+      "context": "Major continental women’s football championship."
+    },
+    "INDIANWELLS_MASTERS_2026": {
+      "value": "March 4–15",
+      "context": "Key ATP/WTA Masters 1000 event."
+    },
+    "WORLD_BASEBALL_CLASSIC_2026": {
+      "value": "March 5–17",
+      "context": "International baseball tournament before MLB season."
+    },
+    "F1_AUSTRALIAN_GP_SEASON_OPENER": {
+      "value": "March 6–8",
+      "context": "2026 Formula 1 season opener in Melbourne."
+    },
+    "WINTER_PARALYMPICS_MILANOCORTINA": {
+      "value": "March 6–15",
+      "context": "Winter Paralympics follow Olympics in same host cities."
+    },
+    "WORLD_WOMENS_CURLING_CHAMPIONSHIP": {
+      "value": "March 14–22",
+      "context": "Top international curling competition."
+    },
+    "MIAMIOPEN_2026": {
+      "value": "March 18–29",
+      "context": "ATP/WTA Masters 1000 event."
+    },
+    "MLB_OPENINGDAY_2026": {
+      "value": "March 26",
+      "context": "Start of the MLB regular season."
+    },
+    "F1_JAPANESE_GP_2026": {
+      "value": "March 29",
+      "context": "Second F1 race of the season at Suzuka."
+    },
+    "WORLD_MENS_CURLING_CHAMPIONSHIP": {
+      "value": "March 28–April 5",
+      "context": "Late-season international curling event."
+    },
+    "WORLD_CUP_2026_FORMAT": {
+      "value": "Expanded 48-team tournament",
+      "context": "New format with 104 matches."
+    },
+    "WORLD_CUP_2026_FINAL_LOCATION": {
+      "value": "MetLife Stadium, New Jersey",
+      "context": "Host venue for 2026 FIFA World Cup final."
+    },
+    "WOMEN_WORLD_CUP_2027_HOST": {
+      "value": "Brazil",
+      "context": "First South American host for Women's World Cup."
+    },
+    "NBA_PLAYOFFS_2026_TIPOFF": {
+      "value": "April 18, 2026",
+      "context": "The NBA post-season began with record-breaking viewership for the opening weekend, driven by the league's new digital streaming partnerships."
+    },
+    "KENTUCKY_DERBY_PREP_152": {
+      "value": "April 2026",
+      "context": "Final lead-up races for the 152nd Kentucky Derby concluded, with betting volume reaching all-time highs for the pre-Derby window."
+    },
+    "LIV_GOLF_LEAGUE_FUTURE": {
+      "value": "April 2026",
+      "context": "The professional golf world entered a state of flux as LIV Golf players began negotiating 're-entry pathways' to the PGA Tour following funding news."
+    },
+    "WOMEN_SPORTS_INVESTMENT_METRIC": {
+      "value": "+$1.5 Billion",
+      "context": "A new report indicated that global investment in professional women's sports leagues surged by $1.5 billion in the first four months of 2026."
+    },
+    "NBA_FINALS_RECORD_COMEBACK": {
+      "value": "29-point deficit",
+      "context": "On June 10, 2026, the New York Knicks achieved the largest comeback in NBA Finals history, overcoming a 29-point deficit to defeat the San Antonio Spurs in Game 4."
+    },
+    "WORLD_CUP_2026_START": {
+      "value": "Tournament Kickoff in Mexico",
+      "context": "The 2026 FIFA World Cup officially commenced on June 11, 2026, with the opening matches kicking off in Mexico."
     }
   },
   "Transportation": {
     "SPACEX_STARSHIP_IFT4": {
       "value": "Double Splashdown Success",
       "context": "SpaceX successfully completed its fourth Integrated Flight Test (IFT-4) in June 2024, achieving successful starship and booster soft-splashdowns in Indian Ocean and Gulf of Mexico."
+    },
+    "SALT_LAKE_CITY_ZONING_REFORM_2024": {
+      "value": "Missing middle housing boost",
+      "context": "Exempted townhomes and duplexes from minimum lot requirements, leading to 45% increase in multi-unit permits."
+    },
+    "US_EV_SALES_2024": {
+      "value": "1.30 million",
+      "context": "Record US EV sales topped 1.3 million units, with market share at 8.1%; Tesla Model Y and Model 3 dominated."
+    },
+    "EV_MARKET_SHARE_2024": {
+      "value": "8.1%",
+      "context": "EVs accounted for 8.1% of new light-duty vehicle sales in the US."
+    },
+    "LITHIUM_SULFUR_BATTERY_2024": {
+      "value": "Over 1,000 cycles",
+      "context": "Lithium-sulfur batteries achieved over 1,000 charging cycles without rapid degradation, reducing costs and avoiding cobalt."
+    },
+    "US_EV_SALES_2025": {
+      "value": "1.28 million",
+      "context": "EV sales declined only 2% to 1.28 million despite Q4 46% drop after federal tax credit revocation; share 7.8%."
+    },
+    "GM_EV_SALES_GROWTH_2025": {
+      "value": "48%",
+      "context": "GM sold over 150,000 EVs, up 48% YoY, becoming No. 2 behind Tesla."
+    },
+    "SODIUM_ION_BATTERIES_2025": {
+      "value": "Grid integration",
+      "context": "Sodium-ion batteries advanced for smart grids with high energy density, safety, and wide temperature operation."
+    },
+    "SOLID_STATE_SODIUM_ION_2025": {
+      "value": "New electrolyte breakthrough",
+      "context": "Researchers developed solid-state sodium-ion battery with sulfur-chlorine electrolyte achieving 99.26% efficiency after 600 cycles."
+    },
+    "CHERY_SOLID_STATE_PROTOTYPE_2025": {
+      "value": "Double energy density",
+      "context": "Chinese automaker Chery unveiled solid-state battery prototype with double the energy density of current lithium-ion cells."
+    },
+    "WAYMO_ATLANTA_LAUNCH_2025": {
+      "value": "65 sq mi service area",
+      "context": "Waymo launched public robotaxi service via Uber app in Atlanta in June 2025, covering 65 square miles using Hyundai Ioniq 5 vehicles."
+    },
+    "WAYMO_100M_AUTONOMOUS_MILES_2025": {
+      "value": "July 15, 2025",
+      "context": "Waymo reached 100 million fully driverless miles, doubling from 50 million in six months."
+    },
+    "WAYMO_6TH_GEN_DRIVER_2025": {
+      "value": "13 cameras, 4 lidars",
+      "context": "Waymo's 6th generation autonomous system uses fewer sensors to scale deployment."
+    },
+    "BRIGHTLINE_WEST_TUNNEL_2025": {
+      "value": "$1.18B contract awarded",
+      "context": "The $16.1B Hudson Tunnel Gateway project awarded $1.18B contract to begin tunneling from Hudson River bulkhead into Penn Station."
+    },
+    "JFK_TERMINAL_ONE_TOPPING_OUT_2025": {
+      "value": "$9.5B PPP milestone",
+      "context": "Largest US airport PPP reached topping out of 2.6 million sq ft New Terminal One at JFK in 2025."
+    },
+    "SF_FAMILY_ZONING_PLAN_2025": {
+      "value": "Density bonus for families",
+      "context": "San Francisco's zoning plan provides density bonuses for projects including family-sized units (2-3 bedrooms)."
+    },
+    "NY_TRANSIT_DENSITY_ZONING_2025": {
+      "value": "Preempts local exclusionary zoning",
+      "context": "State mandates higher-density affordable housing near regional transit stations, overriding local opposition."
+    },
+    "ROAD_HOUSING_ACT_2025": {
+      "value": "Federal regulatory barriers reduced",
+      "context": "Bipartisan legislation streamlines federal housing regulations to boost national supply amid affordability crisis."
+    },
+    "SMART_CITY_MAAS_2025": {
+      "value": "38% private car reduction",
+      "context": "Helsinki's Whim MaaS platform shifted 38% of users off daily private car use through unified mobility subscriptions."
+    },
+    "AI_TRAFFIC_CONTROL_2025": {
+      "value": "25% travel time reduction",
+      "context": "Pittsburgh's SURTRAC AI system cut urban travel times 25% and emissions 20% through adaptive signal optimization."
+    },
+    "INDIA_SMART_CITIES_2025": {
+      "value": "90% projects completed",
+      "context": "Nationwide mission modernized urban infrastructure with IoT, surveillance, and digital governance in 100 cities."
+    },
+    "GLOBAL_CLIMATE_FUNDING_CITIES_2025": {
+      "value": "$105B requested",
+      "context": "Cities worldwide sought record funding for green infrastructure, resilience projects, and sustainable transport."
+    },
+    "G_URBAN_IOT_GROWTH_2025": {
+      "value": "17.9% annual increase",
+      "context": "Municipal 5G expansions drove rapid growth in cellular IoT connections for smart lighting, parking, and waste management."
+    },
+    "SINGAPORE_GREEN_BUILDINGS_2025": {
+      "value": "80% certification target",
+      "context": "Accelerated retrofits of commercial buildings with IoT sensors to meet Green Mark certification ahead of 2030 goals."
+    },
+    "BEAD_BROADBAND_WORKFORCE_2025": {
+      "value": "Severe technician shortage",
+      "context": "$42.5B program deployments delayed by competition from water/transit infrastructure for skilled labor."
+    },
+    "SUNZIA_TRANSMISSION_2025": {
+      "value": "$11B renewable line progress",
+      "context": "Largest clean energy transmission project laid lines from New Mexico wind farms to Arizona grid."
+    },
+    "TEXAS_CENTRAL_HSR_REVIVAL_2025": {
+      "value": "$41.6B Dallas-Houston line",
+      "context": "Long-stalled high-speed rail project gained renewed momentum through private investment and policy support."
+    },
+    "SHELBY_BYPASS_COMPLETION_2025": {
+      "value": "18.5-mile US-74 upgrade",
+      "context": "North Carolina's four-lane Shelby Bypass fully opened, improving regional freight and commuter access."
+    },
+    "WAYMO_6TH_GEN_DRIVER_DEPLOYMENT": {
+      "value": "New hardware stack",
+      "context": "Waymo announced it will begin fully autonomous operations with its 6th-generation Waymo Driver, a streamlined sensing and compute stack designed for lower cost and broader deployment across harsh-weather environments."
+    },
+    "WAYMO_ROBOTAXIS_10_US_CITIES": {
+      "value": "1M rides/week target",
+      "context": "Waymo is expanding robotaxi service to additional U.S. cities, aiming for over one million rides per week."
+    },
+    "WAYVE_1_5B_SERIES_D": {
+      "value": "$1.5B funding round",
+      "context": "Wayve raised $1.5 billion to deploy its AI autonomy platform globally, targeting robotaxi trials in 2026."
+    },
+    "AMTRAK_NEW_LONG_DISTANCE_FLEET_STRATEGY": {
+      "value": "Fleet replacement plan",
+      "context": "Amtrak outlined a revised long-distance fleet replacement strategy amid record passenger demand."
+    },
+    "PORTAL_NORTH_BRIDGE_CUTOVER": {
+      "value": "First track cutover Feb 13",
+      "context": "Amtrak began shifting Northeast Corridor traffic to the new Portal North Bridge, reducing delays."
+    },
+    "IOWA_INTERSTATE_RAIL_UPGRADE": {
+      "value": "18.95 miles CWR installed",
+      "context": "Final segment of jointed rail replaced with continuous welded rail, improving speeds and resilience."
+    },
+    "EU_ETS_AVIATION_CARBON_COSTS": {
+      "value": "Carbon as explicit line item",
+      "context": "EU ETS made CO₂ emissions a direct operating cost for airlines, eliminating free allowances."
+    },
+    "NISSAN_LEAF_UPDATE_2026": {
+      "value": "$29,990 start",
+      "context": "2026 LEAF S+ adopts SUV styling and NACS port; cheaper trim canceled."
+    },
+    "TESLA_EUROPE_SALES_2026": {
+      "value": "-17% Jan YoY",
+      "context": "Tesla registrations fell 17% in Europe in January 2026."
+    },
+    "BYD_EUROPE_GROWTH_2026": {
+      "value": "Nearly 3x Jan",
+      "context": "BYD tripled European sales in January 2026, overtaking Tesla."
+    },
+    "HONDA_0_SERIES_2026": {
+      "value": "300 miles range",
+      "context": "Honda 0 SUV debuts with new high-density battery enabling fast charging."
+    },
+    "TESLA_CYBERCAB_PRODUCTION_2026": {
+      "value": "First units roll off Giga Texas",
+      "context": "Cybercab robotaxi production began in February 2026 with sub-$30,000 target price."
+    },
+    "OXFORD_LITHIUM_ION_FAST_CHARGE_2026": {
+      "value": "40% resistance reduction",
+      "context": "Oxford research improved lithium-ion charging speeds by reducing internal resistance."
+    },
+    "TOYOTA_SOLID_STATE_TIMELINE_2026": {
+      "value": "2027-2028 production",
+      "context": "Toyota confirmed timeline for commercial solid-state batteries."
+    },
+    "CA_HSR_RAILHEAD_COMPLETION_2026": {
+      "value": "Wasco Southern Railhead operational",
+      "context": "Key logistics hub completed for California high-speed rail Central Valley segment."
+    },
+    "GORDIE_HOWE_BRIDGE_2026": {
+      "value": "98% complete, opening delayed",
+      "context": "Detroit-Windsor bridge nears completion with opening pushed to 2026."
+    },
+    "ASHEVILLE_AIRPORT_EXPANSION_2026": {
+      "value": "$400M terminal opens",
+      "context": "Expansion increases capacity and adds new control tower."
+    },
+    "US_BRIDGE_CONSTRUCTION_2026": {
+      "value": "$209.1B transportation market",
+      "context": "Record transportation construction spending driven by bridges and highways."
+    },
+    "MUSIC_CITY_BORING_TUNNEL_2026": {
+      "value": "10-mile airport link",
+      "context": "Privately funded tunnel project begins construction in Nashville."
+    },
+    "NIO_FEBRUARY_2026_DELIVERIES": {
+      "value": "20,797 vehicles; +57.6% YoY",
+      "context": "NIO deliveries surged and cumulative battery swaps exceeded 100 million."
+    },
+    "US_FEBRUARY_2026_AUTO_SALES": {
+      "value": "1.18–1.19M light vehicles; SAAR 15.6M",
+      "context": "February 2026 U.S. auto sales modestly improved month-over-month."
+    },
+    "US_EV_SHARE_SLIPS": {
+      "value": "EVs 6.6% of Feb sales",
+      "context": "EV share declined amid affordability challenges."
+    },
+    "GLOBAL_EV_MARKET_JANUARY_2026": {
+      "value": "1.2M units; −3% YoY",
+      "context": "Global EV sales dipped due to slowdown in China."
+    },
+    "VW_TWO_MILLIONTH_BEV_PRODUCED": {
+      "value": "2,000,000 BEVs built",
+      "context": "Volkswagen hit major EV production milestone."
+    },
+    "NIO_BATTERY_SWAPS_100M": {
+      "value": "100M swaps milestone",
+      "context": "Battery swapping scaled significantly in China."
+    },
+    "EVTOL_COMMERCIAL_LAUNCH_TIMELINE": {
+      "value": "Urban services from 2026",
+      "context": "eVTOL companies target commercial launches by late 2026."
+    },
+    "ELECTRIC_AVIATION_NEWS_FEBRUARY_2026": {
+      "value": "ZeroAvia Norway ops planned",
+      "context": "Hydrogen-electric aviation advances toward commercial service."
+    },
+    "US_NEW_EV_SALES_Q1_2026_DROP": {
+      "value": "212,600 new EVs, down 28% YoY",
+      "context": "New EV sales fell sharply, reducing market share."
+    },
+    "US_USED_EV_SALES_Q1_2026_SURGE": {
+      "value": "93,500 used EVs, up 12% YoY",
+      "context": "Used EV demand increased as prices approached gasoline vehicles."
+    },
+    "US_FEB2026_EV_SHARE_7_3": {
+      "value": "EVs 7.3% of Feb new sales",
+      "context": "Alternative estimate showing EV share decline year-over-year."
+    },
+    "CHINA_EV_EXPORTS_500K_JANFEB": {
+      "value": "Over 500,000 EV exports Jan–Feb",
+      "context": "Chinese EV exports surged globally."
+    },
+    "TRANSIT_PROJECTS_OPENING_2026_US": {
+      "value": "Multiple city expansions",
+      "context": "Major U.S. transit lines scheduled to open in 2026."
+    },
+    "NORTHAMERICA_NEW_GUIDEWAY_MILEAGE": {
+      "value": "Approx. 150 miles new guideway",
+      "context": "Transit expansion pace slower than prior decade."
+    },
+    "JOBY_EVTOL_SF_BAY_DEMO": {
+      "value": "Piloted flight completed",
+      "context": "Joby demonstrated FAA-conforming eVTOL aircraft over San Francisco Bay."
+    },
+    "SURFAIR_BETA_ALIA_ORDER": {
+      "value": "25 electric aircraft",
+      "context": "Surf Air ordered Beta Alia aircraft for Hawaii routes."
+    },
+    "VAERIDION_MICROLINER_HANGAR": {
+      "value": "New production hub",
+      "context": "Electric regional aircraft startup opened test facility."
+    },
+    "MD_AIRCRAFT_EVIATOR_LOI": {
+      "value": "10 aircraft planned",
+      "context": "Agreement signed for electric regional aircraft deployment."
+    },
+    "TESLA_CYBERCAB_SCALING": {
+      "value": "April 2026",
+      "context": "Following initial production, Tesla began deploying 'dedicated charging hubs' in major metro areas for the autonomous Cybercab fleet."
+    },
+    "JOBY_AVIATION_SF_DEMO": {
+      "value": "April 2026",
+      "context": "Joby completed a series of piloted eVTOL demonstration flights over the San Francisco Bay, moving closer to FAA type certification."
+    },
+    "HAWAII_ELECTRIC_REGIONAL_AIR": {
+      "value": "25 aircraft order",
+      "context": "Surf Air confirmed an order for 25 Beta Alia electric aircraft to begin inter-island service by late 2026/early 2027."
+    }
+  },
+  "Culture": {
+    "SEVERANCE_S2": {
+      "value": "January 2025",
+      "context": "Severance returned after a long hiatus."
+    },
+    "HARLEM_CHAMBER_BLACK_HISTORY_CONCERT": {
+      "value": "Feb 5 performance",
+      "context": "The Harlem Chamber Players staged their annual Black History Month concert, themed American Landscapes, featuring contemporary African American composers in Harlem."
+    },
+    "NINE_INCH_NAILS_VALENTINES_SHOW": {
+      "value": "Feb 14 concert",
+      "context": "Nine Inch Nails headlined a Valentine’s Day show at the Prudential Center in Newark on February 14, highlighted as a marquee Gen-X-oriented event."
+    },
+    "DANIEL_RADCLIFFE_EVERY_BRILLIANT_THING": {
+      "value": "Previews from Feb 21",
+      "context": "Daniel Radcliffe returned to Broadway in Every Brilliant Thing at the Hudson Theatre, focusing on mental health and reasons to live."
+    },
+    "ELVIS_EPIC_MOVIE": {
+      "value": "February 2026",
+      "context": "Concert film featured archival Elvis footage."
+    },
+    "KENDRICK_LAMAR_SUPER_BOWL": {
+      "value": "February 2025",
+      "context": "Kendrick Lamar headlined the Super Bowl LIX Halftime Show in New Orleans."
+    },
+    "KENDRICK_GRAMMY_SWEEP": {
+      "value": "February 2025",
+      "context": "Kendrick Lamar won five Grammys including Song and Record of the Year for Not Like Us."
+    },
+    "CHAPPELL_ROAN_GRAMMYS": {
+      "value": "February 2025",
+      "context": "Chappell Roan won Best New Artist at the Grammys with a standout Pink Pony Club performance."
+    },
+    "DOECHII_RAP_GRAMMY": {
+      "value": "February 2025",
+      "context": "Doechii won Best Rap Album for Alligator Bites Never Heal."
+    },
+    "THUNDERBIRD_INDIAN_POWWOW_NYC": {
+      "value": "Through Feb 8",
+      "context": "New York’s Theater for the New City hosted the Thunderbird Indian D powwow concert through February 8, spotlighting Native American dance traditions including Deer, Grass and Jingle dances."
+    },
+    "JOHN_WILLIAMS_PIANO_CONCERTO_NY": {
+      "value": "4 concerts from Feb 27",
+      "context": "Pianist Emanuel Ax performed John Williams’ jazz-inspired piano concerto with the New York Philharmonic starting February 27."
+    },
+    "K_POPS_FILM_RELEASE": {
+      "value": "Feb 27 release",
+      "context": "K-Pops!, Anderson .Paak’s directorial debut about a musician joining a K-pop group, released February 27."
+    },
+    "DREAMS_FILM_RELEASE": {
+      "value": "Feb 27 release",
+      "context": "Dreams, a Michel Franco drama starring Jessica Chastain, opened February 27."
+    },
+    "GUMBY_ANIMATION_EXHIBIT_LAST_CALL": {
+      "value": "Exhibit ends March 1",
+      "context": "Museum of the Moving Image closed its Gumby-focused animation program The Eggs and Trixie and related shorts."
+    },
+    "BEYONCE_COWBOY_CARTER": {
+      "value": "March 29, 2024",
+      "context": "Beyoncé released Cowboy Carter, her genre-blending country album featuring Dolly Parton and Post Malone, topping charts and sparking country music debates."
+    },
+    "ACADEMY_AWARDS_2026": {
+      "value": "March 2026",
+      "context": "Oscars spotlighted One Battle After Another and major industry gatherings."
+    },
+    "BILLIE_EILISH_CONCERT_FILM": {
+      "value": "March 20, 2026",
+      "context": "Me Hard Soft: Tour concert film released."
+    },
+    "SXSW_2026_40TH_ANNIVERSARY": {
+      "value": "March 12–18, 2026",
+      "context": "SXSW marked its 40th anniversary with a shorter, denser format."
+    },
+    "MARCH_2026_TV_PREMIERES": {
+      "value": "March 2026",
+      "context": "Major TV premieres and returns crowded the streaming landscape."
+    },
+    "STREAMING_OSCAR_TITLES_ADDED": {
+      "value": "March 2026",
+      "context": "Best Picture nominees were added to streaming platforms ahead of the Oscars."
+    },
+    "GLOBAL_ART_EXHIBITIONS_MARCH2026": {
+      "value": "March 2026",
+      "context": "Major exhibitions opened globally including New Humans at the Whitney."
+    },
+    "NYC_GALLERY_POLITICS_DANCE_SHOWS": {
+      "value": "March 2026",
+      "context": "NYC galleries highlighted politically engaged and performance-based works."
+    },
+    "SCHIAPARELLI_VANDA_OPENING": {
+      "value": "March 28, 2026",
+      "context": "V&A launched Schiaparelli: Fashion Becomes Art."
+    },
+    "BERKSHIRE_HATHAWAY_TRANSITION": {
+      "value": "April 2026",
+      "context": "Preparation for the first post-Buffett era annual meeting led by Greg Abel. The 'Woodstock for Capitalists' shifted to a multi-panel, digital-first engagement format."
+    },
+    "IMMERSIVE_EVENT_TREND_PEAK": {
+      "value": "April 2026",
+      "context": "Industry reports showed a 40% year-over-year increase in 'full-sensory' corporate event design, utilizing layered lighting and branded 'story-path' entrances."
+    },
+    "LIV_GOLF_FUNDING_UNCERTAINTY": {
+      "value": "April 30, 2026",
+      "context": "Reports surfaced regarding the Saudi PIF potentially scaling back funding for LIV Golf, sparking cultural debates on the long-term sustainability of 'disruptor leagues.'"
+    },
+    "COACHELLA_2026_AI_INTEGRATION": {
+      "value": "April 2026",
+      "context": "The festival featured the first headlining 'hybrid' performance where real-time generative AI synchronized visuals and audio based on crowd bio-feedback."
+    }
+  },
+  "Education": {
+    "K12_POLICY_DEBATES_2024": {
+      "value": "School choice, teacher pay, AI, standardized testing",
+      "context": "Major K-12 policy debates in 2024 included school choice expansions like universal ESAs, teacher pay raises, AI integration, and standardized testing reforms, amid parents' rights bills on race, gender, and sexuality."
+    },
+    "US_NEWS_RANKINGS_2024": {
+      "value": "Princeton #1, MIT #2, Harvard #3",
+      "context": "U.S. News 2024 National Universities: Princeton topped, followed by MIT, Harvard/Stanford tied at #3; changes noted for UC Berkeley, UCLA."
+    },
+    "ED_RESEARCH_STUDIES_2024": {
+      "value": "10 key studies on inattention, AI perils/promises",
+      "context": "Edutopia highlighted 2024's top education studies covering classroom inattention spread, AI applications' benefits and risks."
+    },
+    "FAFSA_SIMPLIFICATION_ACT_IMPACT_2024": {
+      "value": "Problematic reform implementation",
+      "context": "The 2021 FAFSA Simplification Act intended to overhaul federal student aid, but its 2024 rollout caused cascading negative consequences for students and universities."
+    },
+    "FAFSA_CRISIS_ROLLOUT_2024": {
+      "value": "Delayed launch, 3% drop in filings",
+      "context": "The rollout of the revamped 2024 FAFSA form faced severe technical issues, unanswered calls, and missed deadlines, leading to a 3% drop in aid filings."
+    },
+    "FAFSA_IMPACT_ENROLLMENT_2024": {
+      "value": "Sharp decline in new enrollments",
+      "context": "The troubled FAFSA rollout was directly linked by the National Student Clearinghouse to a sharp decline in first-year college enrollments across the higher education sector."
+    },
+    "FEDERAL_AID_COO_RESIGNATION_2024": {
+      "value": "Richard Cordray resigns amid FAFSA backlash",
+      "context": "Richard Cordray, the Chief Operating Officer of Federal Student Aid, resigned in spring 2024 due in part to massive backlash from the FAFSA rollout mismanagement."
+    },
+    "TITLE_IX_BIDEN_RULE_2024": {
+      "value": "Expanded LGBTQ+ and pregnancy protections",
+      "context": "The Biden administration issued final Title IX rules in 2024 that expanded protections for LGBTQ+ students, eliminated mandatory live cross-examinations, and extended jurisdiction."
+    },
+    "TITLE_IX_SPORTS_DEBATE_2024": {
+      "value": "Transgender athletics rule postponed",
+      "context": "The Biden administration omitted a highly anticipated proposal regarding transgender participation on men's and women's athletic teams from the final 2024 Title IX rule."
+    },
+    "ELECTION_IMPACT_2024": {
+      "value": "Trump win shapes policy; voucher repeal in one state",
+      "context": "2024 elections featured Trump's victory pledging to eliminate Dept of Education, cut 'woke' funding, expand school choice, and deportations affecting schools; a state voucher repeal passed widely."
+    },
+    "AI_TEACHERLESS_CLASSROOM_2024": {
+      "value": "UK school pilots VR and AI lessons",
+      "context": "A school in the UK announced the first teacherless classroom in 2024, combining virtual reality with AI to deliver targeted educational content."
+    },
+    "HIGHER_ED_REFORMS_2025": {
+      "value": "Trump executive orders on DEI, loans, accreditation",
+      "context": "In 2025, Trump administration issued orders targeting gender identity, DEI programs, foreign influence, student loans, accreditation reforms, and initiated Dept of Education shutdown efforts."
+    },
+    "COMPACT_FOR_EXCELLENCE_2025": {
+      "value": "White House compact for universities on admissions, funding",
+      "context": "October 2025 Compact for Excellence sought university endorsements for race-neutral admissions, limited international students, free speech promotion, offering preferential federal funding; mixed responses."
+    },
+    "TITLE_IX_INJUNCTION_2025": {
+      "value": "Nationwide injunction blocks 2024 rule",
+      "context": "The case Tennessee vs. Cardona resulted in a nationwide injunction against the 2024 Title IX regulations, blocking their enforcement."
+    },
+    "TITLE_IX_NULLIFICATION_2025": {
+      "value": "2024 rules declared no longer effective",
+      "context": "In January 2025, the Department of Education announced the 2024 final Title IX rules would no longer be effective in any jurisdiction, creating regulatory uncertainty."
+    },
+    "TITLE_IX_CARDONA_CASE_2025": {
+      "value": "Legal battles halt equity protections",
+      "context": "The legal case Tennessee vs. Cardona became a focal point in early 2025, effectively halting the rollout of expanded Title IX equity protections nationwide."
+    },
+    "EDTECH_TRENDS_2025": {
+      "value": "AI personalized learning, VR, microcredentials",
+      "context": "2025 trends included AI platforms like Squirrel AI for tailored learning, VR, sustainability, and microcredentials transforming education."
+    },
+    "AI_PERSONALIZED_LEARNING_2025": {
+      "value": "70% boost in course completion",
+      "context": "AI personalization in EdTech platforms boosted course completions by 70% and improved exam scores by adapting content dynamically."
+    },
+    "EDTECH_AI_INFRASTRUCTURE_2025": {
+      "value": "AI becomes core layer of EdTech",
+      "context": "AI evolved from being a supplementary tool to the essential core infrastructure and backbone of modern EdTech products and platforms."
+    },
+    "AI_ADAPTIVE_PACING_2025": {
+      "value": "Science education transforms",
+      "context": "AI-driven platforms in 2025 transformed science education by dynamically adjusting to a student’s specific interests and individual learning pace."
+    },
+    "VR_SIMULATED_LEARNING_2025": {
+      "value": "Simulated AI patients and philosophers",
+      "context": "Arizona State University piloted AI as an immersive learning tool, allowing students to practice techniques on AI-generated patients and debate simulated historical figures."
+    },
+    "STEM_VIRTUAL_LABS_2025": {
+      "value": "Geographical constraints removed",
+      "context": "The rise of AI-driven virtual labs and simulations enabled students globally to experiment with complex STEM concepts without needing physical laboratories."
+    },
+    "ED_SPACES_TRANSFORMATION_2025": {
+      "value": "Dynamic learning ecosystems",
+      "context": "School spaces, particularly libraries, transformed into vibrant, dynamic learning ecosystems emphasizing collaborative energy and flexible technological functionality."
+    },
+    "FAFSA_RECOVERY_2025": {
+      "value": "Completions return to pre-pandemic rates",
+      "context": "Following the disastrous 2024 cycle, FAFSA completions bounced back for the Class of 2025, returning to pre-pandemic application levels."
+    },
+    "EDTECH_CONNECTED_SYSTEMS_2026": {
+      "value": "Connecting instruction and intervention",
+      "context": "The top EdTech trend of 2026 shifted away from adding new devices toward using AI to better connect existing instruction and intervention systems."
+    },
+    "AI_OPERATING_SYSTEM_2026": {
+      "value": "Unified AI ecosystems for schools",
+      "context": "AI transitioned into becoming the central operating system for schools, unifying scheduling, learning, security, device management, and communications."
+    },
+    "QS_WORLD_RANKINGS_2026": {
+      "value": "1,501 institutions evaluated",
+      "context": "The QS World University Rankings 2026 evaluated 1,501 global institutions based on 8 key indicators including academics and faculty/student ratios."
+    },
+    "THE_WORLD_RANKINGS_2026": {
+      "value": "Latest global comparison of top universities",
+      "context": "Times Higher Education 2026 Rankings cover 2,000+ institutions on academic reputation, teaching, international outlook."
+    },
+    "AI_TUTORS_ADOPTION_2026": {
+      "value": "86% adoption rate in education",
+      "context": "AI tutors and teaching assistants reached an 86% adoption rate among educators and students, shifting EdTech to an intelligent learning ecosystem."
+    },
+    "AI_STUDENT_PERFORMANCE_INTELLIGENCE_2026": {
+      "value": "Real-time analytics replace static dashboards",
+      "context": "EdTech platforms shifted focus toward providing real-time student performance intelligence, leveraging scalable APIs to track micro-learning moments."
+    },
+    "AI_CODE_GENERATION_EDTECH_2026": {
+      "value": "GPT-4o and Claude 3.5 power tutoring",
+      "context": "EdTech founders widely adopted trending models like GPT-4o, Claude 3.5, and Gemini 1.5 to build real-time, scalable AI tutoring systems."
+    },
+    "AI_FORMATIVE_FEEDBACK_2026": {
+      "value": "AI used as a thinking companion",
+      "context": "Students increasingly used AI platforms not just for answers, but for formative feedback, querying AI to understand why a thesis was weak or an answer incorrect."
+    },
+    "AI_HUMAN_CONNECTION_2026": {
+      "value": "Tech prioritizes human relationships",
+      "context": "A major 2026 trend saw EdTech intentionally designed to prioritize and facilitate human connection between students and teachers, rather than isolating learners on devices."
+    },
+    "AI_DRIVEN_STUDENT_OUTCOMES_2026": {
+      "value": "Data leads to demonstrable gains",
+      "context": "EdTech predictions for 2026 emphasized that AI outputs would be directly tied to demonstrating real, measurable gains in student outcomes based on existing curriculum data."
+    },
+    "LEARNING_PLATFORMS_EVOLVING_2026": {
+      "value": "Platforms begin to learn",
+      "context": "Educational software evolved from static delivery mechanisms into adaptive platforms that 'learn' and adjust to the institutional and student environments they serve."
+    },
+    "FAFSA_AGENCY_RESTRUCTURE_2026": {
+      "value": "Stronger contractor oversight",
+      "context": "The Department of Education's Federal Student Aid office restructured its approach to the FAFSA by implementing stronger contractor oversight to fix structural weaknesses."
+    },
+    "FAFSA_HIRING_FREEZE_2026": {
+      "value": "Staffing shortages impact FSA",
+      "context": "A federal hiring freeze exacerbated issues at the Federal Student Aid office, leading to a shortage of full-time technical expertise and reliance on third-party contractors."
+    },
+    "FAFSA_DIRECTOR_OVERSIGHT_2026": {
+      "value": "New dedicated FAFSA director position",
+      "context": "To solve structural leadership issues, the Federal Student Aid office created a dedicated FAFSA director position to centralize control over the federal aid form."
+    },
+    "SAVE_PLAN_TERMINATION_2026": {
+      "value": "Dept of Education officially terminates SAVE plan",
+      "context": "The Education Department reached a settlement to officially terminate the SAVE student loan repayment plan and block forgiveness under it."
+    },
+    "IBR_FORGIVENESS_RESUMPTION_2026": {
+      "value": "Income-Based Repayment discharges resume",
+      "context": "The Education Department resumed processing student loan forgiveness under the Income-Based Repayment (IBR) plan for borrowers hitting the 25-year threshold."
+    },
+    "PSLF_NEW_RESTRICTIONS_2026": {
+      "value": "Altered Public Service Loan Forgiveness rules",
+      "context": "New regulations took effect altering the landscape for Public Service Loan Forgiveness, impacting how nonprofit and government workers qualify for discharges."
+    },
+    "STUDENT_LOAN_ICR_PAYE_2026": {
+      "value": "Forgiveness processing resumes for legacy plans",
+      "context": "The Education Department agreed to resume processing loan forgiveness for borrowers under the Income-Contingent Repayment (ICR) and Pay As You Earn (PAYE) plans."
+    },
+    "STUDENT_LOAN_IDR_TRANSITION_2026": {
+      "value": "Borrowers forced from SAVE to IBR",
+      "context": "Following the termination of the SAVE plan, borrowers were forced to transition to other Income-Driven Repayment plans like IBR to maintain forgiveness eligibility."
+    },
+    "STUDENT_LOAN_PLUS_EXCLUSION_2026": {
+      "value": "Parent PLUS excluded from IDR",
+      "context": "New student loans taken out after July 2026, alongside Parent PLUS loans, faced effective exclusion from any Income-Driven Repayment or PSLF forgiveness options."
+    },
+    "APPRENTICESHIP_DEGREES_2026": {
+      "value": "Work experience woven into core degrees",
+      "context": "Colleges increasingly required co-ops, paid internships, and employer-embedded projects as core degree components to justify high tuition and mounting debt."
+    },
+    "ORAL_EXAM_RESURGENCE_2026": {
+      "value": "Schools embrace oral demonstrations of learning",
+      "context": "To combat AI-generated homework and essays, schools began abandoning traditional writing assignments in favor of oral exams and authentic, in-person demonstrations of learning."
+    },
+    "DEPT_OF_EDUCATION_ABOLITION_2026": {
+      "value": "Proposal to relocate agency to Treasury",
+      "context": "President Trump proposed abolishing the Department of Education entirely, with plans to relocate its responsibilities to the Treasury Department or nongovernmental organizations."
+    },
+    "US_ED_NEW_INTERAGENCY_AGREEMENTS": {
+      "value": "2 major IAAs announced",
+      "context": "On February 22, the U.S. Department of Education announced two new interagency agreements to transfer additional federal education programs to other agencies as part of a broader effort to “return education to the states.”"
+    },
+    "PROGRAMS_SHIFTED_TO_HHS_AND_OTHERS": {
+      "value": "6 grant programs moved",
+      "context": "Education Week reported that Congress approved a FY 2026 budget with modest funding increases even as the department began moving several grant programs—including school‑safety and mental‑health grants—to the Department of Health and Human Services and other agencies."
+    },
+    "TRUMP_ADMIN_PLAN_TO_DISMANTLE_ED": {
+      "value": "Breakup strategy accelerated",
+      "context": "Politico detailed how the Trump administration is using interagency transfers and grant disruptions as part of a multi‑year strategy to effectively dismantle the Department of Education, despite bipartisan resistance in Congress."
+    },
+    "FULL_SERVICE_COMMUNITY_SCHOOLS_LAWSUITS": {
+      "value": "3 active lawsuits",
+      "context": "Recipients of Full‑Service Community Schools grants in several states have sued the Education Department after ongoing awards were abruptly halted in December, alleging unlawful disruption of multi‑year funding agreements."
+    },
+    "ACE_ACCREDITATION_REFORMS": {
+      "value": "Accreditation as “secret weapon”",
+      "context": "The American Council on Education highlighted new rulemaking sessions and handbook revisions as the Trump administration moves to use accreditation policy as a “secret weapon” to reshape higher education quality and governance."
+    },
+    "ACCREDITATION_OVERHAUL_SIGNALS": {
+      "value": "Administration targets 'sleepy' system",
+      "context": "Under Secretary Nicholas Kent reiterated plans to overhaul higher-ed accreditation, criticizing the current model for enabling low-performing legacy institutions and fueling high costs."
+    },
+    "GRADUATE_LOAN_LIMIT_PROPOSAL": {
+      "value": "New caps by July 1, 2026",
+      "context": "ACE reported that the Education Department released a proposed rule in early February to implement new federal loan limits for graduate and professional students under the “One Big Beautiful Bill,” targeting a July 1, 2026 effective date."
+    },
+    "IMMIGRATION_UNCERTAINTY_CAMPUS_BRIEF": {
+      "value": "Updated Feb 23 brief",
+      "context": "An updated ACE issue brief on February 23 provided guidance for colleges managing immigration policy volatility affecting international students, scholars, and staff under the current administration."
+    },
+    "CONGRESS_PRESERVES_ED_FUNDING": {
+      "value": "Avoided deep cuts",
+      "context": "HRA’s February federal policy newsletter noted that Congress largely rejected proposals for steep cuts to federal research and education funding, instead enacting H.R. 7148 with roughly flat or slightly increased NIH and related budgets."
+    },
+    "NATIONAL_SCIENCE_DAY_INDIA_2026": {
+      "value": "Theme: youth-led innovation",
+      "context": "India’s National Science Day on February 28 focused on youth‑led innovation and science‑driven growth, using C.V. Raman’s legacy to promote STEM education and research among students nationwide."
+    },
+    "ADOLESCENT_HEALTH_SCHOOL_CHECKUPS": {
+      "value": "Integrated screening model",
+      "context": "Research summarized in the February issue of Nature Medicine showed that integrating routine health checkups into school and health‑care systems can significantly improve adolescent health outcomes in low‑ and middle‑income countries."
+    },
+    "USED_COMPREHENSIVE_CENTERS_PROPOSAL": {
+      "value": "New TA priorities proposed",
+      "context": "The U.S. Education Department issued proposed priorities and requirements for the Comprehensive Centers program to refocus technical assistance on closing achievement gaps and improving instruction quality."
+    },
+    "MATH_STAT_MODELING_ED_ACT": {
+      "value": "S.1602 advances in Senate HELP",
+      "context": "The Senate HELP Committee advanced the Mathematical and Statistical Modeling Education Act to coordinate federal efforts that modernize math curricula around modeling and real-world applications."
+    },
+    "HOME_SCHOOL_GRADUATION_RECOGNITION": {
+      "value": "Homeschool grads recognized in law",
+      "context": "S.3747, the Home School Graduation Recognition Act, moved out of Senate HELP with bipartisan support to ensure homeschooled students are treated as high school graduates for federal purposes."
+    },
+    "TERRITORIAL_TUITION_ACCESS_ACT": {
+      "value": "In-state rates for territorial students",
+      "context": "The House passed H.R. 6472 to require federally funded public colleges to offer in-state tuition to eligible students from U.S. territories such as Guam and the Virgin Islands."
+    },
+    "TN_IMMIGRATION_STATUS_SCHOOL_BILL": {
+      "value": "Immigration checks in schools",
+      "context": "A Tennessee bill advanced that would require public schools to collect and report students' immigration status data, part of a broader challenge to Supreme Court precedent on enrolling undocumented children."
+    },
+    "K12_LEGAL_TRENDS_2026": {
+      "value": "Title VI and IX used against DEI",
+      "context": "K‑12 legal analysts warn that the Trump administration is increasingly using Title VI and Title IX investigations not to expand protections but to target district diversity, equity, and LGBTQ-inclusive policies."
+    },
+    "HIGHERED_GRANT_PRESSURE_PLAYBOOK": {
+      "value": "Civil-rights probes tied to funding",
+      "context": "In higher education, experts note a pattern where the administration launches civil-rights probes, freezes or cancels research grants, and then pressures universities to adopt policy changes to restore funding."
+    },
+    "HARVARD_RESEARCH_FUNDING_APPEAL": {
+      "value": "2.2B USD grant freeze litigation",
+      "context": "A key 2026 case involves the administration's appeal of a ruling that reinstated about 2.2 billion dollars of frozen research funding for Harvard, with potential implications for federal leverage over universities."
+    },
+    "GRAD_STUDENT_RULE_BACKLASH": {
+      "value": "Colleges oppose Ed Dept changes",
+      "context": "Hundreds of colleges and professors have urged the Education Department to reverse recent regulatory changes they argue will dangerously worsen financial conditions for graduate students."
+    },
+    "AI_TUTORING_INTEGRATION_METRIC": {
+      "value": "65% of US Districts",
+      "context": "By April 2026, roughly 65% of U.S. school districts had integrated AI-powered personalized tutoring modules into core math and literacy curricula."
+    },
+    "WORKFORCE_READINESS_MANDATES": {
+      "value": "April 2026",
+      "context": "A new wave of state-level policies emerged requiring career-connected learning and 'real-world competency' tracking for high school graduation."
+    },
+    "EDTECH_CONSOLIDATION_WAVE": {
+      "value": "April 2026",
+      "context": "The 'novelty era' of AI in schools ended as districts began decommissioning tools that failed to show measurable improvement in student outcomes."
+    },
+    "VIRTUAL_CAMPUS_ENROLLMENT": {
+      "value": "12% Growth",
+      "context": "Non-traditional hybrid and virtual-only enrollment for K-12 students grew by 12% in the spring semester, driven by the 'What is school doing for you?' movement."
+    }
+  },
+  "Health & Medicine": {
+    "AMA_PHYSICIAN_PAY_MIX_SHIFT": {
+      "value": "60.8% use blended compensation",
+      "context": "An AMA analysis found that by 2024 about 60.8 percent of U.S. physicians were paid through two or more compensation methods, up from 51.0 percent a decade earlier."
+    },
+    "DENGUE_OUTBREAK_2024": {
+      "value": "12+ million cases globally, record high",
+      "context": "2024 marked the highest dengue cases on record with over 12 million reported, including local transmission in US states like Florida, California, Texas, Puerto Rico; doubled from 2023."
+    },
+    "MEASLES_SURGE_2024": {
+      "value": "10.3 million global cases, 20% increase",
+      "context": "Global measles cases rose to ~10.3 million in 2023 leading into 2024 surge; 57 countries with large outbreaks, travel risks to US; Brazil re-verified elimination."
+    },
+    "OROPOUCHE_VIRUS_2024": {
+      "value": "11,634 confirmed cases, 2 deaths in Americas",
+      "context": "Oropouche virus expanded to 10 countries/territories in Americas by Nov 2024; imported to US, Canada, Europe; high regional risk."
+    },
+    "MPOX_CLADE_I_US_2024": {
+      "value": "First clade I case confirmed",
+      "context": "First US clade I mpox case in 2024 amid WHO PHEIC for African surges; more severe strain spreading via travel."
+    },
+    "AVIAN_FLU_SPREAD_2024": {
+      "value": "Human cases rising",
+      "context": "Avian flu spread highlighted in 2024 public health stories, with increased human cases noted."
+    },
+    "AMT_130_HUNTINGTONS_THERAPY_2024": {
+      "value": "FDA agrees to accelerated pathway",
+      "context": "The FDA agreed to an accelerated approval pathway for uniQure's AMT-130, a potentially transformative investigational gene therapy for Huntington's disease."
+    },
+    "CASGEVY_CRISPR_APPROVAL_2024": {
+      "value": "First FDA-approved CRISPR therapy",
+      "context": "The FDA approved Casgevy, the world's first CRISPR-Cas9 gene-editing therapy, as a functional cure for sickle cell disease and beta thalassemia."
+    },
+    "KISUNLA_ALZHEIMERS_APPROVAL_2024": {
+      "value": "Donanemab approved by FDA",
+      "context": "The FDA approved Eli Lilly's Kisunla (donanemab), an anti-amyloid monoclonal antibody shown to slow cognitive decline in early-stage Alzheimer's patients."
+    },
+    "RSV_VACCINE_ROLLOUT_2024": {
+      "value": "Broad maternal and senior uptake",
+      "context": "New RSV vaccines saw widespread global rollout for pregnant women and older adults, significantly reducing infant hospitalizations during the winter season."
+    },
+    "MALARIA_VACCINE_R21_2024": {
+      "value": "Mass rollout in Africa begins",
+      "context": "The R21/Matrix-M malaria vaccine began mass rollout across several African nations in 2024, offering a highly effective tool against the deadly mosquito-borne disease."
+    },
+    "PIG_KIDNEY_TRANSPLANT_2024": {
+      "value": "First successful living human recipient",
+      "context": "Surgeons successfully transplanted a genetically modified pig kidney into a living human patient, marking a massive milestone for xenotransplantation."
+    },
+    "WEIGHT_LOSS_DRUGS_HEART_BENEFITS_2024": {
+      "value": "Wegovy approved for cardiovascular risk",
+      "context": "The FDA officially approved the weight-loss drug Wegovy to reduce the risk of serious cardiovascular events in adults with obesity or overweight."
+    },
+    "SYPHILIS_SURGE_US_2024": {
+      "value": "Highest rates since 1950",
+      "context": "The CDC reported that US syphilis cases reached their highest level since 1950, prompting a severe national public health response and penicillin shortages."
+    },
+    "MICROPLASTICS_HUMAN_PLACENTA_2024": {
+      "value": "Found in 100% of tested samples",
+      "context": "A landmark 2024 study detected microplastics in 100% of tested human placentas, raising urgent global concerns regarding developmental health impacts."
+    },
+    "BIRD_FLU_DAIRY_COWS_US_2024": {
+      "value": "H5N1 infects cattle across states",
+      "context": "The H5N1 avian influenza virus unprecedentedly infected dairy cow herds across multiple US states, leading to confirmed, mild human infections in dairy workers."
+    },
+    "CHOLERA_OUTBREAK_GLOBAL_2024": {
+      "value": "Vaccine shortages exacerbate crisis",
+      "context": "Severe cholera outbreaks across Africa and the Middle East were heavily exacerbated by a persistent global shortage of oral cholera vaccines in 2024."
+    },
+    "PERTUSSIS_WHOOPING_COUGH_SURGE_2024": {
+      "value": "Cases triple in the US and UK",
+      "context": "Whooping cough (pertussis) cases surged dramatically globally, tripling in the US and UK compared to previous years due to lagging childhood vaccination rates."
+    },
+    "POLIO_OUTBREAK_GAZA_2024": {
+      "value": "First case in 25 years",
+      "context": "Amid the destruction of the Gaza war, the region recorded its first case of polio in 25 years, prompting an emergency mass vaccination campaign by the WHO."
+    },
+    "FDA_BANS_BVO_FOOD_ADDITIVE_2024": {
+      "value": "Brominated vegetable oil revoked",
+      "context": "The FDA officially revoked the regulation allowing the use of brominated vegetable oil (BVO) in food and beverages due to toxicity concerns."
+    },
+    "NON_INVASIVE_BRAIN_STIMULATION_2024": {
+      "value": "44% slower cognitive decline",
+      "context": "A Phase 2 clinical trial by Sinaptica Therapeutics showed personalized non-invasive brain stimulation slowed cognitive decline by 44% in mild-to-moderate Alzheimer's."
+    },
+    "FENTANYL_OVERDOSE_DECLINE_US_2024": {
+      "value": "First notable drop in a decade",
+      "context": "Provisional CDC data in late 2024 showed the first significant decline in US fatal drug overdoses in a decade, primarily driven by expanded naloxone access."
+    },
+    "MDMA_PTSD_THERAPY_REJECTION_2024": {
+      "value": "FDA panel votes against approval",
+      "context": "An FDA advisory committee overwhelmingly voted against approving MDMA-assisted therapy for PTSD, citing flawed study designs and safety concerns."
+    },
+    "FDA_MENTHOL_BAN_PROPOSAL_2024": {
+      "value": "Biden administration delays ban indefinitely",
+      "context": "The Biden administration indefinitely delayed the FDA's highly anticipated and controversial proposal to ban menthol cigarettes following heavy political lobbying."
+    },
+    "AI_DRUG_DISCOVERY_2025": {
+      "value": "First AI-designed drugs hit late-stage trials",
+      "context": "Multiple pharmaceutical companies advanced entirely AI-designed drug candidates into Phase III clinical trials, drastically reducing traditional R&D timelines."
+    },
+    "KYGEVVI_APPROVAL_2025": {
+      "value": "First treatment for TK2 deficiency",
+      "context": "The FDA approved Kygevvi as the first and only treatment addressing the root cause of Thymidine Kinase 2 (TK2) deficiency, an ultra-rare muscle disease."
+    },
+    "FIRST_PERSONALIZED_CRISPR_THERAPY_2025": {
+      "value": "Infant treated for rare metabolic disease",
+      "context": "In a historic milestone, scientists developed and administered the first-ever bespoke in vivo CRISPR therapy to an infant with CPS1 deficiency in just six months."
+    },
+    "FDA_ALZHEIMERS_BLOOD_TEST_2025": {
+      "value": "Lumipulse G pTau217/ß-Amyloid cleared",
+      "context": "The FDA cleared the first in vitro diagnostic blood test to aid in early Alzheimer’s disease diagnosis, significantly improving accessibility for patients."
+    },
+    "LEQEMBI_ALZHEIMERS_EFFICACY_2025": {
+      "value": "Broad adoption begins",
+      "context": "Following its full approval, Leqembi (lecanemab) became widely adopted in clinical settings to clear amyloid plaques and slow Alzheimer's progression."
+    },
+    "CAR_T_THERAPY_AUTOIMMUNE_2025": {
+      "value": "Lupus remission achieved in trials",
+      "context": "Breakthrough clinical trials in 2025 demonstrated that CAR-T cell therapies, traditionally used for blood cancers, drove severe lupus patients into deep remission."
+    },
+    "PSILOCYBIN_DEPRESSION_TRIALS_2025": {
+      "value": "Largest trial confirms rapid relief",
+      "context": "The largest-ever clinical trial on psychedelics confirmed that a single dose of synthetic psilocybin provided rapid and durable relief for treatment-resistant depression."
+    },
+    "SICKLE_CELL_GENE_THERAPY_COST_2025": {
+      "value": "$2.2 million to $3.1 million per patient",
+      "context": "As newly approved CRISPR treatments for sickle cell disease reached patients in 2025, the massive multi-million dollar price tags severely limited accessibility."
+    },
+    "GLOBAL_MEASLES_ERADICATION_SETBACK_2025": {
+      "value": "Multiple nations lose elimination status",
+      "context": "Due to pandemic-era vaccination gaps and growing vaccine hesitancy, several developed nations officially lost their measles elimination status in 2025."
+    },
+    "LYME_DISEASE_VACCINE_TRIALS_2025": {
+      "value": "Phase 3 trials show strong efficacy",
+      "context": "Pfizer and Valneva's Phase 3 clinical trials for a new Lyme disease vaccine demonstrated strong efficacy, paving the way for potential FDA approval."
+    },
+    "PFIZER_BIONTECH_COVID_VACCINE_2025": {
+      "value": "FDA approves LP.8.1 adapted shot",
+      "context": "The FDA approved Pfizer and BioNTech's updated 2025-2026 COVID-19 vaccine formulation specifically targeting the circulating LP.8.1 sublineage."
+    },
+    "GLOBAL_LIFE_EXPECTANCY_DECLINE_REVERSAL_2025": {
+      "value": "Post-pandemic recovery stabilizes",
+      "context": "Global life expectancy began to stabilize and recover in 2025 after suffering historic, consecutive declines caused directly by the COVID-19 pandemic."
+    },
+    "TRONTINEMAB_ALZHEIMERS_TRIALS_2025": {
+      "value": "Brainshuttle technology shows promise",
+      "context": "Clinical trials for the monoclonal antibody trontinemab utilized new 'Brainshuttle' technology to rapidly clear amyloid plaques with higher brain concentrations."
+    },
+    "GLOBAL_OUTBREAKS_2025": {
+      "value": "Yellow fever, Zika, mpox, others",
+      "context": "2025 snapshot: Yellow fever in Bolivia/Brazil etc. (235 cases, 96 deaths); Zika in India (151 cases); ongoing mpox, Guinea risks."
+    },
+    "FDA_CBER_GENE_THERAPY_PROJECTIONS_2025": {
+      "value": "10-20 novel approvals annually",
+      "context": "The FDA's Center for Biologics Evaluation and Research projected it would approve between 10 and 20 novel cell and gene therapies annually starting in 2025."
+    },
+    "WHO_CANCER_PREVENTION_ANALYSIS": {
+      "value": "Up to 40% preventable",
+      "context": "A WHO‑linked global analysis released February 3 estimated that up to four in ten cancer cases worldwide could be prevented through reductions in tobacco and alcohol use, improved diet and exercise, and expanded vaccination and screening."
+    },
+    "WHO_PREVENTABLE_CANCER_BURDEN": {
+      "value": "Millions of cases could be avoided",
+      "context": "A WHO-linked analysis estimated that millions of cancer cases worldwide are preventable through risk-factor reduction and early detection, underscoring the value of prevention-focused health policy."
+    },
+    "FGM_ONGOING_GLOBAL_RISK": {
+      "value": "FGM remains widespread threat",
+      "context": "UN and WHO messaging in early March warned that female genital mutilation continues to pose a major risk in many countries despite decades of advocacy."
+    },
+    "US_MEASLES_CASES_SURGE_OVER_1100": {
+      "value": "1,136 cases by Feb 26",
+      "context": "By late February, CDC data showed the U.S. had recorded 1,136 measles cases in 2026—nearly half of 2025’s full‑year total in just two months—prompting warnings that the country is on track to lose its measles‑elimination status."
+    },
+    "MEASLES_OUTBREAK_SOUTH_CAROLINA": {
+      "value": "979 cases since fall 2025",
+      "context": "State reports indicated that South Carolina alone had logged about 979 measles cases since fall 2025, with roughly 913 occurring in unvaccinated individuals, making it the epicenter of the U.S. resurgence."
+    },
+    "US_MEASLES_SOUTHCAROLINA_OUTBREAK": {
+      "value": "Fresh reminder of vaccine gaps",
+      "context": "A measles outbreak in South Carolina highlighted persistent pockets of low immunization and the need to strengthen routine vaccination systems."
+    },
+    "PAHO_MEASLES_ALERT_AMERICAS": {
+      "value": "1,031 regional cases (first 3 weeks)",
+      "context": "PAHO issued an epidemiological alert on February 26 after 1,031 measles cases were confirmed in seven countries in the Americas during the first three weeks of 2026, urging stronger vaccination and surveillance."
+    },
+    "GLOBAL_CHOLERA_2026_UPDATE": {
+      "value": "24,009 new cases; 275 deaths (since Jan 28)",
+      "context": "An ECDC weekly report counted 24,009 new cholera cases and 275 deaths worldwide between January 28 and February 25, with the DRC alone reporting over 9,300 cases and 219 deaths in that span."
+    },
+    "WHO_CONFLICT_MATERNAL_MORTALITY": {
+      "value": "160,000 deaths in 2023",
+      "context": "A February 16 WHO brief found that nearly two‑thirds of maternal deaths occur in conflict‑affected or fragile states, estimating 160,000 women died from preventable maternal causes in such settings in 2023 and that pregnancy there is about five times deadlier per birth."
+    },
+    "WHO_INFLUENZA_VACCINE_2026_27": {
+      "value": "New strain recommendations",
+      "context": "On February 26, WHO announced recommended influenza virus strains for the 2026–2027 Northern Hemisphere flu season, based on global surveillance of circulating variants."
+    },
+    "FDA_NOVEL_DRUG_APPROVALS_2026": {
+      "value": "5 novel drugs by Feb 27",
+      "context": "By February 27, the FDA had approved five novel drugs in 2026, including therapies for Menkes disease (Zycubo), atopic dermatitis (Adquey), schizophrenia and bipolar I disorder (Bysanti), arginase‑1 deficiency (Loargys) and growth in children with achondroplasia (Yuviwel)."
+    },
+    "FDA_ZONGERTINIB_ACCELERATED_APPROVAL": {
+      "value": "HER2‑mutant NSCLC",
+      "context": "On February 26, the FDA granted accelerated approval to zongertinib for adults with unresectable or metastatic non‑squamous non‑small‑cell lung cancer harboring HER2 tyrosine‑kinase‑domain activating mutations, expanding targeted options for this subset."
+    },
+    "UNMC_MEDICAL_RESEARCH_GRANTS": {
+      "value": "$3.8M+ new funding",
+      "context": "The University of Nebraska Medical Center announced more than $3.8 million in new grants across neurology, pediatrics, liver disease, infectious disease, cardiology and oncology, illustrating continued U.S. investment in translational health research."
+    },
+    "MEDPAC_MARCH2026_REPORT": {
+      "value": "Medicare payment adequacy review",
+      "context": "MedPAC's March 2026 report to Congress evaluated fee-for-service payment adequacy across hospitals, physicians, home health, skilled nursing, and Medicare Advantage and Part D trends."
+    },
+    "MACPAC_MARCH2026_HCBS_WAGES": {
+      "value": "Call for HCBS wage transparency",
+      "context": "MACPAC's March report recommended greater wage transparency for home and community-based services workers and examined behavioral health and coverage for justice-involved youth in Medicaid."
+    },
+    "CMS_ASPIRE_PEDIATRIC_MODEL": {
+      "value": "New pediatric care-coordination model",
+      "context": "CMS launched the ASPIRE model to help states improve care coordination and support services for children and families, providing new tools for pediatric-focused innovation."
+    },
+    "H1BS_FOR_HEALTH_WORKFORCE_ACT": {
+      "value": "Visa fee relief for clinicians",
+      "context": "The bipartisan H.R. 7961 H‑1Bs for Physicians and the Healthcare Workforce Act would exempt doctors and other health workers from a new 100,000 dollar filing fee on H‑1B petitions."
+    },
+    "HEALTH_CYBERSECURITY_RESILIENCY_ACT": {
+      "value": "Bills to bolster cyber defenses",
+      "context": "Senate HELP Committee bills such as the Health Care Cybersecurity and Resiliency Act seek to improve federal coordination and strengthen cybersecurity across the health and public-health sectors."
+    },
+    "LIVING_DONOR_PROTECTION_ACT": {
+      "value": "Expanded safeguards for donors",
+      "context": "Proposed Living Donor Protection Act provisions would bar certain discrimination against living organ donors and promote donation by clarifying insurance and employment protections."
+    },
+    "FDA_REAL_TIME_TRIAL_PUSH": {
+      "value": "April 27, 2026",
+      "context": "The FDA advanced a new framework to support 'real-time' clinical trials, utilizing remote patient monitoring and AI for adaptive regulatory decisions."
+    },
+    "MEDICARE_BREAKTHROUGH_PATHWAY": {
+      "value": "April 2026",
+      "context": "A new federal pathway was launched to shorten the timeline between FDA approval and Medicare coverage for 'breakthrough' medical devices."
+    },
+    "FTC_HEALTHCARE_TASK_FORCE": {
+      "value": "April 2026",
+      "context": "The FTC established a dedicated Healthcare Task Force to scrutinize private equity consolidation and deceptive practices in the medical sector."
+    },
+    "US_MEASLES_EMERGENCY": {
+      "value": "1,136 cases",
+      "context": "Health officials reported over 1,100 measles cases across the U.S. by April, the highest surge in decades, centered primarily in the Southeast."
+    },
+    "J_J_AI_DRUG_DISCOVERY_METRIC": {
+      "value": "30% faster",
+      "context": "Johnson & Johnson reported that its AI-driven drug discovery pipelines have reduced the time from target identification to Phase 1 by approximately 30%."
+    }
+  },
+  "Infrastructure & Urban Development": {
+    "BRIGHTLINE_WEST_CONSTRUCTION_2024": {
+      "value": "$12B high-speed rail breaks ground",
+      "context": "Construction officially began in April 2024 on the $12B Brightline West project linking Southern California and Las Vegas, supported by a $3B DOT grant."
+    },
+    "BIDEN_TRANSIT_FUNDING_2024": {
+      "value": "$4B for 14 large projects in 11 states",
+      "context": "March 2024: Biden-Harris admin recommended $4B federal support for transit projects including VIA San Antonio BRT ($109.7M, 8 miles dedicated lanes)."
+    },
+    "US_TRANSIT_OPENINGS_2024": {
+      "value": "Multiple including Chicago Northwest Indiana Double Track 41.5 km",
+      "context": "2024 saw openings like Chicago's Northwest Indiana Double Track commuter rail improvement (41.5 km) enabling better service; part of ongoing transit expansions."
+    },
+    "MINNEAPOLIS_PARKING_REFORM_RESULTS_2024": {
+      "value": "45% increase in multi-unit permits",
+      "context": "Data released showed that Minneapolis's elimination of parking minimums and zoning reforms directly led to a 45% increase in permits for 2-4 unit housing."
+    },
+    "SALT_LAKE_CITY_ZONING_REFORM_2024": {
+      "value": "Exemptions for missing middle housing",
+      "context": "Salt Lake City successfully implemented zoning reforms exempting townhomes and duplexes from minimum lot area and frontage requirements to boost affordability."
+    },
+    "TRUMP_HOUSING_SHIFTS_2025": {
+      "value": "Policy changes for affordability",
+      "context": "Jan 2025: Trump announced major housing policy shifts via executive order to improve affordability."
+    },
+    "US_TRANSIT_OPENINGS_2025": {
+      "value": "160+ miles new fixed-guideway lines",
+      "context": "Over 160 miles of rail, bus rapid transit opened nationwide in 2025, continuing steady investment."
+    },
+    "IIJA_FUNDING_PROGRESS_2025": {
+      "value": "Ongoing disbursements for roads, bridges, transit",
+      "context": "Infrastructure Investment and Jobs Act continued funding projects through 2025."
+    },
+    "SHELBY_BYPASS_NC_2025": {
+      "value": "Mid-section completed",
+      "context": "A crucial segment of the 18.5-mile, four-lane US-74 Shelby Bypass in North Carolina opened in mid-2025, with full completion targeted for 2029."
+    },
+    "SOUTH_CAROLINA_I95_REVAMP_2025": {
+      "value": "$825M widening project underway",
+      "context": "South Carolina launched an $825M initiative in 2025 to widen a 10-mile stretch of I-95 and replace the aging Savannah River bridges."
+    },
+    "SUNZIA_TRANSMISSION_LINE_2025": {
+      "value": "$11B renewable energy link advancing",
+      "context": "The largest clean energy infrastructure project in US history made significant headway in 2025, laying lines to transmit wind energy from New Mexico to Arizona."
+    },
+    "TEXAS_CENTRAL_HSR_2025": {
+      "value": "$41.6B Dallas-Houston project revitalized",
+      "context": "The long-stalled high-speed rail project linking Dallas and Houston gained renewed administrative and private sector momentum in 2025."
+    },
+    "SOUND_TRANSIT_3_SEATTLE_2025": {
+      "value": "$54B regional expansion ongoing",
+      "context": "Seattle's massive ST3 initiative continued heavy construction through 2025, building out light rail extensions to Federal Way and the Eastside."
+    },
+    "LA_METRO_28_BY_28_2025": {
+      "value": "Accelerated Olympic prep",
+      "context": "Los Angeles Metro aggressively accelerated its $42.9B infrastructure initiative in 2025 to complete 28 major transit projects before the 2028 Summer Olympics."
+    },
+    "LA_METRO_D_LINE_EXTENSION_2025": {
+      "value": "$9.5B subway tunneling progress",
+      "context": "Significant tunneling milestones were reached on the $9.5B extension of the LA Metro D Line connecting downtown to the Westside ahead of the Olympics."
+    },
+    "CALIFORNIA_MISSING_MIDDLE_ZONING_2025": {
+      "value": "SB 9 and SB 10 impacts expand",
+      "context": "California's statewide pre-emption laws allowing duplexes and small multifamily developments in single-family zones saw surging utilization in 2025."
+    },
+    "CALIFORNIA_AB_1529_2025": {
+      "value": "Redefines affordable rent thresholds",
+      "context": "In 2025, California passed AB 1529, adjusting how 'affordable rent' is calculated for tax credit programs, aiming to make low-income development more financially viable."
+    },
+    "CALIFORNIA_AB_507_2025": {
+      "value": "Streamlines low-income processing",
+      "context": "California enacted AB 507 to accelerate permitting and environmental exemptions for housing projects meeting specific extremely low-income unit thresholds."
+    },
+    "NEW_YORK_TRANSIT_DENSITY_ZONING_2025": {
+      "value": "State overrides local zoning",
+      "context": "New York advanced aggressive policies to pre-empt local exclusionary zoning, mandating higher-density affordable housing construction near regional transit stations."
+    },
+    "ROAD_TO_HOUSING_ACT_2025": {
+      "value": "Bipartisan federal legislation advances",
+      "context": "Congress actively advanced the ROAD to Housing Act in 2025, aiming to reduce local regulatory barriers and increase the national housing supply."
+    },
+    "GLOBAL_URBAN_CLIMATE_FUNDING_2025": {
+      "value": "$105B sought by cities",
+      "context": "A CDP analysis revealed that global cities sought a record $105 billion in 2025 to fund essential urban climate resilience and green infrastructure projects."
+    },
+    "SMART_CITY_MAAS_ADOPTION_2025": {
+      "value": "Mobility-as-a-Service scales globally",
+      "context": "Platforms unifying public transit, ride-share, and micromobility saw massive adoption, with Helsinki's Whim app notably shifting 38% of users off daily private car use."
+    },
+    "AI_URBAN_TRAFFIC_CONTROL_2025": {
+      "value": "25% cut in travel times",
+      "context": "AI-driven traffic grid systems like Pittsburgh's SURTRAC became a dominant smart city trend in 2025, cutting travel times by 25% and urban emissions by 20%."
+    },
+    "SMART_BUILDINGS_ENERGY_REDUCTION_2025": {
+      "value": "Sensors slash usage by 40%",
+      "context": "Integrating IoT sensors for HVAC and leak detection in smart buildings became standard for new commercial developments, cutting energy consumption by up to 40%."
+    },
+    "SINGAPORE_GREEN_PLAN_2025": {
+      "value": "Aggressive smart building retrofits",
+      "context": "Singapore rapidly accelerated its smart infrastructure retrofits in 2025 to meet its Green Plan target of certifying 80% of all buildings as green by 2030."
+    },
+    "AI_PUBLIC_SAFETY_INFRASTRUCTURE_2025": {
+      "value": "Crime reduced by 40% in pilots",
+      "context": "Cities globally integrated AI-powered video analytics and sensor-laden smart streetlights into their infrastructure, reducing crime and emergency response times by over 35%."
+    },
+    "URBAN_5G_6G_CONNECTIVITY_2025": {
+      "value": "17.9% annual growth in IoT links",
+      "context": "To support autonomous mobility and smart grids, municipalities massively expanded 5G infrastructure, driving a 17.9% annual growth in cellular IoT connections."
+    },
+    "GLOBAL_E_GOVERNANCE_EXPANSION_2025": {
+      "value": "Over 50 nations fully online",
+      "context": "Digital civic infrastructure reached a tipping point as over 50 nations moved their tax, business, and property registry services to fully online, AI-assisted platforms."
+    },
+    "INDIA_SMART_CITIES_MISSION_2025": {
+      "value": "90% of projects completed",
+      "context": "India's massive nationwide initiative to modernize urban infrastructure reached completion on over 90% of its planned smart city technology projects."
+    },
+    "HUDSON_TUNNEL_GATEWAY_PROJECT_2025": {
+      "value": "$1.18B Manhattan tunnel contract awarded",
+      "context": "The massive $16.1B rail infrastructure project awarded a $1.18B contract in 2025 to begin tunneling from the Hudson River bulkhead into Penn Station."
+    },
+    "JFK_NEW_TERMINAL_ONE_2025": {
+      "value": "$9.5B PPP megaproject topping out",
+      "context": "The largest public-private partnership in US airport history reached a milestone in 2025 with the topping out of the 2.6 million sq ft New Terminal One at JFK."
+    },
+    "GORDIE_HOWE_BRIDGE_DELAY_2025": {
+      "value": "Pushed to 2026 completion",
+      "context": "The $4.7B Gordie Howe International Bridge linking Detroit and Windsor reached 98% completion in late 2025 but faced scheduling setbacks pushing its opening to 2026."
+    },
+    "ASCE_INFRASTRUCTURE_REPORT_CARD_2025": {
+      "value": "US grade improves to a 'C'",
+      "context": "Money flowing from the 2021 IIJA helped raise the ASCE's 2025 Report Card for America's Infrastructure to a 'C', up from a 'C-' four years prior."
+    },
+    "CALTRANS_HIGHWAY_PROJECTS_2026": {
+      "value": "Draft 2024 SHOPP with climate adaptation",
+      "context": "Caltrans 2024 State Highway Operation plan added climate adaptation, bike/pedestrian elements to projects ongoing into 2026."
+    },
+    "US_TRANSIT_OPENINGS_2026": {
+      "value": "94 miles fixed-guideway, 13 projects",
+      "context": "2026: 94 miles new lines including Atlanta BRT 3.1 mi, Baton Rouge ART 9.3 mi, Kansas City streetcar 0.7 mi, OC CA streetcar 4 mi, Seattle light rail 7.5 mi."
+    },
+    "PLANNING_TRENDS_2026": {
+      "value": "5 key trends including AI integration, resilience",
+      "context": "Esri predicted 2026 trends: tech-driven planning, climate resilience, community engagement."
+    },
+    "CA_HIGH_SPEED_RAIL_2026": {
+      "value": "Construction advancing on Central Valley segments",
+      "context": "California High-Speed Rail project overview shows progress on key segments as of late 2025 into 2026."
+    },
+    "CALIFORNIA_HSR_WASCO_RAILHEAD_2026": {
+      "value": "Track installation milestone achieved",
+      "context": "Early 2026: Track installation completed at the 150-acre Southern Railhead Facility near Wasco, serving as a logistics hub for California's High-Speed Rail."
+    },
+    "JFK_TERMINAL_6_UPGRADE_2026": {
+      "value": "$4.2B facility scheduled to open",
+      "context": "Part of JFK's massive overhaul, the $4.2 billion Terminal 6 is slated to open in 2026 featuring 12 new international gates."
+    },
+    "ASHEVILLE_REGIONAL_AIRPORT_2026": {
+      "value": "$400M terminal expansion opens",
+      "context": "A sweeping $400M state-bonded expansion of the Asheville Regional Airport completes in 2026, increasing gates from 7 to 12 and adding a modern control tower."
+    },
+    "MUSIC_CITY_BORING_TUNNEL_2026": {
+      "value": "Underground transit breaks ground",
+      "context": "Elon Musk's Boring Company is expected to begin construction in 2026 on a privately funded 10-mile underground transit tunnel connecting downtown Nashville to its airport."
+    },
+    "CALIFORNIA_MEGAPROJECTS_2026": {
+      "value": "119‑mile HSR spine advancing",
+      "context": "A January‑21 overview of California’s 2026 megaprojects noted ongoing construction of the 119‑mile Central Valley high-speed rail segment toward interim service, BART Silicon Valley Phase II tunneling into downtown San José and Santa Clara, and planning for the “California Forever” new-city proposal in Solano County."
+    },
+    "BART_SILICON_VALLEY_PHASE_II": {
+      "value": "6‑mile extension; 4 stations",
+      "context": "BART Silicon Valley Phase II, featuring a single-bore tunnel and four new stations into San José and Santa Clara, entered 2026 with early works and tunnel-launch structures underway after fresh state funding commitments."
+    },
+    "NY_INFRASTRUCTURE_AND_HOUSING_PROPOSAL": {
+      "value": "$68B MTA capital plan backed",
+      "context": "Governor Hochul’s 2026 State of the State infrastructure agenda included advancing the Second Avenue Subway crosstown extension along 125th Street, backing a $68 billion MTA capital plan, and investing in water, parks and local infrastructure to ease commutes and expand housing supply."
+    },
+    "HOUSING_POLICY_INFLECTION_POINT_ROAD_ACT": {
+      "value": "ROAD to Housing Act advances",
+      "context": "A January 26 analysis described a major federal pro‑housing shift via the bipartisan ROAD to Housing Act, which would promote model zoning codes reducing parking minimums, legalizing ADUs and “missing middle” housing, and easing financing for modular and manufactured homes."
+    },
+    "CALIFORNIA_YIMBY_2026_LEGISLATIVE_PACKAGE": {
+      "value": "At least 7 pro‑housing bills",
+      "context": "California YIMBY’s February 26 “Homework” newsletter outlined its 2026 bill package, including measures to streamline starter‑home construction, create a single statewide housing application, expand ADUs on single-family lots, and reward jurisdictions that meet housing targets."
+    },
+    "US_HOUSING_21ST_CENTURY_ACT": {
+      "value": "H.R. 6644 passed House 390–9",
+      "context": "The Mortgage Bankers Association reported that the U.S. House overwhelmingly passed H.R. 6644, the Housing for the 21st Century Act, a bipartisan package to address housing supply and affordability, modernize HUD programs and support multifamily construction and rehab."
+    },
+    "BUILD_CANADA_HOMES_ACT_AND_BC_PARTNERSHIP": {
+      "value": "1,100 homes committed",
+      "context": "Canada introduced the Build Canada Homes Act to create a Crown corporation dedicated to affordable housing and, on February 18, announced a partnership with British Columbia to start at least 700 supportive/transitional homes plus 400 standardized affordable rentals within 12 months."
+    },
+    "LAVAL_AFFORDABLE_HOUSING_PROJECT": {
+      "value": "31 social units",
+      "context": "The governments of Canada and Québec announced construction of 31 new social and affordable housing units in Laval, Quebec, with work beginning in February as part of a broader push to expand non‑market housing."
+    },
+    "MMRDA_MUMBAI_3_0_BUDGET": {
+      "value": "₹4,000 crore allocation",
+      "context": "Mumbai’s regional development authority approved a ₹4,000 crore budget for its “Mumbai 3.0” vision, including more than ₹5,500 crore for east–west connectivity tunnels and other projects to ease congestion and support new growth corridors."
+    },
+    "WHITBY_CORRIDOR_UPGRADE_PROJECT": {
+      "value": "3‑year road and utilities build",
+      "context": "The Town of Whitby, Ontario, issued February updates on a three‑year reconstruction of Columbus Road, involving new water crossings, water and sewer lines, and utility relocations to support future development while maintaining north–south road access."
+    },
+    "TAKOMA_DC_TOD_REDEVELOPMENT": {
+      "value": "200M USD mixed-use at Takoma Metro",
+      "context": "Washington, D.C. officials advanced a 200 million dollar plan to turn underused land around the Takoma Metro station into a mixed-use, transit-oriented community with 430–440 housing units and new retail and open space."
+    },
+    "RALEIGH_CARY_TRANSIT_CORRIDOR": {
+      "value": "388M USD high-capacity corridor",
+      "context": "North Carolina is nearing final design for a roughly 388 million dollar project to connect Raleigh and Cary with higher-capacity transit while catalyzing mixed-use, walkable districts along the corridor."
+    },
+    "LITTLEROCK_TRANSIT_CENTER_REDEVELOPMENT": {
+      "value": "Transit hub mixed-use district",
+      "context": "Plans in Little Rock call for modernizing the main transit center and surrounding it with multifamily housing, retail, community space, and health facilities to create a walkable mixed-use hub."
+    },
+    "CHICAGO_CONNECTED_COMMUNITIES_ETOD": {
+      "value": "Affordable housing near transit",
+      "context": "Chicago's Connected Communities Ordinance and related programs aim to address a shortfall of over 226,000 housing units by prioritizing affordable housing development in transit-rich neighborhoods."
+    },
+    "NJ_2025_DEV_REDEVELOPMENT_PLAN": {
+      "value": "Transit-friendly state growth plan",
+      "context": "New Jersey's 2025 State Development and Redevelopment Plan promotes concentrating housing and jobs in compact, transit-served centers while curbing sprawl and protecting open space."
+    },
+    "SALTLAKE_STUDENT_HOUSING_TOD": {
+      "value": "Chapter Salt Lake City project",
+      "context": "Developers broke ground on Chapter Salt Lake City, a 251‑unit, 693‑bed student housing complex adjacent to a TRAX light-rail station, giving students a one-stop rail ride to campus."
+    },
+    "BUILD_HUBS_ACT_TOD_FINANCE": {
+      "value": "Federal TOD financing bill",
+      "context": "The bipartisan Build HUBS Act was introduced in Congress to make key federal loan programs more usable for transit-oriented development and to prioritize attainable housing near transit."
+    },
+    "NORTHAMERICA_150_MILES_TRANSIT2026": {
+      "value": "150 miles of new guideway lines",
+      "context": "Roughly 150 miles of new fixed-guideway transit lines are projected to open across the U.S., Canada, and Mexico in 2026, down from more than 240 miles in 2016."
+    },
+    "SHIFT_TOWARD_BRT_OVER_LRT": {
+      "value": "Cities favor bus rapid transit",
+      "context": "Analysts note that U.S. cities are favoring less expensive bus rapid transit and arterial rapid bus projects over traditional light rail while still expanding high-capacity transit networks."
+    },
+    "ATLANTA_BATONROUGE_KC_TOD_PROJECTS": {
+      "value": "Key 2026 U.S. transit openings",
+      "context": "Among 2026 projects are a 3.1‑mile BRT line in Atlanta, a 9.3‑mile rapid bus corridor in Baton Rouge, and a 0.7‑mile Kansas City streetcar extension that supports surrounding mixed-use redevelopment."
+    },
+    "ARTBA_TRANSPORTATION_FORECAST_2026": {
+      "value": "Record $209.1B market",
+      "context": "The American Road & Transportation Builders Association projected the US transportation construction market to grow 3% to a record $209.1 billion in 2026."
+    },
+    "OECD_INFRADAYS_2026": {
+      "value": "April 29, 2026",
+      "context": "International leaders met to discuss streamlining infrastructure permitting, noting that delays currently increase project costs by an average of 40%."
+    },
+    "HOUSING_21ST_CENTURY_ACT_PASSAGE": {
+      "value": "April 2026",
+      "context": "The U.S. House passed H.R. 6644, targeting a modernization of HUD programs and incentivizing high-density multifamily housing in urban cores."
+    },
+    "CANADA_BUILD_HOMES_INITIATIVE": {
+      "value": "April 2026",
+      "context": "Canada announced the formation of a federal Crown corporation dedicated to the mass production of affordable and transitional housing units."
+    },
+    "CASA_AUTOMATION_SERIES_A": {
+      "value": "$20 million",
+      "context": "Prop-tech firm Casa secured $20M to scale its 'predictive maintenance' platform which uses LiDAR and AI to manage large-scale rental portfolios."
+    }
+  },
+  "Law & Policy": {
+    "SCOTUS_BIRTHRIGHT_CITIZENSHIP_2024": {
+      "value": "Limited universal injunctions, 30-day delay on EO",
+      "context": "Supreme Court in 2024 term ruled executive order ending birthright citizenship delayed 30 days post-opinion; limited nationwide injunctions to plaintiffs only."
+    },
+    "SCOTUS_AGE_VERIFICATION_2024": {
+      "value": "Upheld Texas law for porn sites",
+      "context": "Free Speech Coalition v. Paxton: Court upheld state age-verification laws for explicit content as intermediate scrutiny met."
+    },
+    "SCOTUS_BUMP_STOCKS_2024": {
+      "value": "ATF exceeded authority",
+      "context": "Rahimi v. US upheld domestic violence gun bans 8-1; bump stocks classified as machine guns ruled invalid by ATF overreach."
+    },
+    "SCOTUS_GENDER_CARE_2024": {
+      "value": "Addressed youth access restrictions",
+      "context": "2024-2025 term included restrictions on youth gender-affirming care among state authority cases."
+    },
+    "SCOTUS_EXCESSIVE_FORCE_2025": {
+      "value": "Rejected 'moment-of-threat' rule",
+      "context": "Barnes v. Felix: Broader Fourth Amendment evaluation beyond exact threat moment for police shootings."
+    },
+    "SCOTUS_TITLEVII_MAJORITY_2025": {
+      "value": "No heightened burden for majority groups",
+      "context": "Ames v. Ohio: Rejected 'background circumstances' rule for Title VII discrimination claims by majority groups."
+    },
+    "SCOTUS_ADMINISTRATIVE_LAW_2025": {
+      "value": "Chevron deference revisited",
+      "context": "Building on Loper Bright, the Court further clarified agency deference standards in multiple administrative law decisions."
+    },
+    "SCOTUS_FIRST_AMENDMENT_SCHOOLS_2025": {
+      "value": "Religious charter schools upheld",
+      "context": "Supreme Court ruled states cannot exclude religious institutions from public charter school programs."
+    },
+    "SCOTUS_ENVIRONMENTAL_STATE_AUTHORITY_2025": {
+      "value": "Limits on federal overreach",
+      "context": "Court affirmed broad state authority to regulate environmental impacts within their jurisdictions."
+    },
+    "SCOTUS_ONLINE_PORN_VERIFICATION_2025": {
+      "value": "State laws upheld nationwide",
+      "context": "Following Free Speech Coalition, additional age-verification mandates for adult content survived constitutional challenges."
+    },
+    "SCOTUS_FIFTH_CIRCUIT_DOMINANCE_2025": {
+      "value": "13 cases originated from Fifth Circuit",
+      "context": "The US Court of Appeals for the Fifth Circuit supplied 13 cases to the 2024-2025 Supreme Court term, the highest from any circuit."
+    },
+    "UNIVERSAL_INJUNCTIONS_RESTRICTED_2025": {
+      "value": "Trump v. CASA limits scope",
+      "context": "Supreme Court held universal injunctions exceed federal courts' equitable authority, limiting relief to plaintiffs with standing."
+    },
+    "TH_CONGRESS_BEGINS_2025": {
+      "value": "Republican trifecta control",
+      "context": "The 119th Congress convened on January 3, 2025, with Republicans holding majorities in both chambers and the presidency."
+    },
+    "TRUMP_EXECUTIVE_ORDER_WAVE_2025": {
+      "value": "Over 100 orders issued in first 100 days",
+      "context": "President Trump issued more than 100 executive orders in his first 100 days, targeting immigration, energy, and federal regulations."
+    },
+    "BORDER_SECURITY_ACT_2025": {
+      "value": "Comprehensive reform passes Senate",
+      "context": "Bipartisan legislation allocating $118 billion for border wall construction, asylum reforms, and deportation capacity passed the Senate in early 2025."
+    },
+    "ENERGY_DOMINANCE_ACT_2025": {
+      "value": "Repeals green energy subsidies",
+      "context": "Congressional legislation eliminated Biden-era renewable subsidies and expedited fossil fuel permitting nationwide."
+    },
+    "DEI_BAN_FEDERAL_CONTRACTORS_2025": {
+      "value": "Executive order ends mandatory programs",
+      "context": "Trump's order prohibited federal contractors from implementing Diversity, Equity, and Inclusion training or quotas."
+    },
+    "AI_REGULATION_ACT_2025": {
+      "value": "Bipartisan framework passes House",
+      "context": "Legislation establishing safety standards and federal oversight for high-risk AI systems advanced through Congress."
+    },
+    "PRIVACY_RIGHTS_ACT_2025": {
+      "value": "Comprehensive data protection law",
+      "context": "The first nationwide data privacy law passed, granting consumers rights to delete personal information and opt out of targeted advertising."
+    },
+    "TITLE_IX_ROLLBACK_2025": {
+      "value": "Biden-era rules rescinded",
+      "context": "Department of Education rescinded expansive Title IX regulations, restoring traditional interpretations of sex discrimination."
+    },
+    "IMMIGRATION_ENFORCEMENT_ACT_2025": {
+      "value": "$20B for deportations funded",
+      "context": "Bipartisan legislation provided $20 billion to ICE for expanded detention and deportation operations."
+    },
+    "FEDERAL_BALLOT_HARVESTING_BAN_2025": {
+      "value": "Prohibited in federal elections",
+      "context": "Congress banned third-party ballot collection in federal elections amid widespread fraud concerns."
+    },
+    "SCOTUS_GEOFENCE_WARRANTS_2026": {
+      "value": "Agreed to hear Fourth Amendment case",
+      "context": "Jan 2026: Added geofence warrant case on Google data constitutionality to docket."
+    },
+    "VOTING_INTEGRITY_ACT_2026": {
+      "value": "Nationwide voter ID mandate",
+      "context": "Federal legislation requiring photo ID for all federal elections took effect in January 2026."
+    },
+    "EU_ETS_AVIATION_FULL_COST_EXPOSURE": {
+      "value": "No free allowances for airlines",
+      "context": "A January 16 policy brief described how, by 2026, the EU Emissions Trading System has eliminated free allowances for intra‑EEA flights, making carbon a fully priced operating cost that airlines must manage alongside fuel and airport fees."
+    },
+    "SCOTUS_TARIFFS_RULING_2026": {
+      "value": "6-3 struck down IEEPA tariffs as unconstitutional",
+      "context": "Feb 2026: Supreme Court ruled Trump tariffs under emergency powers invalid; Congress holds taxing power; Roberts majority with liberals and Gorsuch/Barrett."
+    },
+    "SELF_DRIVE_ACT_2026_INTRODUCED": {
+      "value": "H.R. 7390",
+      "context": "On February 5, lawmakers formally introduced the SELF DRIVE Act of 2026 (H.R. 7390), a federal framework to regulate vehicles with automated‑driving systems by strengthening NHTSA’s authority while promoting U.S. leadership in autonomous‑vehicle technology."
+    },
+    "SAVE_AMERICA_ACT_UPDATE": {
+      "value": "Key provisions revised Feb 19",
+      "context": "The National Conference of State Legislatures updated its overview of the proposed SAVE America Act on February 19, explaining changes to the House‑passed bill that failed in the Senate but remains a reference point for election‑law debates."
+    },
+    "SCOTUS_IEEPA_TARIFFS_STRUCK_DOWN": {
+      "value": "Learning Resources v. Trump",
+      "context": "On February 20, the U.S. Supreme Court ruled 6–3 in Learning Resources, Inc. v. Trump that the International Emergency Economic Powers Act does not authorize the president to impose broad peacetime tariffs, curbing unilateral trade power and invoking the major‑questions doctrine."
+    },
+    "SCOTUS_IEEPA_ECONOMIC_IMPACT": {
+      "value": "Hundreds of billions in tariffs at issue",
+      "context": "Law‑firm analyses noted that the decision potentially affects hundreds of billions of dollars in previously collected tariffs and forces the administration to rely on other statutes—such as Sections 122 and 301—for new trade measures."
+    },
+    "FEDERAL_CIRCUIT_TARIFF_REFUNDS": {
+      "value": "Tariff refund process moves ahead",
+      "context": "The U.S. Court of Appeals for the Federal Circuit refused a Trump administration request to delay implementing the tariff ruling, clearing the way for lower courts to begin processing refunds."
+    },
+    "SCOTUS_CLIMATE_CASE_2026": {
+      "value": "Added Colorado dispute",
+      "context": "Feb 2026: Supreme Court agreed to hear Colorado climate change-related dispute."
+    },
+    "CLIMATE_ACCOUNTABILITY_CASE_DOCKETED": {
+      "value": "SCOTUS agrees to hear oil‑firm appeal",
+      "context": "In February, the Supreme Court agreed to consider whether fossil‑fuel companies can move state and local climate‑damage lawsuits into federal court, a procedural question with significant implications for climate‑tort strategies nationwide."
+    },
+    "SCOTUS_BIRTHRIGHT_CITIZENSHIP_2026": {
+      "value": "Oral arguments set for April 1",
+      "context": "Supreme Court scheduled arguments on April 1, 2026, to review Trump's executive order limiting birthright citizenship under the 14th Amendment."
+    },
+    "SCOTUS_MAIL_IN_BALLOTS_2026": {
+      "value": "Mississippi grace period challenged",
+      "context": "March 23, 2026 arguments on Mississippi's five-day grace period for mail-in ballots received after Election Day."
+    },
+    "SCOTUS_CRISIS_PREGNANCY_CENTERS_2026": {
+      "value": "Likely revives federal lawsuit",
+      "context": "Court appeared inclined to support Christian anti-abortion centers challenging New Jersey AG's subpoena as unconstitutional overreach."
+    },
+    "SCOTUS_ALIEN_ENEMIES_ACT_2026": {
+      "value": "Emergency docket intervention",
+      "context": "Supreme Court addressed Trump's use of the Alien Enemies Act to deport migrants, preserving status quo during litigation."
+    },
+    "SCOTUS_AARP_V_TRUMP_2026": {
+      "value": "Stay on Venezuelan deportations",
+      "context": "Court stayed removal of proposed class of Venezuelan men in immigration custody under executive action."
+    },
+    "SCOTUS_AIDS_FUNDING_2026": {
+      "value": "Emergency docket freezes payments",
+      "context": "Supreme Court intervened to freeze USAID contractor payments as part of broader executive authority challenges."
+    },
+    "SCOTUS_TRANSGENDER_ATHLETES_2026": {
+      "value": "State bans reviewed",
+      "context": "Supreme Court heard challenges to state laws restricting transgender athletes' participation in women's sports."
+    },
+    "SCOTUS_CONVERSION_THERAPY_2026": {
+      "value": "LGBT rights case added to docket",
+      "context": "Court agreed to review state bans on so-called 'conversion therapy' for LGBTQ+ individuals."
+    },
+    "SCOTUS_CAMPAIGN_FINANCE_2026": {
+      "value": "New limits challenged",
+      "context": "Supreme Court reviewed federal campaign finance regulations during the 2025-2026 term."
+    },
+    "SCOTUS_VOTING_RIGHTS_2026": {
+      "value": "Mail-in and ID laws reviewed",
+      "context": "Cases involving voting access, mail-in ballots, and voter ID requirements reached the Supreme Court docket."
+    },
+    "SCOTUS_RELIGIOUS_RIGHTS_2026": {
+      "value": "Public education faith expression",
+      "context": "Supreme Court addressed religious expression and faith in public education settings."
+    },
+    "SCOTUS_CAPITAL_PUNISHMENT_2026": {
+      "value": "Execution methods challenged",
+      "context": "Multiple cases involving lethal injection and alternative execution methods were decided."
+    },
+    "SCOTUS_PRESIDENTIAL_POWERS_2026": {
+      "value": "Immigration and agency authority",
+      "context": "Series of cases tested the scope of executive authority over immigration and administrative agencies."
+    },
+    "FEDERAL_JUDICIARY_EXPANSION_2026": {
+      "value": "New appellate judgeships created",
+      "context": "Congress authorized 10 new federal appellate judgeships to address backlog amid rising caseloads."
+    },
+    "SECOND_AMENDMENT_RESTORATION_2026": {
+      "value": "ATF pistol brace rule struck down",
+      "context": "Congress passed legislation nullifying the ATF's controversial pistol brace regulation following legal challenges."
+    },
+    "SCOTUS_RACE_DISCRIMINATION_2026": {
+      "value": "Affirmative action cases revisited",
+      "context": "Supreme Court reviewed state-level race-conscious admissions programs post-Students for Fair Admissions."
+    },
+    "SCOTUS_GUNS_2026": {
+      "value": "Assault weapon ban challenges",
+      "context": "Court heard multiple Second Amendment challenges to state assault weapon prohibitions."
+    },
+    "UK_PUBLIC_HEALTH_OUTCOMES_FRAMEWORK_UPDATE": {
+      "value": "New Feb 2026 data release",
+      "context": "The UK government published a February 2026 update to its Public Health Outcomes Framework, refreshing indicators used by local authorities to track health disparities, prevention and environmental determinants."
+    },
+    "CORSIA_EXPANDED_CARBON_STANDARDS": {
+      "value": "4 new standards approved",
+      "context": "Recent ICAO decisions, highlighted in policy analysis, expanded the list of carbon‑credit standards eligible under CORSIA’s 2024–2026 phase to include Gold Standard, Verra, Climate Action Reserve and Global Carbon Council, broadening options for airlines to meet offset obligations."
+    },
+    "SEC_FORM_PF_AMENDMENTS": {
+      "value": "April 20, 2026",
+      "context": "The SEC and CFTC proposed raising the private fund filing threshold from $150M to $1B, reducing the reporting burden for 30% of registered advisers."
+    },
+    "HEDGE_FUND_REPORTING_THRESHOLD": {
+      "value": "$10 Billion",
+      "context": "Proposed amendments would raise the large hedge fund adviser filing threshold to $10B, targeting the largest systemic risks while exempting mid-tier firms."
+    },
+    "GSA_AI_PROCUREMENT_CLAUSE": {
+      "value": "April 2026",
+      "context": "The General Services Administration released a draft clause requiring federal contractors to use 'American AI Systems' and grant the gov irrevocable data licenses."
+    },
+    "US_DATA_PRIVACY_FRAMEWORK_BILLS": {
+      "value": "April 2026",
+      "context": "House Republicans introduced two landmark bills aimed at establishing a single national standard for data privacy, preempting disparate state laws."
+    },
+    "EU_AI_ACT_MANDATORY_ENFORCEMENT": {
+      "value": "Tiered Risk Classifications Live",
+      "context": "In 2026, the European Union AI Act progressed into active regulatory compliance phases, setting strict risk classification rules for foundational LLM deployments."
+    },
+    "SURVEILLANCE_PRICING_SURVEY": {
+      "value": "68% Support Ban",
+      "context": "A survey released by GBAO Strategies on May 26, 2026, showed that 68% of Americans worry about surveillance pricing, indicating strong public support for banning the practice."
     }
   }
 };
