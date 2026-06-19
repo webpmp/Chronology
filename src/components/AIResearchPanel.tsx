@@ -968,15 +968,17 @@ This is usually caused by one of these reasons:
       });
 
       // Target the newly rendered/highlighted DOM node inside the left column and scroll smoothly
-      setTimeout(() => {
-        const newEntryElement = document.getElementById(`entry-${formattedVar}`);
-        if (newEntryElement) {
-          newEntryElement.scrollIntoView({ 
-            behavior: "smooth", 
-            block: "center" 
-          });
-        }
-      }, 80);
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          const newEntryElement = document.getElementById(`entry-${formattedVar}`);
+          if (newEntryElement) {
+            newEntryElement.scrollIntoView({ 
+              behavior: "smooth", 
+              block: "center" 
+            });
+          }
+        }, 50);
+      });
     }
   };
 
