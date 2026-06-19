@@ -7,20 +7,32 @@
   --font-serif: "Playfair Display", Georgia, serif;
 }
 
-/* Custom scrollbars matching the bookish cream-paper & charcoal-ink theme */
+/* Container scrollbar styling for a unified dark theme interface */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;  /* Force a modern, slim scrollbar layout */
+  height: 8px; /* For horizontal inner scroll containers if applicable */
 }
+
+/* Make the scrollbar track blend into the background workspace layer */
 ::-webkit-scrollbar-track {
-  background: #F4F1E6; /* deep cream paper shade */
+  background: #111111; /* Match this to your exact container background hex */
 }
+
+/* Make the thumb strip a shade darker or subtly contrasted against the track */
 ::-webkit-scrollbar-thumb {
-  background: rgba(26, 26, 26, 0.25); /* ink color with soft opacity */
-  border-radius: 3px;
+  background: #1c1c1e; /* A precise, subtle accent tone slightly darker/distinct from back */
+  border-radius: 4px;   /* Smooth curved design profile */
 }
+
+/* Slight contrast glow when active or hovered */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(26, 26, 26, 0.45);
+  background: #252529; 
+}
+
+/* Firefox alternative standard layout engine support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1c1c1e #111111;
 }
 
 .editorial-card {
