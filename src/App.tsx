@@ -367,276 +367,281 @@ export default function App() {
       {/* Main Workspace Split Row */}
       <div className="flex-1 flex flex-row overflow-hidden w-full max-w-7xl mx-auto bg-[#FDFCF8]">
         
-        {/* Left Data Column: Scrollable Curated Memory Visualizer */}
-        <main className="left-data-column flex-1 min-w-0 h-full overflow-y-auto p-6 space-y-6 flex flex-col">
+        {/* Left Column Wrapper: rigid, non-scrolling vertical stack */}
+        <div className="flex flex-col h-full flex-grow flex-1 min-w-0">
           
-          {/* Controls: Search bar with custom styling */}
-          <div className="border border-[#1A1A1A]/15 bg-[#FDFCF8] p-4 flex flex-col sm:flex-row gap-4 items-center justify-between">
-            <form onSubmit={(e) => e.preventDefault()} className="relative w-full sm:w-80">
-              <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <Search className="w-4 h-4 text-[#1A1A1A]/60" />
-              </span>
-              <input
-                type="text"
-                placeholder="Filter by title, summary, or details..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-white border border-[#1A1A1A]/20 rounded-none pl-9 pr-12 py-1.5 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#C2410C] placeholder-[#1A1A1A]/35 font-sans"
-              />
-              {searchTerm && (
-                <button
-                  type="button"
-                  onClick={() => setSearchTerm("")}
-                  className="absolute inset-y-0 right-0 flex items-center pr-3 text-xs text-[#C2410C] hover:opacity-80"
-                >
-                  Clear
-                </button>
-              )}
-            </form>
+          {/* Controls: Search bar with custom styling (Filter Container) */}
+          <div className="flex-shrink-0 p-6 bg-[#FDFCF8] border-b border-[#1A1A1A]/10">
+            <div className="border border-[#1A1A1A]/15 bg-[#FDFCF8] p-4 flex flex-col sm:flex-row gap-4 items-center justify-between">
+              <form onSubmit={(e) => e.preventDefault()} className="relative w-full sm:w-80">
+                <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <Search className="w-4 h-4 text-[#1A1A1A]/60" />
+                </span>
+                <input
+                  type="text"
+                  placeholder="Filter by title, summary, or details..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full bg-white border border-[#1A1A1A]/20 rounded-none pl-9 pr-12 py-1.5 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#C2410C] placeholder-[#1A1A1A]/35 font-sans"
+                />
+                {searchTerm && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchTerm("")}
+                    className="absolute inset-y-0 right-0 flex items-center pr-3 text-xs text-[#C2410C] hover:opacity-80"
+                  >
+                    Clear
+                  </button>
+                )}
+              </form>
 
-            <div className="text-[11px] font-mono text-[#1A1A1A]/70 flex items-center gap-3">
-              <span className="flex items-center gap-1">
-                Categories: <strong className="text-[#1A1A1A]">{CATEGORIES.length}</strong>
-              </span>
-              <span className="text-[#1A1A1A]/30">|</span>
-              <span className="flex items-center gap-1">
-                Facts: <strong className="text-[#C2410C]">{existingVariables.length}</strong>
-              </span>
+              <div className="text-[11px] font-mono text-[#1A1A1A]/70 flex items-center gap-3">
+                <span className="flex items-center gap-1">
+                  Categories: <strong className="text-[#1A1A1A]">{CATEGORIES.length}</strong>
+                </span>
+                <span className="text-[#1A1A1A]/30">|</span>
+                <span className="flex items-center gap-1">
+                  Facts: <strong className="text-[#C2410C]">{existingVariables.length}</strong>
+                </span>
+              </div>
             </div>
           </div>
 
-          {/* Categories Accordions & Card Nodes */}
-          <div className="flex-grow space-y-4">
-            {loading ? (
-              <div className="h-60 border border-[#1A1A1A]/15 bg-[#F4F1E6]/40 rounded-sm flex flex-col items-center justify-center space-y-3 text-center">
-                <RefreshCw className="w-6 h-6 text-[#1A1A1A] animate-spin" />
-                <span className="text-xs font-mono uppercase tracking-widest text-[#1A1A1A]/60">SYNCHRONIZING REPOSITORY GRAPH...</span>
-              </div>
-            ) : (
-              CATEGORIES.map((category) => {
-                const categoryFacts = sessionData[category] || {};
-                const variables = Object.keys(categoryFacts).reverse();
-                
-                // Filtering variables and values matching search string
-                const filteredVars = variables.filter((v) => {
-                  if (!searchTerm) return true;
-                  const item = categoryFacts[v];
-                  const term = searchTerm.toLowerCase();
+          {/* Categories & Entries Container: scrollable area */}
+          <main className="left-data-column flex-1 overflow-y-auto p-6 space-y-6 flex flex-col">
+            {/* Categories Accordions & Card Nodes */}
+            <div className="flex-grow space-y-4">
+              {loading ? (
+                <div className="h-60 border border-[#1A1A1A]/15 bg-[#F4F1E6]/40 rounded-sm flex flex-col items-center justify-center space-y-3 text-center">
+                  <RefreshCw className="w-6 h-6 text-[#1A1A1A] animate-spin" />
+                  <span className="text-xs font-mono uppercase tracking-widest text-[#1A1A1A]/60">SYNCHRONIZING REPOSITORY GRAPH...</span>
+                </div>
+              ) : (
+                CATEGORIES.map((category) => {
+                  const categoryFacts = sessionData[category] || {};
+                  const variables = Object.keys(categoryFacts).reverse();
+                  
+                  // Filtering variables and values matching search string
+                  const filteredVars = variables.filter((v) => {
+                    if (!searchTerm) return true;
+                    const item = categoryFacts[v];
+                    const term = searchTerm.toLowerCase();
+                    return (
+                      v.toLowerCase().includes(term) ||
+                      item.value.toLowerCase().includes(term) ||
+                      item.context.toLowerCase().includes(term)
+                    );
+                  });
+
+                  if (searchTerm && filteredVars.length === 0) {
+                    return null; // Hide categories without matches during search
+                  }
+
+                  const isExpanded = expandedCategories.includes(category);
+                  const isEditingThisCategory = editingCard?.category === category;
+
                   return (
-                    v.toLowerCase().includes(term) ||
-                    item.value.toLowerCase().includes(term) ||
-                    item.context.toLowerCase().includes(term)
-                  );
-                });
-
-                if (searchTerm && filteredVars.length === 0) {
-                  return null; // Hide categories without matches during search
-                }
-
-                const isExpanded = expandedCategories.includes(category);
-                const isEditingThisCategory = editingCard?.category === category;
-
-                return (
-                  <div
-                    key={category}
-                    className="border-b border-[#1A1A1A]/15 pb-2 last:border-0"
-                  >
-                    {/* Accordion Trigger */}
-                    <button
-                      onClick={() => toggleCategory(category)}
-                      className="w-full py-3.5 flex items-center justify-between text-left cursor-pointer group"
+                    <div
+                      key={category}
+                      className="border-b border-[#1A1A1A]/15 pb-2 last:border-0"
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="p-1 px-2 border border-[#1A1A1A]/15 bg-[#1A1A1A]/5 text-[#C2410C]">
-                          <CategoryIcon category={category} className="w-4 h-4" />
+                      {/* Accordion Trigger */}
+                      <button
+                        onClick={() => toggleCategory(category)}
+                        className="w-full py-3.5 flex items-center justify-between text-left cursor-pointer group"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="p-1 px-2 border border-[#1A1A1A]/15 bg-[#1A1A1A]/5 text-[#C2410C]">
+                            <CategoryIcon category={category} className="w-4 h-4" />
+                          </div>
+                          <div>
+                            <h3 className="font-serif text-xl font-bold italic text-[#1A1A1A] group-hover:text-[#C2410C] transition-colors">{category}</h3>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="font-serif text-xl font-bold italic text-[#1A1A1A] group-hover:text-[#C2410C] transition-colors">{category}</h3>
-                        </div>
-                      </div>
 
-                      <div className="flex items-center gap-3">
-                        <span className="font-mono text-xs text-[#1A1A1A]/50 bg-[#1A1A1A]/5 px-2 py-0.5 border border-[#1A1A1A]/10">
-                          {variables.length} entries
-                        </span>
-                        {filteredVars.length !== variables.length && (
-                          <span className="text-[10px] px-1.5 py-0.2 bg-[#C2410C] text-[#FDFCF8] rounded-none font-mono">
-                            {filteredVars.length} match
+                        <div className="flex items-center gap-3">
+                          <span className="font-mono text-xs text-[#1A1A1A]/50 bg-[#1A1A1A]/5 px-2 py-0.5 border border-[#1A1A1A]/10">
+                            {variables.length} entries
                           </span>
-                        )}
-                        <span className="text-[#1A1A1A]/50 text-xs">
-                          {isExpanded ? <FolderOpen className="w-4 h-4 text-[#C2410C]" /> : <Folder className="w-4 h-4" />}
-                        </span>
-                      </div>
-                    </button>
+                          {filteredVars.length !== variables.length && (
+                            <span className="text-[10px] px-1.5 py-0.2 bg-[#C2410C] text-[#FDFCF8] rounded-none font-mono">
+                              {filteredVars.length} match
+                            </span>
+                          )}
+                          <span className="text-[#1A1A1A]/50 text-xs">
+                            {isExpanded ? <FolderOpen className="w-4 h-4 text-[#C2410C]" /> : <Folder className="w-4 h-4" />}
+                          </span>
+                        </div>
+                      </button>
 
-                    {/* Accordion Body */}
-                    {isExpanded && (
-                      <div className="pl-4 pr-1 pb-4 pt-2 space-y-4">
-                        {variables.length === 0 ? (
-                           <p className="text-xs text-[#1A1A1A]/50 italic py-2">No training variables enrolled under this category.</p>
-                        ) : filteredVars.length === 0 ? (
-                           <p className="text-xs text-[#1A1A1A]/50 italic py-2">No entries match current query.</p>
-                        ) : (
-                          <div className="grid grid-cols-1 gap-4">
-                            {filteredVars.map((v) => {
-                              const item = categoryFacts[v];
-                              const isEditingThisCard = editingCard && editingCard.oldVariable === v && isEditingThisCategory;
+                      {/* Accordion Body */}
+                      {isExpanded && (
+                        <div className="pl-4 pr-1 pb-4 pt-2 space-y-4">
+                          {variables.length === 0 ? (
+                             <p className="text-xs text-[#1A1A1A]/50 italic py-2">No training variables enrolled under this category.</p>
+                          ) : filteredVars.length === 0 ? (
+                             <p className="text-xs text-[#1A1A1A]/50 italic py-2">No entries match current query.</p>
+                          ) : (
+                            <div className="grid grid-cols-1 gap-4">
+                              {filteredVars.map((v) => {
+                                const item = categoryFacts[v];
+                                const isEditingThisCard = editingCard && editingCard.oldVariable === v && isEditingThisCategory;
 
-                              if (isEditingThisCard && editingCard) {
-                                return (
-                                  <form
-                                    key={v}
-                                    onSubmit={(e) => { e.preventDefault(); saveCardEdit(); }}
-                                    className="p-5 border-2 border-[#1A1A1A] bg-[#f4f3ed] space-y-4"
-                                  >
-                                    <div className="flex items-center justify-between border-b border-[#1A1A1A]/10 pb-2">
-                                      <span className="text-[10px] font-mono text-[#C2410C] font-bold tracking-wider">EDIT VARIABLE CONFIG</span>
-                                      <button
-                                        onClick={() => setEditingCard(null)}
-                                        className="p-1 hover:bg-[#1A1A1A]/10 rounded text-[#1A1A1A]/70"
-                                      >
-                                        <X className="w-4 h-4" />
-                                      </button>
-                                    </div>
-                                    
-                                    <div className="space-y-3">
-                                      <div>
-                                        <label className="block text-[10px] text-[#1A1A1A]/75 font-mono mb-1 uppercase font-bold">Variable Name (uppercase snake_case)</label>
-                                        <input
-                                          type="text"
-                                          value={editingCard.newVariable}
-                                          onChange={(e) => setEditingCard({ ...editingCard, newVariable: e.target.value.toUpperCase().replace(/[^A-Z0-9_]/g, "_") })}
-                                          className="w-full bg-[#text-slate-100] bg-white border border-[#1A1A1A]/20 rounded-none px-2.5 py-1.5 text-xs text-[#1A1A1A] font-mono focus:outline-none focus:border-[#C2410C]"
-                                        />
-                                      </div>
-
-                                      <div>
-                                        <label className="block text-[10px] text-[#1A1A1A]/75 font-mono mb-1 uppercase font-bold">Verified Fact / Metric Status</label>
-                                        <input
-                                          type="text"
-                                          value={editingCard.value}
-                                          onChange={(e) => setEditingCard({ ...editingCard, value: e.target.value })}
-                                          className="w-full bg-white border border-[#1A1A1A]/20 rounded-none px-2.5 py-1.5 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#C2410C] font-semibold"
-                                        />
-                                      </div>
-
-                                      <div>
-                                        <label className="block text-[10px] text-[#1A1A1A]/75 font-mono mb-1 uppercase font-bold">Context Chronicles</label>
-                                        <textarea
-                                          rows={2}
-                                          value={editingCard.context}
-                                          onChange={(e) => setEditingCard({ ...editingCard, context: e.target.value })}
-                                          className="w-full bg-white border border-[#1A1A1A]/20 rounded-none p-2.5 text-xs text-[#1A1A1A] font-sans resize-none focus:outline-none focus:border-[#C2410C]"
-                                        />
-                                      </div>
-                                    </div>
-
-                                    <div className="flex justify-end gap-2 text-xs pt-1">
-                                      <button
-                                        type="button"
-                                        onClick={() => setEditingCard(null)}
-                                        className="border border-[#1A1A1A]/30 px-3 py-1.5 text-[10px] uppercase font-bold hover:bg-[#1A1A1A]/10"
-                                      >
-                                        Discard
-                                      </button>
-                                      <button
-                                        type="submit"
-                                        className="bg-[#1A1A1A] hover:bg-[#C2410C] text-[#FDFCF8] px-4 py-1.5 text-[10px] uppercase font-bold tracking-wider transition-colors"
-                                      >
-                                        Save Changes
-                                      </button>
-                                    </div>
-                                  </form>
-                                );
-                              }
-
-                              const isUnsaved = !savedData[category]?.[v];
-                              const isPendingDelete = !!pendingDeletions[category]?.[v];
-
-                              return (
-                                <div
-                                  key={v}
-                                  id={`entry-${v}`}
-                                  className={`pending-save p-5 border border-[#1A1A1A]/15 transition-all flex flex-col justify-between ${
-                                    isPendingDelete
-                                      ? "bg-red-50/40 border-l-[3px] border-red-500 hover:border-[#1A1A1A]/30 hover:border-l-red-500 shadow-sm opacity-60"
-                                      : isUnsaved
-                                      ? "bg-[#f0f9ff]/75 border-l-[3px] border-[#0284c7] hover:border-[#1A1A1A]/30 hover:border-l-[#0284c7] shadow-sm"
-                                      : "bg-[#FDFCF8] hover:border-[#1A1A1A]/30"
-                                  }`}
-                                >
-                                  <div>
-                                    <div className="flex items-start justify-between gap-4 mb-2 pb-2 border-b border-[#1A1A1A]/5">
-                                      <div className="flex flex-wrap items-center gap-2 max-w-[calc(100%-48px)]">
-                                        <code className={`text-[10px] text-[#C2410C] font-mono tracking-tight font-bold bg-[#C2410C]/5 border border-[#C2410C]/15 px-2 py-0.5 rounded-none shrink-0 ${
-                                          isPendingDelete ? "line-through text-red-650 bg-red-100/10 border-red-500/15" : ""
-                                        }`}>
-                                          {v}
-                                        </code>
-                                        {isPendingDelete && (
-                                          <span className="text-[8px] font-mono font-black bg-red-100 text-red-600 px-1.5 py-0.5 rounded-[3px] border border-red-500/15 shrink-0 tracking-wider">
-                                            DELETING
-                                          </span>
-                                        )}
-                                        {isUnsaved && !isPendingDelete && (
-                                          <span className="text-[8px] font-mono font-black bg-[#e0f2fe] text-[#0369a1] px-1.5 py-0.5 rounded-[3px] border border-[#0369a1]/15 shrink-0 tracking-wider">
-                                            UNSAVED
-                                          </span>
-                                        )}
+                                if (isEditingThisCard && editingCard) {
+                                  return (
+                                    <form
+                                      key={v}
+                                      onSubmit={(e) => { e.preventDefault(); saveCardEdit(); }}
+                                      className="p-5 border-2 border-[#1A1A1A] bg-[#f4f3ed] space-y-4"
+                                    >
+                                      <div className="flex items-center justify-between border-b border-[#1A1A1A]/10 pb-2">
+                                        <span className="text-[10px] font-mono text-[#C2410C] font-bold tracking-wider">EDIT VARIABLE CONFIG</span>
+                                        <button
+                                          onClick={() => setEditingCard(null)}
+                                          className="p-1 hover:bg-[#1A1A1A]/10 rounded text-[#1A1A1A]/70"
+                                        >
+                                          <X className="w-4 h-4" />
+                                        </button>
                                       </div>
                                       
-                                      <div className="flex items-center gap-1.5 flex-shrink-0">
-                                        {!isPendingDelete && (
-                                          <button
-                                            onClick={() => startEditAction(category, v, item)}
-                                            className="p-1 hover:bg-[#1A1A1A]/5 text-[#1A1A1A]/60 hover:text-[#1A1A1A] rounded-none transition"
-                                            title="Edit memory card"
-                                          >
-                                            <Edit2 className="w-3.5 h-3.5" />
-                                          </button>
-                                        )}
-                                        {isPendingDelete ? (
-                                          <button
-                                            onClick={() => handleUndoDeleteFact(category, v)}
-                                            className="p-1 hover:bg-orange-100 text-orange-655 rounded-none transition"
-                                            title="Undo pending deletion"
-                                          >
-                                            <RotateCcw className="w-3.5 h-3.5 text-orange-600" />
-                                          </button>
-                                        ) : (
-                                          <button
-                                            onClick={() => handleDeleteFact(category, v)}
-                                            className="p-1 hover:bg-[#C2410C]/10 text-[#1A1A1A]/40 hover:text-[#C2410C] rounded-none transition"
-                                            title="Deletes fact from dataset"
-                                          >
-                                            <Trash2 className="w-3.5 h-3.5" />
-                                          </button>
-                                        )}
-                                      </div>
-                                    </div>
+                                      <div className="space-y-3">
+                                        <div>
+                                          <label className="block text-[10px] text-[#1A1A1A]/75 font-mono mb-1 uppercase font-bold">Variable Name (uppercase snake_case)</label>
+                                          <input
+                                            type="text"
+                                            value={editingCard.newVariable}
+                                            onChange={(e) => setEditingCard({ ...editingCard, newVariable: e.target.value.toUpperCase().replace(/[^A-Z0-9_]/g, "_") })}
+                                            className="w-full bg-[#text-slate-100] bg-white border border-[#1A1A1A]/20 rounded-none px-2.5 py-1.5 text-xs text-[#1A1A1A] font-mono focus:outline-none focus:border-[#C2410C]"
+                                          />
+                                        </div>
 
-                                    <h4 className="font-serif italic text-2xl font-light text-[#1A1A1A] mb-2 leading-tight">
-                                      {item.value}
-                                    </h4>
-                                    
-                                    <p className="text-xs text-[#1A1A1A]/75 leading-relaxed font-sans">
-                                      {item.context}
-                                    </p>
+                                        <div>
+                                          <label className="block text-[10px] text-[#1A1A1A]/75 font-mono mb-1 uppercase font-bold">Verified Fact / Metric Status</label>
+                                          <input
+                                            type="text"
+                                            value={editingCard.value}
+                                            onChange={(e) => setEditingCard({ ...editingCard, value: e.target.value })}
+                                            className="w-full bg-white border border-[#1A1A1A]/20 rounded-none px-2.5 py-1.5 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#C2410C] font-semibold"
+                                          />
+                                        </div>
+
+                                        <div>
+                                          <label className="block text-[10px] text-[#1A1A1A]/75 font-mono mb-1 uppercase font-bold">Context Chronicles</label>
+                                          <textarea
+                                            rows={2}
+                                            value={editingCard.context}
+                                            onChange={(e) => setEditingCard({ ...editingCard, context: e.target.value })}
+                                            className="w-full bg-white border border-[#1A1A1A]/20 rounded-none p-2.5 text-xs text-[#1A1A1A] font-sans resize-none focus:outline-none focus:border-[#C2410C]"
+                                          />
+                                        </div>
+                                      </div>
+
+                                      <div className="flex justify-end gap-2 text-xs pt-1">
+                                        <button
+                                          type="button"
+                                          onClick={() => setEditingCard(null)}
+                                          className="border border-[#1A1A1A]/30 px-3 py-1.5 text-[10px] uppercase font-bold hover:bg-[#1A1A1A]/10"
+                                        >
+                                          Discard
+                                        </button>
+                                        <button
+                                          type="submit"
+                                          className="bg-[#1A1A1A] hover:bg-[#C2410C] text-[#FDFCF8] px-4 py-1.5 text-[10px] uppercase font-bold tracking-wider transition-colors"
+                                        >
+                                          Save Changes
+                                        </button>
+                                      </div>
+                                    </form>
+                                  );
+                                }
+
+                                const isUnsaved = !savedData[category]?.[v];
+                                const isPendingDelete = !!pendingDeletions[category]?.[v];
+
+                                return (
+                                  <div
+                                    key={v}
+                                    id={`entry-${v}`}
+                                    className={`pending-save p-5 border border-[#1A1A1A]/15 transition-all flex flex-col justify-between ${
+                                      isPendingDelete
+                                        ? "bg-red-50/40 border-l-[3px] border-red-500 hover:border-[#1A1A1A]/30 hover:border-l-red-500 shadow-sm opacity-60"
+                                        : isUnsaved
+                                        ? "bg-[#f0f9ff]/75 border-l-[3px] border-[#0284c7] hover:border-[#1A1A1A]/30 hover:border-l-[#0284c7] shadow-sm"
+                                        : "bg-[#FDFCF8] hover:border-[#1A1A1A]/30"
+                                    }`}
+                                  >
+                                    <div>
+                                      <div className="flex items-start justify-between gap-4 mb-2 pb-2 border-b border-[#1A1A1A]/5">
+                                        <div className="flex flex-wrap items-center gap-2 max-w-[calc(100%-48px)]">
+                                          <code className={`text-[10px] text-[#C2410C] font-mono tracking-tight font-bold bg-[#C2410C]/5 border border-[#C2410C]/15 px-2 py-0.5 rounded-none shrink-0 ${
+                                            isPendingDelete ? "line-through text-red-650 bg-red-100/10 border-red-500/15" : ""
+                                          }`}>
+                                            {v}
+                                          </code>
+                                          {isPendingDelete && (
+                                            <span className="text-[8px] font-mono font-black bg-red-100 text-red-600 px-1.5 py-0.5 rounded-[3px] border border-red-500/15 shrink-0 tracking-wider">
+                                              DELETING
+                                            </span>
+                                          )}
+                                          {isUnsaved && !isPendingDelete && (
+                                            <span className="text-[8px] font-mono font-black bg-[#e0f2fe] text-[#0369a1] px-1.5 py-0.5 rounded-[3px] border border-[#0369a1]/15 shrink-0 tracking-wider">
+                                              UNSAVED
+                                            </span>
+                                          )}
+                                        </div>
+                                        
+                                        <div className="flex items-center gap-1.5 flex-shrink-0">
+                                          {!isPendingDelete && (
+                                            <button
+                                              onClick={() => startEditAction(category, v, item)}
+                                              className="p-1 hover:bg-[#1A1A1A]/5 text-[#1A1A1A]/60 hover:text-[#1A1A1A] rounded-none transition"
+                                              title="Edit memory card"
+                                            >
+                                              <Edit2 className="w-3.5 h-3.5" />
+                                            </button>
+                                          )}
+                                          {isPendingDelete ? (
+                                            <button
+                                              onClick={() => handleUndoDeleteFact(category, v)}
+                                              className="p-1 hover:bg-orange-100 text-orange-655 rounded-none transition"
+                                              title="Undo pending deletion"
+                                            >
+                                              <RotateCcw className="w-3.5 h-3.5 text-orange-600" />
+                                            </button>
+                                          ) : (
+                                            <button
+                                              onClick={() => handleDeleteFact(category, v)}
+                                              className="p-1 hover:bg-[#C2410C]/10 text-[#1A1A1A]/40 hover:text-[#C2410C] rounded-none transition"
+                                              title="Deletes fact from dataset"
+                                            >
+                                              <Trash2 className="w-3.5 h-3.5" />
+                                            </button>
+                                          )}
+                                        </div>
+                                      </div>
+
+                                      <h4 className="font-serif italic text-2xl font-light text-[#1A1A1A] mb-2 leading-tight">
+                                        {item.value}
+                                      </h4>
+                                      
+                                      <p className="text-xs text-[#1A1A1A]/75 leading-relaxed font-sans">
+                                        {item.context}
+                                      </p>
+                                    </div>
                                   </div>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                );
-              })
-            )}
-          </div>
-        </main>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })
+              )}
+            </div>
+          </main>
+        </div>
 
         {/* Right Control Sidebar: Fixed Width & Independently Scrollable */}
         <aside className="w-[484px] h-full overflow-y-auto bg-[#FDFCF8] border-l border-[#1A1A1A]/10 p-6 space-y-8 flex-shrink-0">

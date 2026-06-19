@@ -211,6 +211,10 @@
     "APPLE_Q2_EARNINGS_AI_SHIFT": {
       "value": "$29.6B Profit",
       "context": "Apple reported record Q2 profits, with CEO John Ternus confirming a shift in cash reserves toward massive, 'incremental' AI and hardware infrastructure."
+    },
+    "ANTHROPIC_COLOSSUS_COMPUTE_PARTNERSHIP": {
+      "value": "$15 Billion Annual Access Fee",
+      "context": "SpaceX entered into a major compute partnership with Anthropic, providing access to its Colossus data centers in Memphis, TN, for an annual fee of $15 billion."
     }
   },
   "Science": {
@@ -735,6 +739,10 @@
     "UK_INFLATION_RATE": {
       "value": "2.8%",
       "context": "The UK Office for National Statistics reported on May 20, 2026, that annual inflation fell to 2.8% due to lower wholesale energy prices and the government's energy bill support package."
+    },
+    "US_MORTGAGE_RATE_FALL": {
+      "value": "6.47%",
+      "context": "The average 30-year fixed U.S. mortgage rate has fallen to 6.47%, tracking lower Treasury bond yields following the announcement of a deal aimed at ending the war with Iran."
     }
   },
   "Environment & Climate": {
@@ -977,6 +985,10 @@
     "AI_DATA_CENTER_WATER_METRIC": {
       "value": "12M people equivalent",
       "context": "Research indicated that GPT-4o-class model inference water usage for 2026 may exceed the total drinking water needs of 12 million people."
+    },
+    "EL_NINO_STRENGTHENING": {
+      "value": "Conditions Present and Strengthening",
+      "context": "The National Oceanic and Atmospheric Administration confirmed the presence of El Niño conditions on June 11, 2026, predicting a strengthening phase that will bring potentially significant impacts to global weather patterns."
     }
   },
   "Global Affairs": {
@@ -1239,6 +1251,14 @@
     "MULTIPOLAR_TRADE_SHIFT": {
       "value": "April 2026",
       "context": "A significant increase in 'inward-looking' trade policies and restrictions across the G7 signaled a move toward a fragmented, multipolar global economy."
+    },
+    "PENTAGON_GOLDEN_DOME_CONTRACT": {
+      "value": "$4.16 Billion Contract Awarded",
+      "context": "SpaceX secured a $4.16 billion contract from the Pentagon to develop missile-tracking satellites for President Trump's 'Golden Dome' defense system."
+    },
+    "FED_CHAIRSHIP_TRANSITION": {
+      "value": "Kevin Warsh succeeds Jerome Powell.",
+      "context": "Kevin Warsh assumed the role of Chair of the Federal Reserve, succeeding Jerome Powell. This marks a significant shift in monetary policy leadership during a period of high inflation concern."
     }
   },
   "Politics": {
@@ -1831,6 +1851,10 @@
     "WORLD_CUP_2026_START": {
       "value": "Tournament Kickoff in Mexico",
       "context": "The 2026 FIFA World Cup officially commenced on June 11, 2026, with the opening matches kicking off in Mexico."
+    },
+    "FIRST_TITLE_SINCE_1973": {
+      "value": "NBA Championship Clinched (First since 1973)",
+      "context": "The New York Knicks secured the NBA championship title, ending a 53-year drought since their previous victory in 1973."
     }
   },
   "Transportation": {
