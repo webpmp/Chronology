@@ -638,7 +638,7 @@ export default function App() {
         </main>
 
         {/* Right Control Sidebar: Fixed Width & Independently Scrollable */}
-        <aside className="w-[444px] h-full overflow-y-auto bg-[#FDFCF8] border-l border-[#1A1A1A]/10 p-6 space-y-8 flex-shrink-0">
+        <aside className="w-[484px] h-full overflow-y-auto bg-[#FDFCF8] border-l border-[#1A1A1A]/10 p-6 space-y-8 flex-shrink-0">
           <JSONViewer
             data={sessionData}
             savedData={savedData}
