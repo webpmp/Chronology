@@ -968,17 +968,54 @@ This is usually caused by one of these reasons:
       });
 
       // Target the newly rendered/highlighted DOM node inside the left column and scroll smoothly
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          const newEntryElement = document.getElementById(`entry-${formattedVar}`);
-          if (newEntryElement) {
-            newEntryElement.scrollIntoView({ 
-              behavior: "smooth", 
-              block: "center" 
-            });
+      const container = document.querySelector(".left-data-column");
+      const targetElement = document.getElementById(`entry-${formattedVar}`);
+
+      if (container && targetElement) {
+        // 1. Calculate structural positions
+        const containerTop = container.getBoundingClientRect().top;
+        const elementTop = targetElement.getBoundingClientRect().top;
+        
+        // Center the target element inside the container frame
+        const targetScrollTop = container.scrollTop + (elementTop - containerTop) - (container.clientHeight / 2) + (targetElement.clientHeight / 2);
+        
+        const startScrollTop = container.scrollTop;
+        const distance = targetScrollTop - startScrollTop;
+        
+        // 2. Control animation timing bounds (1200ms gives a beautiful, cinematic glide)
+        const duration = 1200; 
+        let startTime: number | null = null;
+
+        // 3. Quad Ease-In-Out formula: Accel to half, decelerate to target point
+        const easeInOutQuad = (t: number, b: number, c: number, d: number) => {
+          t /= d / 2;
+          if (t < 1) return (c / 2) * t * t + b;
+          t--;
+          return (-c / 2) * (t * (t - 2) - 1) + b;
+        };
+
+        // 4. Animation loop frame runner
+        const animationLoop = (currentTime: number) => {
+          if (!startTime) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+
+          // Interpolate next position coordinate
+          container.scrollTop = easeInOutQuad(timeElapsed, startScrollTop, distance, duration);
+
+          if (timeElapsed < duration) {
+            requestAnimationFrame(animationLoop);
+          } else {
+            container.scrollTop = targetScrollTop; // Perfect snap layout correction at end
           }
-        }, 50);
-      });
+        };
+
+        // Run the loop asynchronously after the layout engine finishes painting the new element
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            requestAnimationFrame(animationLoop);
+          }, 50);
+        });
+      }
     }
   };
 
