@@ -84,6 +84,9 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
   const [lmStudioModel, setLmStudioModel] = useState<string>(() => {
     return localStorage.getItem("lm_studio_model") || "";
   });
+  const [lmStudioToken, setLmStudioToken] = useState<string>(() => {
+    return localStorage.getItem("lm_studio_token") || "";
+  });
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [connectionTesting, setConnectionTesting] = useState<boolean>(false);
   const [connectionStatus, setConnectionStatus] = useState<"idle" | "success" | "failed" | "cors_blocked" | "invalid_endpoint">("idle");
@@ -119,6 +122,11 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
     localStorage.setItem("lm_studio_model", model);
   };
 
+  const handleSaveLMSToken = (token: string) => {
+    setLmStudioToken(token);
+    localStorage.setItem("lm_studio_token", token);
+  };
+
   const testLMStudioConnection = async (targetUrl: string, targetModel: string) => {
     setConnectionTesting(true);
     setConnectionStatus("idle");
@@ -134,10 +142,15 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
         return JSON.parse(text);
       };
 
+      const headers: Record<string, string> = { "Content-Type": "application/json" };
+      if (lmStudioToken) {
+        headers["Authorization"] = `Bearer ${lmStudioToken}`;
+      }
+
       // Let's first probe the primary configured URL
       let res = await fetch(`${sanitizedUrl}/models`, {
         method: "GET",
-        headers: { "Content-Type": "application/json" }
+        headers
       });
       
       // Dynamic fallback probe: If 404 or failed and URL does not end in /v1, try appending /v1
@@ -146,7 +159,7 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
         try {
           const altRes = await fetch(`${altUrl}/models`, {
             method: "GET",
-            headers: { "Content-Type": "application/json" }
+            headers
           });
           if (altRes.ok) {
             res = altRes;
@@ -175,7 +188,7 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
         // Fallback test block using chat/completions endpoint
         let compRes = await fetch(`${sanitizedUrl}/chat/completions`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers,
           body: JSON.stringify({
             model: targetModel || "any",
             messages: [{ role: "user", content: "ping" }],
@@ -189,7 +202,7 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
           try {
             const altCompRes = await fetch(`${altUrl}/chat/completions`, {
               method: "POST",
-              headers: { "Content-Type": "application/json" },
+              headers,
               body: JSON.stringify({
                 model: targetModel || "any",
                 messages: [{ role: "user", content: "ping" }],
@@ -273,6 +286,11 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
     const categoriesListStr = CATEGORIES.join(", ");
     const sanitizedUrl = lmStudioUrl.replace(/\/$/, "");
 
+    const headers: Record<string, string> = { "Content-Type": "application/json" };
+    if (lmStudioToken) {
+      headers["Authorization"] = `Bearer ${lmStudioToken}`;
+    }
+
     setLoadingStep("Constructing Local LLM Structured Extraction payload...");
     const systemInstruction = `=== Operational Mandate ===
 You function as the primary data ingestion filter for the archive. For every news item or text provided, you must execute a strict two-step process: Evaluate then Extract.
@@ -310,7 +328,7 @@ Format: If the batch passes Step 1, output ONLY a valid and parsable raw JSON ar
       try {
         const modelsRes = await fetch(`${sanitizedUrl}/models`, {
           method: "GET",
-          headers: { "Content-Type": "application/json" }
+          headers
         });
         if (modelsRes.ok) {
           const text = await modelsRes.text();
@@ -346,7 +364,7 @@ Format: If the batch passes Step 1, output ONLY a valid and parsable raw JSON ar
     try {
       res = await fetch(urlToUse, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers,
         body: JSON.stringify(requestPayload)
       });
       
@@ -356,7 +374,7 @@ Format: If the batch passes Step 1, output ONLY a valid and parsable raw JSON ar
         setLoadingStep(`Primary endpoint 404ed. Trying auto-corrected fallback ${altUrl}/chat/completions...`);
         const altRes = await fetch(`${altUrl}/chat/completions`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers,
           body: JSON.stringify(requestPayload)
         });
         if (altRes.ok) {
@@ -371,7 +389,7 @@ Format: If the batch passes Step 1, output ONLY a valid and parsable raw JSON ar
         let detectedModel = "";
         try {
           const currentSanitized = sanitizedUrl.endsWith("/v1") ? sanitizedUrl : `${sanitizedUrl}/v1`;
-          const mRes = await fetch(`${currentSanitized}/models`, { method: "GET" });
+          const mRes = await fetch(`${currentSanitized}/models`, { method: "GET", headers });
           if (mRes.ok) {
             const mText = await mRes.text();
             if (!mText.trim().startsWith("<")) {
@@ -386,7 +404,7 @@ Format: If the batch passes Step 1, output ONLY a valid and parsable raw JSON ar
           const retryPayload = { ...requestPayload, model: detectedModel };
           const retryRes = await fetch(sanitizedUrl.endsWith("/v1") ? `${sanitizedUrl}/chat/completions` : `${sanitizedUrl}/v1/chat/completions`, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers,
             body: JSON.stringify(retryPayload)
           });
           if (retryRes.ok) {
@@ -402,7 +420,7 @@ Format: If the batch passes Step 1, output ONLY a valid and parsable raw JSON ar
           const altUrl = `${sanitizedUrl}/v1`;
           const altRes = await fetch(`${altUrl}/chat/completions`, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers,
             body: JSON.stringify(requestPayload)
           });
           if (altRes.ok) {
@@ -1176,7 +1194,7 @@ This is usually caused by one of these reasons:
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
                       <label className="block text-[10px] uppercase font-mono font-bold text-[#1A1A1A]/70 mb-1.5">
                         LM Studio Base Server URL
@@ -1199,6 +1217,19 @@ This is usually caused by one of these reasons:
                         placeholder="Auto-match (leave empty) or exact loaded identifier..."
                         value={lmStudioModel}
                         onChange={(e) => handleSaveLMSConfig(lmStudioUrl, e.target.value)}
+                        className="w-full bg-white border border-[#1A1A1A]/20 rounded-none px-3 py-1.5 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#C2410C] font-mono"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-[10px] uppercase font-mono font-bold text-[#1A1A1A]/70 mb-1.5">
+                        API Key / Bearer Token (Optional)
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Bearer token if authentication is enabled..."
+                        value={lmStudioToken}
+                        onChange={(e) => handleSaveLMSToken(e.target.value)}
                         className="w-full bg-white border border-[#1A1A1A]/20 rounded-none px-3 py-1.5 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#C2410C] font-mono"
                       />
                     </div>
