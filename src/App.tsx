@@ -368,7 +368,7 @@ export default function App() {
       <div className="flex-1 flex flex-row overflow-hidden w-full max-w-7xl mx-auto bg-[#FDFCF8]">
         
         {/* Left Data Column: Scrollable Curated Memory Visualizer */}
-        <main className="flex-1 h-full overflow-y-auto p-6 space-y-6 flex flex-col">
+        <main className="flex-1 min-w-0 h-full overflow-y-auto p-6 space-y-6 flex flex-col">
           
           {/* Controls: Search bar with custom styling */}
           <div className="border border-[#1A1A1A]/15 bg-[#FDFCF8] p-4 flex flex-col sm:flex-row gap-4 items-center justify-between">
@@ -638,7 +638,7 @@ export default function App() {
         </main>
 
         {/* Right Control Sidebar: Fixed Width & Independently Scrollable */}
-        <aside className="w-96 h-full overflow-y-auto bg-[#FDFCF8] border-l border-[#1A1A1A]/10 p-6 space-y-8 flex-shrink-0">
+        <aside className="w-[444px] h-full overflow-y-auto bg-[#FDFCF8] border-l border-[#1A1A1A]/10 p-6 space-y-8 flex-shrink-0">
           <JSONViewer
             data={sessionData}
             savedData={savedData}
