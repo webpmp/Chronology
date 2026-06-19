@@ -5,7 +5,7 @@
 
 # Chronology
 
-Chronology is a professional research curation dashboard designed to patch the structural knowledge gaps of open-source LLMs.
+Chronology is a research curation dashboard designed to patch the structural knowledge gaps of open-source LLMs.
 Because static language models are bound to their historical training cutoffs, they remain blind to recent events. Chronology bridges this gap by acting as a live programmatic patch—extracting, refining, and structuring verified global facts from 2024 through the present into an agent-ingestible, schema-strict JSON dataset.
 
 ```json
