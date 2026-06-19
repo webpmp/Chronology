@@ -340,32 +340,33 @@ export default function App() {
   );
 
   return (
-    <div className="font-sans min-h-screen bg-[#FDFCF8] text-[#1A1A1A] flex flex-col selection:bg-[#C2410C]/20">
-      {/* Editorial Header */}
-      <header className="border-b-4 border-[#1A1A1A] mx-auto max-w-7xl w-full px-6 pt-4 pb-4">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-1">
-          <div className="flex flex-col">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold italic tracking-tight text-[#1A1A1A] leading-none">
-              Chronology
-            </h1>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center text-xs border-t border-[#1A1A1A]/10 mt-3 pt-2.5 gap-2">
-          <p className="uppercase tracking-widest text-[10px] sm:text-[11px] font-bold text-[#1A1A1A]/70 flex items-center gap-2">
-            <span>Significant Global Events & Scientific Breakthroughs Reference Archive</span>
-          </p>
-          <div className="font-mono text-[11px] opacity-65">
-            {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
-          </div>
-        </div>
-      </header>
-
-      {/* Main Workspace Layout */}
-      <main className="flex-grow max-w-7xl w-full mx-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <div className="font-sans h-screen w-screen overflow-hidden bg-[#FDFCF8] text-[#1A1A1A] flex selection:bg-[#C2410C]/20">
+      
+      {/* Left Data Column: Scrollable Curated Memory Visualizer */}
+      <main className="flex-1 h-full overflow-y-auto flex flex-col border-r border-[#1A1A1A]/10">
         
-        {/* Left Column: Curated memory visualizer (7 cols) */}
-        <div className="lg:col-span-7 space-y-6 flex flex-col">
+        {/* Editorial Header */}
+        <header className="border-b-4 border-[#1A1A1A] mx-auto max-w-5xl w-full px-6 pt-4 pb-4">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-1">
+            <div className="flex flex-col">
+              <h1 className="font-serif text-5xl md:text-6xl font-bold italic tracking-tight text-[#1A1A1A] leading-none">
+                Chronology
+              </h1>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center text-xs border-t border-[#1A1A1A]/10 mt-3 pt-2.5 gap-2">
+            <p className="uppercase tracking-widest text-[10px] sm:text-[11px] font-bold text-[#1A1A1A]/70 flex items-center gap-2">
+              <span>Significant Global Events & Scientific Breakthroughs Reference Archive</span>
+            </p>
+            <div className="font-mono text-[11px] opacity-65">
+              {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+            </div>
+          </div>
+        </header>
+
+        {/* Curated memory visualizer content */}
+        <div className="flex-grow max-w-5xl w-full mx-auto p-6 space-y-6 flex flex-col">
           
           {/* Controls: Search bar with custom styling */}
           <div className="border border-[#1A1A1A]/15 bg-[#FDFCF8] p-4 flex flex-col sm:flex-row gap-4 items-center justify-between">
@@ -473,7 +474,7 @@ export default function App() {
                         {variables.length === 0 ? (
                            <p className="text-xs text-[#1A1A1A]/50 italic py-2">No training variables enrolled under this category.</p>
                         ) : filteredVars.length === 0 ? (
-                          <p className="text-xs text-[#1A1A1A]/50 italic py-2">No entries match current query.</p>
+                           <p className="text-xs text-[#1A1A1A]/50 italic py-2">No entries match current query.</p>
                         ) : (
                           <div className="grid grid-cols-1 gap-4">
                             {filteredVars.map((v) => {
@@ -634,42 +635,43 @@ export default function App() {
           </div>
         </div>
 
-        {/* Right Column: AI extractor panel & code output viewer (5 cols) */}
-        <div className="lg:col-span-5 space-y-8">
-          <JSONViewer
-            data={sessionData}
-            savedData={savedData}
-            pendingDeletions={pendingDeletions}
-            onImportJSON={handleImportJSON}
-            onClearDataset={handleClearDataset}
-            onResetToSeed={handleResetToSeed}
-            onSaveData={handleSaveData}
-            isDirty={isDirty}
-            unsavedCount={unsavedCount}
-          />
-
-          <AIResearchPanel onAddFact={handleAddFact} existingVariables={existingVariables} />
-
-          {/* Add Manual Fact Form */}
-          <ManualFactForm onAddFact={handleAddFact} />
-        </div>
+        {/* Editorial Footer */}
+        <footer className="app-footer border-t-2 border-[#1A1A1A] mx-auto max-w-5xl w-full px-6 py-8 mt-12">
+          <div className="footer-content flex flex-col md:flex-row items-center justify-between text-[11px] font-mono text-[#1A1A1A]/60 uppercase tracking-wider gap-4">
+            <p className="copyright">
+              &copy; 2026 Chronology Reference Archive by Chris Adkins
+            </p>
+            <p className="licensing">
+              Software licensed under the{" "}
+              <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" className="text-[#C2410C] hover:underline">MIT License</a>.{" "}
+              Data archives licensed under{" "}
+              <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" className="text-[#C2410C] hover:underline">CC BY 4.0</a>.
+            </p>
+          </div>
+        </footer>
 
       </main>
 
-      {/* Editorial Footer */}
-      <footer className="app-footer border-t-2 border-[#1A1A1A] mx-auto max-w-7xl w-full px-6 py-8 mt-12">
-        <div className="footer-content flex flex-col md:flex-row items-center justify-between text-[11px] font-mono text-[#1A1A1A]/60 uppercase tracking-wider gap-4">
-          <p className="copyright">
-            &copy; 2026 Chronology Reference Archive by Chris Adkins
-          </p>
-          <p className="licensing">
-            Software licensed under the{" "}
-            <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" className="text-[#C2410C] hover:underline">MIT License</a>.{" "}
-            Data archives licensed under{" "}
-            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" className="text-[#C2410C] hover:underline">CC BY 4.0</a>.
-          </p>
-        </div>
-      </footer>
+      {/* Right Control Sidebar: Fixed Width & Independently Scrollable */}
+      <aside className="w-[420px] max-w-[450px] min-w-[380px] h-full overflow-y-auto bg-[#FDFCF8] border-l border-[#1A1A1A]/10 p-6 space-y-8 flex-shrink-0">
+        <JSONViewer
+          data={sessionData}
+          savedData={savedData}
+          pendingDeletions={pendingDeletions}
+          onImportJSON={handleImportJSON}
+          onClearDataset={handleClearDataset}
+          onResetToSeed={handleResetToSeed}
+          onSaveData={handleSaveData}
+          isDirty={isDirty}
+          unsavedCount={unsavedCount}
+        />
+
+        <AIResearchPanel onAddFact={handleAddFact} existingVariables={existingVariables} />
+
+        {/* Add Manual Fact Form */}
+        <ManualFactForm onAddFact={handleAddFact} />
+      </aside>
+
     </div>
   );
 }
