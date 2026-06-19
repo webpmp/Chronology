@@ -368,7 +368,7 @@ export default function App() {
       <div className="flex-1 flex flex-row overflow-hidden w-full max-w-7xl mx-auto bg-[#FDFCF8]">
         
         {/* Left Data Column: Scrollable Curated Memory Visualizer */}
-        <main className="flex-1 min-w-0 h-full overflow-y-auto p-6 space-y-6 flex flex-col">
+        <main className="flex-1 min-w-0 h-full overflow-y-auto scroll-smooth p-6 space-y-6 flex flex-col">
           
           {/* Controls: Search bar with custom styling */}
           <div className="border border-[#1A1A1A]/15 bg-[#FDFCF8] p-4 flex flex-col sm:flex-row gap-4 items-center justify-between">
