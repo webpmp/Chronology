@@ -131,7 +131,10 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
     setConnectionTesting(true);
     setConnectionStatus("idle");
     try {
-      const sanitizedUrl = targetUrl.replace(/\/$/, "");
+      let sanitizedUrl = targetUrl.replace(/\/$/, "");
+      if (!sanitizedUrl.endsWith("/v1")) {
+        sanitizedUrl = `${sanitizedUrl}/v1`;
+      }
       
       const getJSONSafe = async (response: Response) => {
         const text = await response.text();
@@ -284,7 +287,10 @@ export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables 
 
   const extractWithLocalLLM = async (textToParse: string, descriptionTopic: string) => {
     const categoriesListStr = CATEGORIES.join(", ");
-    const sanitizedUrl = lmStudioUrl.replace(/\/$/, "");
+    let sanitizedUrl = lmStudioUrl.replace(/\/$/, "");
+    if (!sanitizedUrl.endsWith("/v1")) {
+      sanitizedUrl = `${sanitizedUrl}/v1`;
+    }
 
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     if (lmStudioToken) {
