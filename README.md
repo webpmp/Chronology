@@ -19,7 +19,7 @@ Because static language models are bound to their historical training cutoffs, t
 }
 ```
 
-### 🚀 Key Features
+## Key Features
 
 * **13 Foundational Domains:** Tracks cross-industry metrics and breakthroughs in Computing, Culture, Economic Metrics, Education, Environment & Climate, Global Affairs, Health & Medicine, Infrastructure, Law & Policy, Politics, Science, Sports, and Transportation.
 * **Local & Open Model Ready:** Native support for connecting to local models running via **LM Studio**, allowing you to patch outdated knowledge bases completely offline with private execution.
