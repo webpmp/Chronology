@@ -10,10 +10,10 @@ Because static language models are bound to their historical training cutoffs, t
 
 ```json
 {
-  "Computing": {
-    "Agentic_AI_Shift": {
-      "value": "2025-2026",
-      "context": "AI evolved into autonomous agents executing multi-step workflows..."
+  "Sports": {
+    "KNICKS_FIRST_TITLE_SINCE_1973": {
+      "value": "NBA Championship Clinched (First since 1973)",
+      "context": "The New York Knicks secured the NBA championship title, ending a 53-year drought since their previous victory in 1973."
     }
   }
 }
