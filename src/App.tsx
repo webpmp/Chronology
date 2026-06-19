@@ -557,6 +557,7 @@ export default function App() {
                               return (
                                 <div
                                   key={v}
+                                  id={`entry-${v}`}
                                   className={`pending-save p-5 border border-[#1A1A1A]/15 transition-all flex flex-col justify-between ${
                                     isPendingDelete
                                       ? "bg-red-50/40 border-l-[3px] border-red-500 hover:border-[#1A1A1A]/30 hover:border-l-red-500 shadow-sm opacity-60"
