@@ -20,7 +20,7 @@ interface Props {
   existingVariables: string[];
 }
 
-type TabType = "grounding" | "newsapi" | "newsdata" | "text";
+type TabType = "grounding" | "newsapi" | "newsdata" | "nyt" | "text";
 
 export const AIResearchPanel: React.FC<Props> = ({ onAddFact, existingVariables }) => {
   const [activeTab, setActiveTab] = useState<TabType>("newsapi");
@@ -860,6 +860,96 @@ This is usually caused by one of these reasons:
     }
   };
 
+  const handleNYTExtract = async () => {
+    if (!topicQuery.trim()) {
+      setErrorMsg("Please enter a research topic.");
+      return;
+    }
+    setLoading(true);
+    setErrorMsg(null);
+    setFallbackNotice(null);
+    setDraftFacts([]);
+    setAddedDraftIndices([]);
+
+    if (lmStudioEnabled) {
+      setLoadingStep("LM Studio Enabled: Calling New York Times wire feed directly...");
+      try {
+        const response = await fetch("/api/nyt-articles", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ topic: topicQuery }),
+        });
+
+        const data = await response.json();
+        if (!response.ok || data.error) {
+          throw new Error(data.error || "Failed to query NYT articles");
+        }
+
+        const articles = data.articles || [];
+        if (articles.length === 0) {
+          setErrorMsg(`No recent NYT wires found for topic "${topicQuery}".`);
+          setLoading(false);
+          return;
+        }
+
+        setLoadingStep("Formatting headlines payload for local extraction...");
+        const synthesized = articles.map((art: any, index: number) => {
+          return `Article #${index + 1}:\nTitle: ${art.title}\nSource: ${art.source?.name || "Unknown"}\nDate: ${art.publishedAt}\nSummary: ${art.description || ""}\nContent Snippet: ${art.content || ""}\n`;
+        }).join("\n---\n");
+
+        setLoadingStep("Routing news articles to LM Studio locally...");
+        const localFacts = await extractWithLocalLLM(synthesized, topicQuery);
+        setDraftFacts(localFacts);
+      } catch (err: any) {
+        console.error(err);
+        if (err.message === "NO_SIGNIFICANT_ITEMS_FOUND" || err.message === "NO SIGNIFICANT HEADLINES FOUND") {
+          setErrorMsg("NO SIGNIFICANT HEADLINES FOUND");
+          setDraftFacts([]);
+        } else {
+          setErrorMsg(err.message || "An error occurred during local LLM NYT extraction.");
+        }
+      } finally {
+        setLoading(false);
+        setLoadingStep("");
+      }
+      return;
+    }
+
+    setLoadingStep("Initiating NYT queries...");
+    try {
+      setLoadingStep("Retrieving articles from the New York Times...");
+      const response = await fetch("/api/nyt-search", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ topic: topicQuery, model: selectedModel }),
+      });
+
+      const data = await response.json();
+      if (!response.ok || data.error) {
+        throw new Error(data.error || "Failed to query NYT");
+      }
+
+      setLoadingStep("Running headlines through Gemini to filter telemetry & extract 100% verified facts...");
+      if (data.rejected || data.message === "NO_SIGNIFICANT_ITEMS_FOUND" || data.message === "NO SIGNIFICANT HEADLINES FOUND") {
+        setErrorMsg("NO SIGNIFICANT HEADLINES FOUND");
+        setDraftFacts([]);
+        return;
+      }
+
+      if (data.facts && Array.isArray(data.facts)) {
+        setDraftFacts(data.facts);
+      } else {
+        setDraftFacts([]);
+      }
+    } catch (err: any) {
+      console.error(err);
+      setErrorMsg(err.message || "An error occurred during New York Times extraction.");
+    } finally {
+      setLoading(false);
+      setLoadingStep("");
+    }
+  };
+
   const handleDirectTextExtract = async () => {
     if (!rawText.trim()) {
       setErrorMsg("Please paste some text content first.");
@@ -1154,6 +1244,7 @@ This is usually caused by one of these reasons:
                   >
                     <option value="newsapi">News Wire</option>
                     <option value="newsdata">NewsData.io</option>
+                    <option value="nyt">New York Times</option>
                     <option value="grounding">Google Search</option>
                     <option value="text">Raw Ingestor</option>
                   </select>
@@ -1184,6 +1275,14 @@ This is usually caused by one of these reasons:
                     <Info className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>NewsData.io Route:</strong> Fetches recent articles from news sources worldwide using your NewsData.io credentials. Headlines are refined by Gemini into clean archive metrics.
+                    </span>
+                  </div>
+                )}
+                {activeTab === "nyt" && (
+                  <div className="flex gap-2 items-start text-[#1A1A1A]/80 text-xs">
+                    <Info className="w-4 h-4 text-neutral-600 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>New York Times:</strong> Fetches recent articles using your New York Times Article Search credentials. Excellent for trusted, high-reputation journalistic records.
                     </span>
                   </div>
                 )}
@@ -1384,6 +1483,40 @@ This is usually caused by one of these reasons:
                     <input
                       type="text"
                       placeholder="e.g. general artificial intelligence, superconductor..."
+                      value={topicQuery}
+                      onChange={(e) => setTopicQuery(e.target.value)}
+                      disabled={loading}
+                      className="flex-1 bg-white border border-[#1A1A1A]/20 rounded-none px-3 py-2 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#C2410C] placeholder-[#1A1A1A]/35"
+                    />
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="bg-[#1A1A1A] hover:bg-[#C2410C] text-[#FDFCF8] disabled:opacity-50 text-[10px] uppercase tracking-wider font-bold px-4 rounded-none flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      {loading ? <RotateCw className="w-3.5 h-3.5 animate-spin" /> : <Search className="w-3.5 h-3.5" />}
+                      Fetch
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleClearResults}
+                      disabled={loading}
+                      className="border border-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-[#FDFCF8] text-[10px] uppercase tracking-wider font-bold px-4 rounded-none transition-all cursor-pointer"
+                    >
+                      Clear
+                    </button>
+                  </form>
+                </div>
+              </div>
+            )}
+
+            {activeTab === "nyt" && (
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-[10px] uppercase tracking-wide text-[#1A1A1A]/70 mb-1.5 font-bold font-mono">NEW YORK TIMES SEARCH QUERY</label>
+                  <form onSubmit={(e) => { e.preventDefault(); handleNYTExtract(); }} className="flex gap-2">
+                    <input
+                      type="text"
+                      placeholder="e.g. quantum computing, US inflation, climate change..."
                       value={topicQuery}
                       onChange={(e) => setTopicQuery(e.target.value)}
                       disabled={loading}

@@ -4232,6 +4232,213 @@ app.post("/api/newsdata-articles", async (req, res) => {
   }
 });
 
+// 8. Endpoint: Search NYT Article Search API & Parse via Gemini
+app.post("/api/nyt-search", async (req, res) => {
+  const { topic, model } = req.body;
+  if (!topic) {
+    return res.status(400).json({ error: "Search query topic is required" });
+  }
+
+  const apiKey = process.env.NYT_API_KEY;
+  if (!apiKey || apiKey === "YOUR_NYT_API_KEY_HERE" || apiKey.trim() === "") {
+    console.error("NYT API Key is missing - fails explicitly as mandated.");
+    return res.status(400).json({ error: "New York Times API Key has not been configured in .env" });
+  }
+
+  try {
+    const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${encodeURIComponent(topic)}&sort=relevance&api-key=${apiKey}`;
+    const apiRes = await fetch(url);
+    const apiData = await apiRes.json();
+
+    if (apiData.status !== "OK") {
+      console.error("NYT API error returned. Failing explicitly as mandated.");
+      return res.status(500).json({ error: apiData.fault?.faultstring || "New York Times API returned an error status" });
+    }
+
+    const docs = apiData.response?.docs || [];
+    if (docs.length === 0) {
+      return res.json({ success: true, facts: [], message: `No recent NYT articles found on topic "${topic}". Try another search term.` });
+    }
+
+    // Pass the news articles to Gemini to digest and extract structured facts
+    const articlesPrompt = docs.map((art: any, index: number) => {
+      return `Article #${index + 1}:
+Title: ${art.headline?.main || art.headline?.print_headline || "Untitled"}
+Source: ${art.source || "The New York Times"}
+Published: ${art.pub_date || "Unknown Date"}
+Summary: ${art.abstract || art.snippet || ""}
+Content Snippet: ${art.lead_paragraph || ""}
+URL: ${art.web_url || ""}
+`;
+    }).join("\n---\n");
+
+    const categoriesList = [
+      "Computing", "Culture", "Economic Metrics", "Education", "Environment & Climate",
+      "Global Affairs", "Health & Medicine", "Infrastructure & Urban Development",
+      "Law & Policy", "Politics", "Science", "Sports", "Transportation"
+    ];
+
+    const systemPrompt = `=== Operational Mandate ===
+You function as an ultra-efficient batch ingestion filter. Under strict administrative guidelines, you must process all incoming items through the following strict quality gate:
+
+Step 1: Evaluation (Inclusion/Exclusion)
+Analyze the incoming text. To be accepted, the text must contain a specific, named entity and a concrete, localized historic milestone or significant national/global achievement that fits into an existing system category (Computing, Science, Global Affairs, Politics, Economic Metrics, Infrastructure, Transportation, Environment, Culture, Education, Health, Law, Sports).
+
+- EXPANDED SPORTS/CULTURE CRITERIA: For categories like Sports and Culture, do not just look for multi-decade historic anomalies. Include major championship conclusions, definitive season-ending records, or globally significant milestone events (e.g., individual career-shattering records or tournament final completions).
+- Discard routine pre-game gossip, minor local regular-season match scores, local political campaign banter, or unverified speculative hype. Only archive realized milestones.
+- Discard all generic placeholder content.
+If an item fails this evaluation, output exactly this string: "SKIP_ITEM" for both "value" and "context" parameters.
+
+Step 2: Parameter Population
+If and only if the item passes Step 1, populate these parameters:
+1. "category": Must be one of the defined 13 categories: ${categoriesList.join(", ")}
+2. "variable": A short uppercase snake_case string (Alpha-numeric & underscores only, e.g., 'SPACEX_STARSHIP_FLIGHT') acting as a unique key descriptor.
+3. "value" (The "value" Parameter): Extract the core, defining quantifiable metric, benchmark, or specific breakthrough fact. Keep this short and data-dense (e.g., "20 Petaflops FP4", "Permanent Ceasefire Signed", or "Championship Title Secured").
+4. "context" (The "context" Parameter): Synthesize a dense, factual, 1-to-2 sentence summary detailing the entity, the announcement date, and the structural impact with zero media fluff.
+
+Format: Output ONLY a valid and parsable raw JSON array of objects with the fields: category, variable, value, context. If everything is skipped/rejected, you can output a single object with value and context set to "SKIP_ITEM", or a list of such objects, or exactly the string: "NO SIGNIFICANT HEADLINES FOUND".`;
+
+    let response: any;
+    let attempts = 0;
+    let currentModel = model || "gemini-3.5-flash";
+    while (true) {
+      try {
+        response = await ai.models.generateContent({
+          model: currentModel,
+          contents: `Parse these NYT articles and pull verified facts. Thoroughly evaluate every single article in the payload. Do not stop extracting after finding a few items; perform a comprehensive harvest of all verified key facts, aiming to extract up to 8 to 10 valid milestones if the data supports it, ensuring no authentic breakthrough or major event is left behind: \n\n${articlesPrompt}`,
+          config: {
+            systemInstruction: systemPrompt,
+          }
+        });
+        break; // Success
+      } catch (err: any) {
+        attempts++;
+        const errCode = err?.status || (err?.error && err.error.code) || "503";
+        if (attempts === 1) {
+          const fallback = "gemini-3.1-flash-lite";
+          console.log(`[Gemini Connection] Step ${attempts} resolved with status code ${errCode}. Re-routing to high-availability channel: ${fallback}`);
+          currentModel = fallback;
+          await new Promise(resolve => setTimeout(resolve, 1500));
+        } else if (attempts === 2) {
+          const fallback = "gemini-2.5-flash";
+          console.log(`[Gemini Connection] Step ${attempts} resolved with status code ${errCode}. Re-routing to stable channel: ${fallback}`);
+          currentModel = fallback;
+          await new Promise(resolve => setTimeout(resolve, 1500));
+        } else if (attempts === 3) {
+          const ultraFallback = "gemini-3.1-pro-preview";
+          console.log(`[Gemini Connection] Step ${attempts} resolved with status code ${errCode}. Re-routing to premium channel: ${ultraFallback}`);
+          currentModel = ultraFallback;
+          await new Promise(resolve => setTimeout(resolve, 1500));
+        } else {
+          throw err;
+        }
+      }
+    }
+
+    let jsonText = (response.text || "").trim();
+    if (jsonText.startsWith("```")) {
+      const match = jsonText.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+      if (match) {
+        jsonText = match[1].trim();
+      }
+    }
+
+    if (jsonText === "NO_SIGNIFICANT_ITEMS_FOUND" || 
+        jsonText === '"NO_SIGNIFICANT_ITEMS_FOUND"' || 
+        jsonText.includes("NO_SIGNIFICANT_ITEMS_FOUND") ||
+        jsonText === "NO SIGNIFICANT HEADLINES FOUND" ||
+        jsonText === '"NO SIGNIFICANT HEADLINES FOUND"' ||
+        jsonText.includes("NO SIGNIFICANT HEADLINES FOUND") ||
+        jsonText === "SKIP_ITEM" ||
+        jsonText === '"SKIP_ITEM"' ||
+        jsonText === '["SKIP_ITEM"]') {
+      return res.json({ success: true, facts: [], rejected: true, message: "NO SIGNIFICANT HEADLINES FOUND" });
+    }
+
+    let parsedFacts = JSON.parse(jsonText);
+    if (!Array.isArray(parsedFacts)) {
+      if (typeof parsedFacts === "object" && parsedFacts !== null) {
+        const potentialArray = parsedFacts.facts || Object.values(parsedFacts).find(v => Array.isArray(v));
+        if (Array.isArray(potentialArray)) {
+          parsedFacts = potentialArray;
+        } else {
+          parsedFacts = [parsedFacts];
+        }
+      } else {
+        parsedFacts = [];
+      }
+    }
+
+    if (Array.isArray(parsedFacts)) {
+      parsedFacts = parsedFacts.filter((fact: any) => {
+        if (!fact) return false;
+        const val = String(fact.value || "").toUpperCase().trim();
+        const ctx = String(fact.context || "").toUpperCase().trim();
+        return val !== "SKIP_ITEM" && ctx !== "SKIP_ITEM";
+      });
+    }
+
+    res.json({ success: true, facts: parsedFacts, rawArticlesCount: docs.length });
+
+  } catch (error: any) {
+    console.error("[Severe Gemini API Connection Error in NYT Search]:", error);
+    let errorMsg = error.message || String(error);
+    if (errorMsg.includes("API_KEY") || errorMsg.includes("API key") || errorMsg.includes("key not found")) {
+      errorMsg = "API Key Invalid";
+    } else if (errorMsg.includes("quota") || errorMsg.includes("rate limit") || errorMsg.includes("429") || errorMsg.includes("exhausted")) {
+      errorMsg = "Gemini API Quota Reached";
+    } else if (errorMsg.includes("timeout") || errorMsg.includes("ETIMEDOUT") || errorMsg.includes("deadline")) {
+      errorMsg = "Network Timeout";
+    } else if (errorMsg.includes("billing") || errorMsg.includes("BILLING")) {
+      errorMsg = "Billing Hold";
+    }
+    res.status(500).json({
+      success: false,
+      error: errorMsg
+    });
+  }
+});
+
+// 9. Endpoint: Fetch raw NYT articles so client-side routers can parse/extract locally
+app.post("/api/nyt-articles", async (req, res) => {
+  const { topic } = req.body;
+  if (!topic) {
+    return res.status(400).json({ error: "Search query topic is required" });
+  }
+
+  const apiKey = process.env.NYT_API_KEY;
+  if (!apiKey || apiKey === "YOUR_NYT_API_KEY_HERE" || apiKey.trim() === "") {
+    console.error("NYT API Key is missing for raw articles fetching.");
+    return res.status(400).json({ error: "New York Times API Key has not been configured in .env" });
+  }
+
+  try {
+    const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${encodeURIComponent(topic)}&sort=relevance&api-key=${apiKey}`;
+    const apiRes = await fetch(url);
+    const apiData = await apiRes.json();
+
+    if (apiData.status !== "OK") {
+      console.error("NYT API error returned. Failing explicitly as mandated.");
+      return res.status(500).json({ error: apiData.fault?.faultstring || "New York Times API returned an error" });
+    }
+
+    const docs = apiData.response?.docs || [];
+    const standardizedArticles = docs.map((art: any) => ({
+      title: art.headline?.main || art.headline?.print_headline || "Untitled",
+      source: { name: art.source || "The New York Times" },
+      publishedAt: art.pub_date,
+      description: art.abstract || art.snippet || "",
+      content: art.lead_paragraph || art.abstract || "",
+      url: art.web_url
+    }));
+
+    res.json({ success: true, articles: standardizedArticles });
+  } catch (error: any) {
+    console.error("Error fetching NYT articles:", error);
+    res.status(500).json({ error: "Failed to fetch headlines: " + error.message });
+  }
+});
+
 // Configure Vite integration for development vs. production static hosting
 async function startServer() {
   // Initialize and back up our 801-variable seed data
