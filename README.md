@@ -68,6 +68,30 @@ Because static language models are bound to their historical training cutoffs, t
    NEWSDATA_API_KEY=your-newsdata-key-here
    ```
 
+---
+
+## Configuring LM Studio for Local Execution
+
+To run fact extraction completely offline and private on your own machine without using Google Gemini tokens, you can configure **LM Studio** as the backend:
+
+1. **Download and Open LM Studio**: Install [LM Studio](https://lmstudio.ai/) on your machine.
+2. **Download a Model**: Download a compatible model from the LM Studio homepage (e.g., Llama 3, Qwen 2.5, or Mistral).
+3. **Configure & Start the Local Server**:
+   - Go to the **Local Server** tab (the double arrow icon on the left panel in LM Studio).
+   - Select the model you downloaded from the dropdown at the top.
+   - In the settings panel on the right, under **Server Settings**:
+     - **Enable CORS**: Toggle this setting to **ON** (CORS must be enabled so that your web browser running Chronology on `http://localhost:3000` is permitted to make requests to the local LM Studio server).
+     - Check the **Port** (default is `1234`).
+   - Click **Start Server**.
+4. **Configure Chronology**:
+   - Open the Chronology Dashboard in your browser.
+   - In the right control sidebar under **AI Extraction Setup**, select the model **LM Studio (Local)**.
+   - Enter your local server endpoint (default: `http://localhost:1234/v1`).
+   - If you configured a token in LM Studio, enter it in the **LM Studio Token (Optional)** field.
+   - The application will now route all extraction tasks to your local model, using 0 external API tokens.
+
+---
+
 ### Development Mode
 
 To boot the dev server locally using standard `tsx` executing `server.ts` directly:
