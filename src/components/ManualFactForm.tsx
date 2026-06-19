@@ -135,7 +135,15 @@ export const ManualFactForm: React.FC<Props> = ({ onAddFact }) => {
 
             <div>
               <div className="flex items-center justify-between mb-1">
-                <label className="block text-[10px] text-[#1A1A1A]/70 font-mono uppercase font-semibold">Short Title</label>
+                <label className="block text-[10px] text-[#1A1A1A]/70 font-mono uppercase font-semibold flex items-center gap-1.5">
+                  <span>Short Title</span>
+                  <span className="group relative cursor-help inline-flex items-center">
+                    <Info className="w-3 h-3 text-[#1A1A1A]/40 hover:text-[#C2410C] transition-colors" />
+                    <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block w-48 bg-[#1A1A1A] text-[#FDFCF8] text-[9px] font-sans font-normal p-2 shadow-md text-center pointer-events-none z-20 normal-case border border-white/10 leading-normal">
+                      Uppercase keys prevent formatting drift.
+                    </span>
+                  </span>
+                </label>
                 {validationErrors.variable && <span className="text-[9px] text-[#C2410C] font-mono font-bold">* REQUIRED</span>}
               </div>
               <input
@@ -191,12 +199,7 @@ export const ManualFactForm: React.FC<Props> = ({ onAddFact }) => {
             />
           </div>
 
-          <div className="flex items-center justify-between pt-1">
-            <span className="text-[9px] text-[#1A1A1A]/50 font-mono flex items-center gap-1">
-              <Info className="w-3 h-3 flex-shrink-0 text-[#C2410C]" />
-              Uppercase keys prevent formatting drift.
-            </span>
-
+          <div className="flex justify-end pt-1">
             <button
               type="submit"
               className="bg-[#1A1A1A] hover:bg-[#C2410C] text-[#FDFCF8] font-bold px-5 py-2 rounded-none text-[10px] uppercase tracking-wider transition-colors cursor-pointer flex items-center gap-1.5"
