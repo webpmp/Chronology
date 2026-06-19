@@ -458,11 +458,22 @@ This is usually caused by one of these reasons:
     }
 
     const data = await res.json();
+    console.log("[LM Studio Response Data]:", data);
     setLoadingStep("Extracting response context and validating syntax...");
     
-    let completionText = data.choices?.[0]?.message?.content || "";
-    if (!completionText) {
-      throw new Error("No response or text returned from the local LM Studio model.");
+    let completionText = "";
+    if (data.choices?.[0]?.message?.content !== undefined) {
+      completionText = data.choices[0].message.content;
+    } else if (data.choices?.[0]?.text !== undefined) {
+      completionText = data.choices[0].text;
+    } else if (data.error?.message) {
+      throw new Error(`LM Studio returned an error: ${data.error.message}`);
+    } else {
+      throw new Error(`Unexpected response format from LM Studio. Raw response: ${JSON.stringify(data)}`);
+    }
+
+    if (!completionText || !completionText.trim()) {
+      throw new Error("Empty response returned from the local LM Studio model.");
     }
 
     completionText = completionText.trim();
