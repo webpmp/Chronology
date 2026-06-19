@@ -5,22 +5,27 @@
 
 # Chronology
 
-Chronology is a professional, high-fidelity research and curation dashboard designed to extract, refine, and structure verified global facts, metrics, and scientific or technological breakthroughs. It provides a visual platform to build structured JSON datasets, which can be utilized for machine learning model tuning, retrieval-augmented generation (RAG), or detailed facts-based knowledge bases.
+Chronology is a professional research curation dashboard designed to patch the structural knowledge gaps of open-source LLMs.
+Because static language models are bound to their historical training cutoffs, they remain blind to recent events. Chronology bridges this gap by acting as a live programmatic patch—extracting, refining, and structuring verified global facts from 2024 through the present into an agent-ingestible, schema-strict JSON dataset.
 
-The dashboard integrates live visual state indicators, dual workflows (automatic Gemini-powered research and manual structured inputs), validation pipelines, and a direct JSON visualization.
+```json
+{
+  "Computing": {
+    "Agentic_AI_Shift": {
+      "value": "2025-2026",
+      "context": "AI evolved into autonomous agents executing multi-step workflows..."
+    }
+  }
+}
+```
 
----
+### 🚀 Key Features
 
-## Key Features
-
-- **Gemini AI Deep Research & Extractor**: Search or query complex topics using server-side Gemini models with real-time Google Search Grounding to automatically discover and extract high-confidence, verified assertions. You can select different Gemini models to use in Settings, or configure local models using LM Studio.
-- **Bi-Directional Interactive Curation**: Discoveries are proposed as editable cards. Select, edit, rename, modify, or append suggested entries directly.
-- **Manual Data Orchestration**: Append facts manually with a validation engine. It enforces unique, properly formatted uppercase snake_case identifier variables (e.g., `ASTRONOMY_SGR_A_MASS`).
-- **Pending Actions Lifecycle**:
-  - **Unsaved Modifications**: New facts are highlighted with an emerald border and background tint, with an `UNSAVED` badge.
-  - **Unsaved Deletions**: Deleting facts marks them for `pending-deletion` (lower row opacity, strikethrough styling, `DELETING` status badge, and an interactive Redo/Undo arrow). Deleted blocks are highlighted in a red transparent background with a solid red left-gutter accent, before permanent disk purge.
-- **Top Metrics Panel**: Clear visual status cards reporting current sync status (`STATUS: SYNCED` vs. `UNSAVED CHANGES` with (+X new / pending)), and total global dataset size.
-- **Interactive JSON Code Viewer**: A customized, dark-themed code block displaying the entire structured JSON dataset dynamically highlighting newly created and deleted lines.
+* **13 Foundational Domains:** Tracks cross-industry metrics and breakthroughs in Computing, Culture, Economic Metrics, Education, Environment & Climate, Global Affairs, Health & Medicine, Infrastructure, Law & Policy, Politics, Science, Sports, and Transportation.
+* **Local & Open Model Ready:** Native support for connecting to local models running via **LM Studio**, allowing you to patch outdated knowledge bases completely offline with private execution.
+* **Dual Research Workflows:** Combines automated, LLM-powered extraction with manual, structured data overrides to maintain complete control over dataset quality.
+* **Production-Ready Ingestion:** Formats verified, timestamped variables into a schema-strict JSON ledger built explicitly for retrieval-augmented generation (RAG) pipelines, context windows, or model fine-tuning.
+* **Data Integrity Pipelines:** Integrates live visual state indicators, format verification checks, and inline JSON validation to prevent syntax breakage.
 
 ---
 
