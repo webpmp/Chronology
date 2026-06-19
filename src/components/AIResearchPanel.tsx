@@ -1584,6 +1584,11 @@ This is usually caused by one of these reasons:
                 <div className="flex-1">
                   <span className="font-bold uppercase tracking-wider font-mono text-[10px] block mb-0.5 text-[#C2410C]">Extraction Encountered Issues</span>
                   <p>{errorMsg}</p>
+                  {errorMsg === "NO SIGNIFICANT HEADLINES FOUND" && lmStudioEnabled && (
+                    <p className="mt-2 text-[10.5px] text-[#C2410C]/80 leading-normal font-sans border-t border-[#C2410C]/15 pt-2">
+                      💡 <strong>Tip for Local Models:</strong> Rejections often happen if the loaded local LLM struggles with complex formatting/exclusion instructions. Try using a model specifically trained for instruction following and structured JSON output, such as <strong>qwen2.5-7b-instruct</strong> or <strong>llama-3.1-8b-instruct</strong>, and ensure your local server temperature is set to <strong>0.1</strong>.
+                    </p>
+                  )}
                 </div>
               </div>
             )}
